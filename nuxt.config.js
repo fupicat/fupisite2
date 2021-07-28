@@ -49,7 +49,14 @@ export default {
               nav: '#6E438D',
               hov: '#8C4DBA',
             }
-          } 
+          },
+          zIndex: {
+            '1': '1',
+          },
+          translate: {
+            '200': '200%',
+            '-200': '-200%',
+          },
         }
       }
     }

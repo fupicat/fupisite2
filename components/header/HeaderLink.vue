@@ -1,6 +1,6 @@
 <template>
   <nuxt-link :to="to"
-    class="block text-center text-white hover:bg-purple-hov p-4">
+    class="block text-center text-white bg-purple-nav hover:bg-purple-hov p-4">
   <slot></slot>
   </nuxt-link>
 </template>
