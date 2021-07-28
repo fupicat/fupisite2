@@ -1,5 +1,3 @@
-const axios = require('axios');
-
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -22,20 +20,6 @@ export default {
   },
 
   generate: {
-    async routes() {
-      const posts = await axios.get('https://fupisite2-posts.glitch.me/posts');
-      const pages = posts.data.map(post => {
-        return {
-          route: '/blog/' + post.filename,
-          payload: post,
-        }
-      });
-      pages.push({
-        route: '/blog/',
-        payload: posts,
-      });
-      return pages;
-    }
   },
 
   tailwindcss: {
@@ -48,6 +32,7 @@ export default {
             purple: {
               nav: '#6E438D',
               hov: '#8C4DBA',
+              bg: '#e8d7e6',
             }
           },
           zIndex: {
@@ -57,8 +42,14 @@ export default {
             '200': '200%',
             '-200': '-200%',
           },
+          rotate: {
+            '360': '360deg',
+          },
         }
-      }
+      },
+      variants: {
+        transitionProperty: ['responsive', 'motion-safe', 'motion-reduce']
+      },
     }
   },
 
@@ -83,6 +74,7 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    '@nuxt/content',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios

@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <site-header />
-    <nuxt />
+    <nuxt class="bg-purple-bg" />
     <site-footer />
   </div>
 </template>
@@ -42,5 +42,8 @@ export default {
 </script>
 
 <style>
-
+.sticker {
+  -webkit-filter: drop-shadow(0px 1px 0.2px white) drop-shadow(1px 0px 0.2px white) drop-shadow(0px -1px 0.2px white) drop-shadow(-1px 0px 0.2px white) drop-shadow(0px 1px 0.2px white) drop-shadow(1px 0px 0.2px white) drop-shadow(0px -1px 0.2px white) drop-shadow(-1px 0px 0.2px white) drop-shadow(0px 0px 4px black);
+  filter: drop-shadow(0px 1px 0.2px white) drop-shadow(1px 0px 0.2px white) drop-shadow(0px -1px 0.2px white) drop-shadow(-1px 0px 0.2px white) drop-shadow(0px 1px 0.2px white) drop-shadow(1px 0px 0.2px white) drop-shadow(0px -1px 0.2px white) drop-shadow(-1px 0px 0.2px white) drop-shadow(0px 0px 4px black);
+}
 </style>

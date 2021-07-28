@@ -1,8 +1,8 @@
 <template>
   <div class="flex flex-col justify-between p-5 cursor-pointer" @click="toggle()">
-    <div id="bun1" class="rounded-full transform transition-transform w-full h-1/5 bg-white"></div>
-    <div id="bun2" class="rounded-full transform transition-transform w-full h-1/5 bg-white"></div>
-    <div id="bun3" class="rounded-full transform transition-transform w-full h-1/5 bg-white"></div>
+    <div id="bun1" class="rounded-full transform transition-transform motion-reduce:transition-none w-full h-1/5 bg-white"></div>
+    <div id="bun2" class="rounded-full transform transition-transform motion-reduce:transition-none w-full h-1/5 bg-white"></div>
+    <div id="bun3" class="rounded-full transform transition-transform motion-reduce:transition-none w-full h-1/5 bg-white"></div>
   </div>
 </template>
 
