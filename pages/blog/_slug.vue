@@ -10,7 +10,7 @@
         <tag-link v-for="tag in post.tags" :key="tag" :tag="tag" />
       </div>
     </div>
-    <div class="commentbox bg-purple-nav"></div>
+    <div class="commentbox"></div>
   </div>
 </template>
 
@@ -26,7 +26,7 @@ export default {
     TagLink,
   },
   mounted() {
-    commentBox('5707504335978496-proj', { textColor: '#fff' });
+    commentBox('5707504335978496-proj');
   },
   async asyncData({ $content, params }) {
     const post = await $content('blog', params.slug).fetch();
