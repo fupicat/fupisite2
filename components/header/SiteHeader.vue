@@ -4,7 +4,7 @@
       <home-logo />
       <menu-icon class="h-full w-16" @toggle="toggleMenu()" />
     </div>
-    <div id="menu" class="origin-top z-50 transform motion-reduce:transition-none absolute scale-y-0 w-screen flex flex-col">
+    <div id="menu" class="origin-top z-40 transform motion-reduce:transition-none absolute scale-y-0 w-full flex flex-col">
       <header-link to="/projetos">Projetos</header-link>
       <header-link to="/blog">Blog</header-link>
       <header-link to="/sobre">Sobre</header-link>

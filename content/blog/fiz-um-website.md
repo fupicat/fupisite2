@@ -1,0 +1,11 @@
+---
+title: Fiz um website
+description: Postagem antiga, feita em 21/1/2020 quando o site foi criado.
+icon: /img/SiteIcon.png
+tags:
+    - site
+    - antiga
+---
+![](/img/SiteVelho.png)
+
+Ele ainda não está completo, por exemplo as coisas em destaque ainda não têm páginas próprias, mas estou atualizando ele bastante ainda. Você pode acessar o site pelo blog mesmo, é só clicar no meu logo aí em cima.
