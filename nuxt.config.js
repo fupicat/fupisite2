@@ -23,6 +23,7 @@ export default {
   },
 
   generate: {
+    routes: ["/blog/fiz-um-website", "/blog/postagem-longa-ludum-dare", "/blog/replacer"]
   },
 
   tailwindcss: {
