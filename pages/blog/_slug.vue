@@ -1,7 +1,7 @@
 <template>
   <div>
     <post-header :title="post.title" :description="post.description" :icon="post.icon" :created="post.createdAt" :updated="post.updatedAt" />
-    <article class="m-2">
+    <article class="my-2 mx-4">
       <nuxt-content :document="post" />
     </article>
     <div class="bg-purple-hov text-white py-2">
@@ -10,6 +10,7 @@
         <tag-link v-for="tag in post.tags" :key="tag" :tag="tag" />
       </div>
     </div>
+    <div class="commentbox bg-purple-nav"></div>
   </div>
 </template>
 
@@ -17,10 +18,15 @@
 import PostHeader from "~/components/blog/PostHeader.vue";
 import TagLink from "~/components/blog/TagLink.vue";
 
+import commentBox from 'commentbox.io';
+
 export default {
   components: {
     PostHeader,
     TagLink,
+  },
+  mounted() {
+    commentBox('5707504335978496-proj', { textColor: '#fff' });
   },
   async asyncData({ $content, params }) {
     const post = await $content('blog', params.slug).fetch();
@@ -61,7 +67,9 @@ export default {
 }
 
 .nuxt-content p {
+  text-indent: 1.6em;
   margin: 1em 0px;
+  text-align: justify;
 }
 
 .nuxt-content a {
