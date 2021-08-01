@@ -54,9 +54,9 @@ export default {
 .icon.icon-link {
   background-image: url('~assets/svg/icon-hashtag.svg');
   display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-size: 20px 20px;
+  width: 15px;
+  height: 15px;
+  background-size: 15px 15px;
 }
 
 .nuxt-content img {
@@ -88,6 +88,13 @@ export default {
   display: block;
   font-size: 1.5em;
   margin: 0.83em 0px;
+  font-weight: bold;
+}
+
+.nuxt-content h3 {
+  display: block;
+  font-size: 1.17em;
+  margin: 1em 0px;
   font-weight: bold;
 }
 

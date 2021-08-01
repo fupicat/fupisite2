@@ -12,11 +12,11 @@ Olá! Estou fazendo este post para falar como foi minha experiência na Ludum Da
 
 <iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/2_DaXlkwK4o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-# O que é
+## O que é
 
 Para quem não conhece a [Ludum Dare](https://ldjam.com/), ela é um evento que acontece duas vezes por ano, na qual qualquer um pode se inscrever, e o objetivo da competição é criar um jogo de computador em 72 horas, baseado em um tema escolhido pela comunidade. A jam acontece em quatro fases:
 
-## Escolha do tema
+### Escolha do tema
 
 Essa fase acontece uma semana antes da competição. Primeiro cada participante pode sugerir três temas (por exemplo, o tema da Ludum Dare 46 foi “Keep it alive” (mantenha-o vivo)). Depois do tempo de enviar temas acabar, acontece o primeiro round de votação (Theme Slaughter), onde temos que decidir para cada um dos temas individualmente, se é um bom tema ou não.
 
@@ -28,23 +28,23 @@ Normalmente tem mais de 5000 temas, mas no round 2, onde realmente começa a vot
 
 Esses rounds de 15 temas por vez se repetem 3 vezes, uma por dia até o dia em que o tema é anunciado, e imediatamente a competição começa.
 
-## Jam
+### Jam
 
 Existem duas categorias de competição: Jam e Compo. Você pode entrar em qualquer uma, mas elas têm regras separadas. A Jam dura 72 horas e você pode usar qualquer engine, base de código, template, gráficos, música e outros assets que você tenha permissão para usar. A Compo dura 48 horas, e você não pode usar gráficos, áudio ou outros assets que não tenham sido feitos durante a competição, e você deve obrigatoriamente compartilhar o código-fonte. Você ainda pode usar qualquer engine e base de código, mas os competidores da Compo tendem a ser mais rígidos na votação. Se alguém perceber que você só usou um template e enviou pra Compo, seu jogo não vai se sair muito bem.
 
 Quando você terminar seu jogo, você cria uma página no site da Ludum Dare e publica o seu jogo em algum outro lugar para distribuir (Itch, Gamejolt, Google Drive...) e posta o link na página do seu jogo com uma descrição e imagens.
 
-## Feedback
+### Feedback
 
 Depois de acabar o tempo, todos podem dar notas aos jogos das outras pessoas. Tanto faz se você participou da Compo ou da Jam, todos podem votar nos jogos de todos. Você joga o jogo e depois dá uma nota de 0 a 5 estrelas nas categorias Geral, Diversão, Inovação, Tema, Gráficos, Áudio, Humor, e Atmosfera (Atmosfera é feita para jogos de terror, ou outro tipo de jogo que é feito para causar alguma emoção no jogador).
 
 Além de dar nota também é bom deixar comentários para dar uma ideia pro criador do que ele devia melhorar, e assim ganhar mais views no seu próprio jogo também. Quanto mais comentários você faz, mais o site vai recomendar o seu jogo. Você precisa de 20 notas para se classificar.
 
-## Fim
+### Fim
 
 Quando acaba o tempo de dar feedback (entre uma e duas semanas), você vê em que posição seu jogo ficou em relação aos outros, e como você foi em cada uma das categorias de votação! Não tem prêmio para os vencedores.
 
-# Ludum Dare 45
+## Ludum Dare 45
 
 Então, na minha primeira Ludum Dare o tema era “Start with nothing” (começar sem nada), e eu criei um jogo chamado [God Complex](https://ldjam.com/events/ludum-dare/45/god-complex). No jogo você é um deus que deve juntar elementos, construir um universo, ganhar devotos, e destruir tudo no final juntando dois buracos negros. Tinha uns 5000 participantes e eu fui muito bem! Especialmente na categoria Tema. No fim, achei que criei um jogo muito interessante mas extremamente desbalanceado.
 
@@ -54,7 +54,7 @@ Eu jurei que na próxima Ludum Dare, eu ia fazer um jogo bem mais simples. Minha
 
 Eu não quero ter que lidar com esse desbalanceamento, por isso não vou atualizar este jogo ou adicionar mais elementos. Por isso também, eu decidi que na próxima game jam eu ia simplificar muito mais o conceito e fazer algo super simples.
 
-# Ludum Dare 46
+## Ludum Dare 46
 
 Dessa vez o tema era “Keep it alive” (mantenha-o vivo). Eu já tinha na cabeça a ideia de que eu queria fazer um jogo baseado em highscore onde você tinha que fazer mais de uma coisa ao mesmo tempo usando apenas o mouse. Minha primeira ideia foi um simulador de médico, onde você ia estar em uma ambulância e tinha que manter um paciente vivo o máximo de tempo possível. Seria um jogo cartunesco, e você ia ter que usar um desfibrilador, um soro, e fazer aquele movimento empurrando o peito do paciente em um certo ritmo para mantê-lo vivo. Eu não programei isso mas foi a minha primeira ideia.
 
@@ -78,17 +78,17 @@ Quando saíram os resultados, eu definitivamente não fui tão bem quanto no ano
 
 No fim, o jogo que eu fiz acabou ficando meio desinteressante. É só um joguinho arcade de highscore sem muita variedade, que você joga por 5 minutos e esquece. Por mais desbalanceado que tenha ficado o meu jogo da Ludum Dare anterior, pelo menos ele era ambicioso e mais memorável.
 
-# Próxima jam
+## Próxima jam
 
 A próxima jam da qual eu vou participar é a [GMTK Game Jam](https://itch.io/jam/gmtk-2020), que é uma competição criada por um youtuber que eu costumava assistir chamado Game Maker's Toolkit, que fala sobre game design. Já participei dela ano passado com o jogo [Nowhere but Forward](https://itch.io/jam/gmtk-2019/rate/460975), e esse ano vou participar de novo, se tudo der certo! O conceito é praticamente o mesmo que a Ludum Dare, exceto que o tema é escolhido apenas pelo apresentador, e tem bem menos categorias de votação. Como essa jam é mais baseada em game design do que apresentação, as categorias são Tema, Originalidade, e Design. A sua nota final é uma média de todas as notas que você recebeu. Então nessa jam, o mais importante é ter um jogo bem estruturado, do que um jogo bonito ou chamativo (ou pelo menos é assim que devia ser).
 
 Minha ideia para a próxima jam é algo parecido com o Nowhere but Forward, um jogo com início, meio e fim, ao invés de ser infinito como o Hearty Dose que eu fiz pra Ludum Dare. Estou pensando em fazer algo que envolva level design, porque eu percebi que a maioria dos jogos que eu gostei dessa jam tinham níveis, ou algum outro tipo de progressão linear.
 
-# Meus jogos favoritos
+## Meus jogos favoritos
 
 Aqui estão algumas recomendações dos melhores jogos que eu joguei nesta jam:
 
-## My Pet's Dungeon
+### My Pet's Dungeon
 
 ![](https://1.bp.blogspot.com/-h4iN6oFpexc/Xr8aVkWEXSI/AAAAAAAAEJo/p7Ta8rJKLkYsneGgBaUxJpMiPdGAACfqwCK4BGAsYHg/2b89f.png)
 
@@ -96,7 +96,7 @@ Aqui estão algumas recomendações dos melhores jogos que eu joguei nesta jam:
 
 Esse foi o meu jogo favorito esta jam, muito criativo! É uma mistura entre Tamagotchi e RPG. Você precisa tomar conta de um pet que adora entrar em cavernas e matar monstros, mas você não pode deixar ele morrer. Na dungeon ele ataca sozinho, e você precisa decidir quando fugir, mas se o seu pet estiver com baixa felicidade ele vai atacar mais devagar e pode se recusar a fugir! Você precisa alimentar e dar remédio pro seu pet, mas alguns itens deixam o seu pet triste ou tiram vida, então você deve sempre balancear o uso de itens até chegar no final.
 
-## Son of a Liche
+### Son of a Liche
 
 ![](https://1.bp.blogspot.com/-uGhY0Laz3Qk/Xr8b2VHGyKI/AAAAAAAAEKE/XhQAeBLmjCULK_WkpQhBo4abPHvQ69X2wCK4BGAsYHg/2dac9.png)
 
@@ -104,7 +104,7 @@ Esse foi o meu jogo favorito esta jam, muito criativo! É uma mistura entre Tama
 
 Você é um mago que morreu e precisa fazer com que seu esqueleto chegue a um ritual para te ressuscitar. Infelizmente o esqueleto anda que nem um imbecil então você precisa ajudar ele criando caminhos e jogando explosões em inimigos para que ele possa atravessar em segurança. Foi o jogo mais inovador que eu joguei na jam.
 
-## Custom Critter Fighter
+### Custom Critter Fighter
 
 ![](https://1.bp.blogspot.com/-KOD8uXjHSI4/Xr8c8T2FFgI/AAAAAAAAEKc/rmrvYCH_LFgwBQvL69vFInwr-z47CRWHACK4BGAsYHg/s320/32909.png)
 
