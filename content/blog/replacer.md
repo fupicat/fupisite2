@@ -1,6 +1,7 @@
 ---
 title: Replacer
 description: Postagem antiga, feita em 10/2/2020 quando o Replacer foi criado.
+posted: 1581303600000
 icon: /img/Replacer.png
 tags:
     - ferramenta

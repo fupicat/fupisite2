@@ -1,6 +1,7 @@
 ---
 title: Uma postagem longa demais sobre a minha participação na Ludum Dare
 description: Postagem antiga, feita em 15/5/2020 quando eu participei da Ludum Dare 46.
+posted: 1589511600000
 icon: /img/HeartyDose.png
 tags:
     - jam

@@ -1,9 +1,9 @@
 <template>
   <div>
-    <post-header :title="post.title" :description="post.description" :icon="post.icon" :created="post.createdAt" :updated="post.updatedAt" />
-    <article class="my-2 mx-4">
+    <page-header :title="post.title" :description="post.description" :icon="post.icon" :posted="post.posted" :edited="post.edited" />
+    <container pad>
       <nuxt-content :document="post" />
-    </article>
+    </container>
     <div class="bg-purple-hov text-white py-2">
       <p class="font-bold text-xl text-center pb-2">Tags</p>
       <div class="flex flex-row justify-center gap-1">
@@ -15,15 +15,17 @@
 </template>
 
 <script>
-import PostHeader from "~/components/blog/PostHeader.vue";
+import PageHeader from "~/components/PageHeader.vue";
 import TagLink from "~/components/blog/TagLink.vue";
+import Container from '~/components/Container.vue';
 
 import commentBox from 'commentbox.io';
 
 export default {
   components: {
-    PostHeader,
+    PageHeader,
     TagLink,
+    Container,
   },
   mounted() {
     commentBox('5707504335978496-proj');

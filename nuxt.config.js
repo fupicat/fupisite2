@@ -23,7 +23,6 @@ export default {
   },
 
   generate: {
-    routes: ["/blog/fiz-um-website", "/blog/postagem-longa-ludum-dare", "/blog/replacer"]
   },
 
   tailwindcss: {
@@ -31,6 +30,9 @@ export default {
       darkMode: "class",
       theme: {
         extend: {
+          spacing: {
+            pc: "10%",
+          },
           colors: {
             transparent: 'transparent',
             purple: {
