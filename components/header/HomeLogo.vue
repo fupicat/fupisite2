@@ -1,10 +1,10 @@
 <template>
   <div id="home-logo" class="px-2 w-40 cursor-pointer" @mouseover="logoHover(true)" @mouseout="logoHover(false)">
-    <nuxt-link to="/">
+    <nuxt-link to="/" class="block h-full">
       <img src="~/assets/img/LogoSmallNoButtons.png" alt="Fupi logo" class="pointer-events-none small-logo no-buttons absolute z-10 h-16 py-2 motion-reduce:transition-none">
       <img src="~/assets/img/LogoSmall.png" alt="Fupi logo" class="pointer-events-none small-logo buttons absolute z-10 h-16 py-2 motion-reduce:transition-none">
-      <img src="~/assets/img/Logo.png" alt="Fupi logo" class="pointer-events-none big-logo absolute h-16 py-2 left-2 top-0 motion-reduce:transition-none">
-      <img src="~/assets/img/ParaPfv.png" alt="para pfv ;-;" class="pointer-events-none para absolute opacity-0 transition-all transform origin-top-left scale-0 z-50 h-10 top-12 left-4 motion-reduce:transition-none">
+      <img src="~/assets/img/Logo.png" alt="Fupi logo" class="pointer-events-none big-logo relative h-16 py-2 top-0 motion-reduce:transition-none">
+      <img src="~/assets/img/ParaPfv.png" alt="para pfv ;-;" class="pointer-events-none para relative opacity-0 transition-all transform origin-top-left scale-0 z-50 h-10 -top-2 motion-reduce:transition-none">
     </nuxt-link>
   </div>
 </template>

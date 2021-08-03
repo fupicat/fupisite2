@@ -1,40 +1,53 @@
 <template>
   <div>
     <page-header title="Blog" description="Coisas que eu escrevi" />
-    <container pad>
-      <ul>
-        <li v-for="post of posts" :key="post.slug">
-          <NuxtLink :to="{ name: 'blog-slug', params: { slug: post.slug } }">
-            <img :src="post.icon" />
-            <div>
-              <h2>{{ post.title }}</h2>
-              <p>{{ post.description }}</p>
-            </div>
-          </NuxtLink>
-        </li>
-      </ul>
+    <container>
+      <search type="blog" @SearchChanged="refresh" />
     </container>
+    <thing-list>
+      <thing-item v-for="post of posts" :key="post.slug"
+        :slug="post.slug"
+        :title="post.title"
+        :description="post.description"
+        :icon="post.icon"
+        :posted="post.posted"
+        showdate
+        color="purple-hov"
+        colorhov="purple-hov2"
+      />
+    </thing-list>
   </div>
 </template>
 
 
 <script>
 import Container from '~/components/Container.vue';
+import ThingList from '~/components/list/ThingList.vue';
+import ThingItem from '~/components/list/ThingItem.vue';
 import PageHeader from "~/components/PageHeader.vue";
+import Search from "~/components/list/Search.vue";
 
 export default {
   components: {
     PageHeader,
     Container,
+    ThingList,
+    ThingItem,
+    Search,
   },
   async asyncData({ $content, params }) {
     const posts = await $content('blog')
-      .only(['title', 'description', 'slug', 'icon', 'tags'])
-      .sortBy('createdAt', 'desc')
+      .only(['title', 'description', 'slug', 'icon', 'tags', 'posted'])
+      .sortBy('posted', 'desc')
       .fetch()
 
     return {
       posts
+    }
+  },
+  methods: {
+    refresh(results) {
+      this.posts = results;
     }
   }
 }
