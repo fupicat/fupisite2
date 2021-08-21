@@ -86,10 +86,33 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     '@nuxt/content',
+    '@nuxtjs/i18n',
   ],
 
-  // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {},
+  i18n: {
+    baseUrl: 'https://fupi.netlify.app',
+    locales: [
+      {
+        code: 'en',
+        iso: 'en-US',
+        name: 'English',
+        file: 'en.js',
+      },
+      {
+        code: 'pt',
+        iso: 'pt-BR',
+        name: 'Português',
+        file: 'pt.js',
+      },
+    ],
+    lazy: true,
+    langDir: "locales",
+    defaultLocale: 'pt',
+    noPrefixDefaultLocale: true,
+    vueI18n: {
+      fallbackLocale: 'pt',
+    },
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {

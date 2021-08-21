@@ -1,8 +1,8 @@
 <template>
   <div>
-    <page-header title="Blog" description="Coisas que eu escrevi" />
+    <page-header :title="$t('blog')" :description="$t('blogDesc')" />
     <container>
-      <search :query="query" type="blog" @SearchChanged="refresh" />
+      <search :query="query" :type="content" @SearchChanged="refresh" />
     </container>
     <thing-list>
       <thing-item v-for="post of posts" :key="post.slug"
@@ -40,14 +40,16 @@ export default {
       query: "",
     }
   },
-  async asyncData({ $content, params }) {
-    const posts = await $content('blog')
+  async asyncData({ $content, app }) {
+    const content = `${app.i18n.locale}/blog`;
+    const posts = await $content(content)
       .only(['title', 'description', 'slug', 'icon', 'tags', 'posted'])
       .sortBy('posted', 'desc')
       .fetch();
 
     return {
-      posts
+      posts,
+      content,
     }
   },
   methods: {

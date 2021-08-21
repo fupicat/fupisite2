@@ -22,8 +22,8 @@ export default {
   mounted() {
     commentBox('5707504335978496-proj');
   },
-  async asyncData({ $content, params }) {
-    const post = await $content('blog', params.slug).fetch();
+  async asyncData({ $content, params, app }) {
+    const post = await $content(`${app.i18n.locale}/blog`, params.slug).fetch();
 
     return { post }
   },

@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col justify-between p-5 cursor-pointer">
+  <div class="md:hidden flex flex-col h-full w-6 justify-between py-5 mx-1 cursor-pointer">
     <div id="bun1" class="rounded-full transform transition-transform motion-reduce:transition-none w-full h-1/5 bg-white"></div>
     <div id="bun2" class="rounded-full transform transition-transform motion-reduce:transition-none w-full h-1/5 bg-white"></div>
     <div id="bun3" class="rounded-full transform transition-transform motion-reduce:transition-none w-full h-1/5 bg-white"></div>
