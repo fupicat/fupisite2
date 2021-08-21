@@ -60,6 +60,10 @@ export default {
     }
   },
 
+  content: {
+    fullTextSearchFields: ['title', 'description', 'tags', 'text'],
+  },
+
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
   ],

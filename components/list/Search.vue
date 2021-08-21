@@ -4,7 +4,7 @@
     type="search"
     autocomplete="off"
     placeholder="Pesquisar..."
-    class="p-1"
+    class="p-1 w-full mt-2"
   />
 </template>
 
@@ -12,6 +12,10 @@
 export default {
   props: {
     type: String,
+    query: {
+      type: String,
+      default: "",
+    },
   },
   data() {
     return {
@@ -19,6 +23,9 @@ export default {
     }
   },
   watch: {
+    query(query) {
+      this.searchQuery = query;
+    },
     async searchQuery(searchQuery) {
       let results = [];
       if (!searchQuery) {

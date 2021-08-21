@@ -2,7 +2,7 @@
   <div>
     <page-header title="Blog" description="Coisas que eu escrevi" />
     <container>
-      <search type="blog" @SearchChanged="refresh" />
+      <search :query="query" type="blog" @SearchChanged="refresh" />
     </container>
     <thing-list>
       <thing-item v-for="post of posts" :key="post.slug"
@@ -35,11 +35,16 @@ export default {
     ThingItem,
     Search,
   },
+  data() {
+    return {
+      query: "",
+    }
+  },
   async asyncData({ $content, params }) {
     const posts = await $content('blog')
       .only(['title', 'description', 'slug', 'icon', 'tags', 'posted'])
       .sortBy('posted', 'desc')
-      .fetch()
+      .fetch();
 
     return {
       posts
@@ -48,7 +53,12 @@ export default {
   methods: {
     refresh(results) {
       this.posts = results;
+      console.log(results);
     }
+  },
+  mounted() {
+    let query = this.$route.query.q;
+    if (query) this.query = query;
   }
 }
 </script>

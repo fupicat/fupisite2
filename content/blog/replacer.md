@@ -3,10 +3,7 @@ title: Replacer
 description: Postagem antiga, feita em 10/2/2020 quando o Replacer foi criado.
 posted: 1581303600000
 icon: /img/Replacer.png
-tags:
-    - ferramenta
-    - site
-    - antiga
+tags: "#ferramenta #site #antiga"
 ---
 Ontem eu publiquei uma ferramenta na minha página do GitHub que serve para automaticamente formatar texto. Ela se chama Replacer e foi originalmente feita para deixar o trabalho do meu pai mais fácil, para que ele pudesse copiar e colar vários emails de uma vez só. Mas trabalhando mais nela eu fiz essa ferramentinha poder fazer muito mais.
 

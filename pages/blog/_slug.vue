@@ -1,22 +1,15 @@
 <template>
   <div>
-    <page-header :title="post.title" :description="post.description" :icon="post.icon" :posted="post.posted" :edited="post.edited" />
+    <page-header :title="post.title" :description="post.description" :icon="post.icon" :posted="post.posted" :edited="post.edited" :tags="post.tags" />
     <container pad>
       <nuxt-content :document="post" />
     </container>
-    <div class="bg-purple-hov text-white py-2">
-      <p class="font-bold text-xl text-center pb-2">Tags</p>
-      <div class="flex flex-row justify-center gap-1">
-        <tag-link v-for="tag in post.tags" :key="tag" :tag="tag" />
-      </div>
-    </div>
     <div class="commentbox"></div>
   </div>
 </template>
 
 <script>
 import PageHeader from "~/components/PageHeader.vue";
-import TagLink from "~/components/blog/TagLink.vue";
 import Container from '~/components/Container.vue';
 
 import commentBox from 'commentbox.io';
@@ -24,7 +17,6 @@ import commentBox from 'commentbox.io';
 export default {
   components: {
     PageHeader,
-    TagLink,
     Container,
   },
   mounted() {
