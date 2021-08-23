@@ -1,6 +1,6 @@
 export default {
   projects: 'Projetos',
-  projectsDesc: 'Coisas que eu fiz',
+  projectsDesc: 'Todas as coisas que eu fiz',
 
   games: 'Jogos',
   gamesDesc: "Coisas para jogar",

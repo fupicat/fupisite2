@@ -43,7 +43,7 @@ export default {
 
 <style>
 * {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Atkinson Hyperlegible', sans-serif;
 }
 
 .sticker {

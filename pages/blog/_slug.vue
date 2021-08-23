@@ -3,8 +3,8 @@
     <page-header :title="post.title" :description="post.description" :icon="post.icon" :posted="post.posted" :edited="post.edited" :tags="post.tags" />
     <container pad>
       <nuxt-content :document="post" />
+      <div class="commentbox"></div>
     </container>
-    <div class="commentbox"></div>
   </div>
 </template>
 
@@ -54,9 +54,10 @@ export default {
 }
 
 .nuxt-content img {
+  margin: 1em 0px;
   display: block;
   width: 100%;
-  max-height: 700px;
+  max-height: 50vh;
   object-fit: contain;
 }
 
@@ -90,10 +91,6 @@ export default {
   font-size: 1.17em;
   margin: 1em 0px;
   font-weight: bold;
-}
-
-.nuxt-content img {
-  margin: 1em 0px;
 }
 
 .nuxt-content ol {
