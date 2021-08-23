@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="py-5 px-7 bg-purple-hov w-full">
+    <div class="py-5 px-7 bg-purple-hov dark:bg-purple-hovdark w-full">
       <div class="flex flex-row gap-5 justify-center items-center">
         <img :src="icon ? icon : '/img/Eu.png'" alt="ícone da postagem" class="transform transition-transform duration-200 motion-reduce:transition-none sticker h-16 hover:rotate-6 hover:scale-110">
         <div class="text-white">
@@ -13,7 +13,7 @@
         <p v-if="edited && (posted != edited)">Editado:<br>{{ formatDate(edited) }}</p>
       </div>
     </div>
-    <div v-if="tags" class="py-2 bg-purple-nav text-white flex flex-row justify-center gap-1">
+    <div v-if="tags" class="py-2 bg-purple-nav dark:bg-purple-navdark text-white flex flex-row justify-center gap-1">
       <tag-link v-for="tag in tags.split(' ')" :key="tag" :tag="tag" />
     </div>
   </div>

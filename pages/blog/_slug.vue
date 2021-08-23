@@ -46,11 +46,14 @@ export default {
 
 <style>
 .icon.icon-link {
-  background-image: url('~assets/svg/icon-hashtag.svg');
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  background-size: 15px 15px;
+  width: 100%;
+  display: block;
+  height: 25px;
+  position: absolute;
+}
+
+.dark .nuxt-content {
+  color: white;
 }
 
 .nuxt-content img {

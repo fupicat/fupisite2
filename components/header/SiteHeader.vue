@@ -1,5 +1,5 @@
 <template>
-  <header class="bg-purple-nav">
+  <header class="bg-purple-nav dark:bg-purple-navdark">
     <container>
       <div class="flex flex-row justify-between h-16">
         <home-logo />

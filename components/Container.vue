@@ -1,5 +1,5 @@
 <template>
-  <div :class="{ 'px-4': !pconly, 'md:px-pc': true, 'py-2': pad }">
+  <div :class="{ 'px-4': !pconly, 'md:px-pc w-full': true, 'py-2': pad }">
     <slot />
   </div>
 </template>

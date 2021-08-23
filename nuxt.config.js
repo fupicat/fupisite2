@@ -19,6 +19,9 @@ export default {
       { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
       { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: true },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap' }
+    ],
+    script: [
+      { src: 'https://kit.fontawesome.com/fd71929a84.js', crossorigin: 'anonymous' },
     ]
   },
 
@@ -40,7 +43,11 @@ export default {
               hov: '#8C4DBA',
               hov2: '#a660ce',
               bg: '#e8d7e6',
-            }
+              navdark: '#1C1620',
+              hovdark: '#352540',
+              hov2dark: '#523c62',
+              bgdark: '#2e2633',
+            },
           },
           zIndex: {
             '1': '1',
@@ -66,6 +73,7 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '@/assets/css/main.css'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
