@@ -20,7 +20,15 @@ export default {
     Container,
   },
   mounted() {
-    commentBox('5707504335978496-proj');
+    let removeComments = commentBox('5707504335978496-proj');
+
+    window.onkeydown = function() {
+      removeComments();
+      console.log("oh");
+      removeComments = commentBox('5707504335978496-proj', {
+        textColor: '#fff',
+      });
+    }
   },
   async asyncData({ $content, params, app }) {
     const post = await $content(`${app.i18n.locale}/blog`, params.slug).fetch();
@@ -53,7 +61,7 @@ export default {
 }
 
 .dark .nuxt-content {
-  color: white;
+  color: var(--purple-textdark);
 }
 
 .nuxt-content img {
