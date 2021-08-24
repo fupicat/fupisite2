@@ -50,13 +50,6 @@ export default {
 </script>
 
 <style>
-.icon.icon-link {
-  width: 100%;
-  display: block;
-  height: 25px;
-  position: absolute;
-}
-
 .dark .nuxt-content {
   color: var(--purple-textdark);
 }
