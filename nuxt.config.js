@@ -25,10 +25,6 @@ export default {
     ]
   },
 
-  generate: {
-    fallback: true,
-  },
-
   tailwindcss: {
     config: {
       darkMode: "class",
