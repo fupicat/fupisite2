@@ -1,10 +1,10 @@
 <template>
-  <header class="bg-purple-nav dark:bg-purple-navdark">
+  <header>
     <container>
-      <div class="flex flex-row justify-between h-16">
+      <div class="main">
         <home-logo />
         <menu-icon :open="open" @click.native="toggleMenu()" />
-        <div id="menu" class="origin-top z-40 top-16 transform motion-reduce:transition-none absolute left-0 scale-y-0 w-full flex flex-col md:flex-row md:items-center md:static md:transform-none md:w-auto md:gap-2"
+        <div id="menu" class="reduced-motion"
             @click="toggleMenu()">
           <header-link :to="localePath('/projects')">{{ $t("projects") }}</header-link>
           <header-link :to="localePath('/blog')">{{ $t("blog") }}</header-link>
@@ -37,14 +37,55 @@ export default {
     toggleMenu() {
       this.open = !this.open;
       const menu = document.getElementById("menu");
-      menu.classList.add("transition-transform");
-      menu.classList.toggle("scale-y-0");
-      menu.classList.toggle("scale-y-100");
+      menu.classList.toggle("open");
     }
   }
 }
 </script>
 
-<style>
+<style scoped>
+header {
+  background-color: var(--purple-nav);
+}
 
+.dark header {
+  background-color: var(--purple-navdark);
+}
+
+header .main {
+  display: flex;
+  justify-content: space-between;
+  height: 4rem;
+}
+
+header #menu {
+  transform-origin: top;
+  z-index: 40;
+  top: 4rem;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  transform: scaleY(0%);
+  transition-property: transform;
+  transition-timing-function: var(--trans-smooth);
+  transition-duration: 150ms;
+}
+
+header #menu.open {
+  transform: scaleY(100%);
+}
+
+@media (min-width: 768px) {
+  header #menu {
+    flex-direction: row;
+    align-items: center;
+    position: static;
+    transform: none;
+    width: auto;
+    gap: 0.5rem;
+  }
+}
 </style>

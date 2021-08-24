@@ -12,13 +12,11 @@
         :icon="post.icon"
         :posted="post.posted"
         showdate
-        color="purple-hov"
-        colorhov="purple-hov2"
+        class="blog"
       />
     </thing-list>
   </div>
 </template>
-
 
 <script>
 import Container from '~/components/Container.vue';
@@ -65,6 +63,6 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 
 </style>

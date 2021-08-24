@@ -1,10 +1,10 @@
 <template>
-  <div id="home-logo" class="w-40 cursor-pointer" @mouseover="logoHover(true)" @mouseout="logoHover(false)">
-    <nuxt-link to="/" class="block h-full">
-      <img src="~/assets/img/LogoSmallNoButtons.png" alt="Fupi logo" class="pointer-events-none small-logo no-buttons absolute z-10 h-16 py-2 motion-reduce:transition-none">
-      <img src="~/assets/img/LogoSmall.png" alt="Fupi logo" class="pointer-events-none small-logo buttons absolute z-10 h-16 py-2 motion-reduce:transition-none">
-      <img src="~/assets/img/Logo.png" alt="Fupi logo" class="pointer-events-none big-logo relative h-16 py-2 top-0 motion-reduce:transition-none">
-      <img :src="$t('stopPlz')" alt="para pfv ;-;" class="pointer-events-none para relative opacity-0 transition-all transform origin-top-left scale-0 z-50 h-10 -top-4 motion-reduce:transition-none">
+  <div id="home-logo" @mouseover="logoHover(true)" @mouseout="logoHover(false)">
+    <nuxt-link to="/" class="home-link">
+      <img src="~/assets/img/LogoSmallNoButtons.png" alt="Fupi logo" class="small-logo no-buttons reduced-motion">
+      <img src="~/assets/img/LogoSmall.png" alt="Fupi logo" class="small-logo buttons reduced-motion">
+      <img src="~/assets/img/Logo.png" alt="Fupi logo" class="big-logo reduced-motion">
+      <img :src="$t('stopPlz')" alt="para pfv ;-;" class="para reduced-motion">
     </nuxt-link>
   </div>
 </template>
@@ -45,10 +45,7 @@ export default {
     paraPfv() {
       if (this.intervalo) {
         const para = document.querySelector(".para");
-        para.classList.toggle("scale-0");
-        para.classList.toggle("scale-100");
-        para.classList.toggle("opacity-0");
-        para.classList.toggle("opacoty-100");
+        para.classList.toggle("uncovered");
 
         setTimeout(this.clearPara, 4000)
       }
@@ -56,10 +53,7 @@ export default {
     clearPara() {
       console.log("ok parou");
       const para = document.querySelector(".para");
-      para.classList.toggle("scale-0");
-      para.classList.toggle("scale-100");
-      para.classList.toggle("opacity-0");
-      para.classList.toggle("opacoty-100");
+      para.classList.toggle("uncovered");
       this.intervalo = null;
       this.incomoda = 0;
     }
@@ -68,10 +62,34 @@ export default {
 </script>
 
 <style scoped>
+
+/* Link */
+
+#home-logo {
+  width: 10rem;
+  cursor: pointer;
+}
+
+.home-link {
+  display: block;
+  height: 100%;
+}
+
+/* Logo */
+
+.home-link img {
+  pointer-events: none;
+}
+
 .small-logo {
+  position: absolute;
+  z-index: 10;
+  height: 4rem;
+  padding: 0.5rem 0px;
+
   transition-property: transform opacity mask-position;
   transition-duration: 500ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--trans-smooth);
   --rotate: 0deg;
   transform: rotate(var(--rotate));
 }
@@ -100,12 +118,17 @@ export default {
 }
 
 .big-logo {
+  position: relative;
+  height: 4rem;
+  padding: 0.5rem 0px;
+  top: 0px;
+
   mask-image: linear-gradient(90deg, rgba(0,0,0,0) 59%, rgba(0,0,0,1) 59%);
   mask-position: left;
   mask-size: 200% 100%;
   transition-property: mask-position transform;
   transition-duration: 500ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--trans-smooth);
   --move: -100%;
   transform: translateX(var(--move));
 }
@@ -114,4 +137,23 @@ export default {
   mask-position: right;
   --move: 0%;
 }
+
+.para {
+  position: relative;
+  opacity: 0;
+  transition-property: all;
+  transition-timing-function: var(--trans-smooth);
+  transition-duration: 150ms;
+  transform-origin: top left;
+  transform: scale(0%);
+  z-index: 50;
+  height: 2.5rem;
+  top: -1rem;
+}
+
+.para.uncovered {
+  transform: scale(100%);
+  opacity: 1;
+}
+
 </style>

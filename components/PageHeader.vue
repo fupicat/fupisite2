@@ -1,19 +1,19 @@
 <template>
   <div>
-    <div class="py-5 px-7 bg-purple-hov dark:bg-purple-hovdark w-full">
-      <div class="flex flex-row gap-5 justify-center items-center">
-        <img :src="icon ? icon : '/img/Eu.png'" alt="ícone da postagem" class="transform transition-transform duration-200 motion-reduce:transition-none sticker h-16 hover:rotate-6 hover:scale-110">
-        <div class="text-white">
-          <p class="font-bold text-xl text-center">{{ title }}</p>
-          <p class="text-sm text-center">{{ description }}</p>
+    <div class="thing-header">
+      <div class="main">
+        <img :src="icon ? icon : '/img/Eu.png'" alt="ícone da postagem" class="reduced-motion sticker">
+        <div>
+          <p class="title">{{ title }}</p>
+          <p class="description">{{ description }}</p>
         </div>
       </div>
-      <div v-if="posted || edited" class="pt-2 flex flex-row text-center justify-center items-center text-white opacity-50 gap-5">
+      <div v-if="posted || edited" class="date">
         <p>Postado:<br>{{ formatDate(posted) }}</p>
         <p v-if="edited && (posted != edited)">Editado:<br>{{ formatDate(edited) }}</p>
       </div>
     </div>
-    <div v-if="tags" class="py-2 bg-purple-nav dark:bg-purple-navdark text-white flex flex-row justify-center gap-1">
+    <div v-if="tags" class="tags">
       <tag-link v-for="tag in tags.split(' ')" :key="tag" :tag="tag" />
     </div>
   </div>
@@ -35,3 +35,72 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.thing-header {
+  padding: 1.25rem 1.75rem;
+  background-color: var(--purple-hov);
+  width: 100%;
+}
+
+.dark .thing-header {
+  background-color: var(--purple-hovdark);
+}
+
+.thing-header .main {
+  display: flex;
+  gap: 1.25rem;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.thing-header .main img {
+  transition-property: transform;
+  transition-timing-function: var(--trans-smooth);
+  transition-duration: 200ms;
+
+  height: 4rem;
+}
+
+.thing-header .main img:hover {
+  transform: rotate(6deg) scale(110%);
+}
+
+.title {
+  font-weight: bold;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  text-align: center;
+}
+
+.description {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-align: center;
+}
+
+.date {
+  padding-top: 0.5rem;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  opacity: 0.5;
+  gap: 1.25rem;
+}
+
+.tags {
+  padding: 0.5rem 0px;
+  background-color: var(--purple-nav);
+  color: white;
+  display: flex;
+  justify-content: center;
+  gap: 0.25rem;
+}
+
+.dark .tags {
+  background-color: var(--purple-navdark);
+}
+</style>

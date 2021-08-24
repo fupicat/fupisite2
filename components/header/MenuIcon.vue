@@ -1,8 +1,8 @@
 <template>
-  <div class="md:hidden flex flex-col h-full w-6 justify-between py-5 mx-1 cursor-pointer">
-    <div id="bun1" class="rounded-full transform transition-transform motion-reduce:transition-none w-full h-1/5 bg-white"></div>
-    <div id="bun2" class="rounded-full transform transition-transform motion-reduce:transition-none w-full h-1/5 bg-white"></div>
-    <div id="bun3" class="rounded-full transform transition-transform motion-reduce:transition-none w-full h-1/5 bg-white"></div>
+  <div class="hamburger">
+    <div id="bun1" class="reduced-motion"></div>
+    <div id="bun2" class="reduced-motion"></div>
+    <div id="bun3" class="reduced-motion"></div>
   </div>
 </template>
 
@@ -13,20 +13,51 @@ export default {
   },
   watch: {
     open(open) {
-      const bun1 = document.getElementById("bun1");
-      const bun2 = document.getElementById("bun2");
-      const bun3 = document.getElementById("bun3");
+      const hamburger = document.querySelector(".hamburger");
 
-      bun1.classList.toggle("translate-y-200", open);
-      bun1.classList.toggle("rotate-45", open);
-      bun2.classList.toggle("scale-x-0", open);
-      bun3.classList.toggle("-translate-y-200", open);
-      bun3.classList.toggle("-rotate-45", open);
+      hamburger.classList.toggle("open", open);
     }
   }
 }
 </script>
 
-<style>
+<style scoped>
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 1.5rem;
+  justify-content: space-between;
+  padding: 1.25rem 0px;
+  margin: 0px 0.25rem;
+  cursor: pointer;
+}
 
+.hamburger div {
+  border-radius: 99px;
+  transition-property: transform;
+  transition-timing-function: var(--trans-smooth);
+  transition-duration: 150ms;
+  width: 100%;
+  height: 20%;
+  background-color: white;
+}
+
+.open #bun1 {
+  transform: translateY(200%) rotate(45deg);
+}
+
+.open #bun2 {
+  transform: scaleX(0%);
+}
+
+.open #bun3 {
+  transform: translateY(-200%) rotate(-45deg);
+}
+
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+}
 </style>

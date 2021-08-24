@@ -1,5 +1,5 @@
 <template>
-  <div :class="{ 'px-4': !pconly, 'md:px-pc w-full': true, 'py-2': pad }">
+  <div :class="{ 'mobile': !pconly, 'container': true, 'pad': pad }">
     <slot />
   </div>
 </template>
@@ -13,6 +13,25 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+.container {
+  width: 100%;
+}
 
+.container.mobile {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.container.pad {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .container, .container.mobile {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
 </style>

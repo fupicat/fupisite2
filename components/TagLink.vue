@@ -1,5 +1,5 @@
 <template>
-  <nuxt-link :to="'/blog/?q=' + encodeURIComponent(tag)" class="inline-block px-2 py-1 transition-colors hover:bg-purple-hov dark:hover:bg-purple-hovdark motion-reduce:transition-none">{{ tag }}</nuxt-link>
+  <nuxt-link :to="'/blog/?q=' + encodeURIComponent(tag)" class="tag reduced-motion">{{ tag }}</nuxt-link>
 </template>
 
 <script>
@@ -8,6 +8,20 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+.tag {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  transition-property: background-color;
+  transition-duration: 150ms;
+  transition-timing-function: var(--trans-smooth);
+}
 
+.tag:hover {
+  background-color: var(--purple-hov);
+}
+
+.dark .tag:hover {
+  background-color: var(--purple-hovdark);
+}
 </style>

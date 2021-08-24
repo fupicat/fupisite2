@@ -1,13 +1,13 @@
 <template>
-  <NuxtLink :to="`/blog/${slug}`" :class="`transition-colors flex flex-col justify-center gap-2 py-5 px-7 bg-${color} hover:bg-${colorhov}`">
-    <div class="flex flex-row gap-5 justify-center items-center">
-      <img :src="icon ? icon : '/img/Eu.png'" alt="ícone da postagem" class="sticker h-16">
-      <div class="text-white">
-        <p class="font-bold text-xl text-center">{{ title }}</p>
-        <p class="text-sm text-center">{{ description }}</p>
+  <NuxtLink :to="`/blog/${slug}`" class="thing">
+    <div class="main">
+      <img :src="icon ? icon : '/img/Eu.png'" alt="ícone da postagem" class="sticker">
+      <div>
+        <p class="title">{{ title }}</p>
+        <p class="description">{{ description }}</p>
       </div>
     </div>
-    <div v-if="showdate" class="text-center text-white opacity-50">
+    <div v-if="showdate" class="date">
       <p>{{ formatDate(posted) }}</p>
     </div>
   </NuxtLink>
@@ -33,3 +33,60 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.thing {
+  transition-property: background-color;
+  transition-timing-function: var(--trans-smooth);
+  transition-duration: 150ms;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1.25rem 1.75rem;
+  color: white;
+  background-color: var(--purple-hov);
+}
+
+.thing:hover {
+  background-color: var(--purple-hov2);
+}
+
+.dark .thing {
+  background-color: var(--purple-hovdark);
+}
+
+.dark .thing:hover {
+  background-color: var(--purple-hov2dark);
+}
+
+.thing .main {
+  display: flex;
+  gap: 1.25rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.thing .main img {
+  height: 4rem;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  text-align: center;
+}
+
+.description {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-align: center;
+}
+
+.date {
+  text-align: center;
+  opacity: 0.5;
+}
+</style>

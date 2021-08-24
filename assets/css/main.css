@@ -1,8 +1,39 @@
+html {
+  --purple-nav: #6E438D;
+  --purple-hov: #8C4DBA;
+  --purple-hov2: #a660ce;
+  --purple-bg: #e8d7e6;
+  --purple-navdark: #2B122D;
+  --purple-hovdark: #352540;
+  --purple-hov2dark: #523c62;
+  --purple-bgdark: #120a18;
+  --purple-textdark: #e3dee8;
+  
+  --trans-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+  --trans-out: cubic-bezier(0, 0, 0.2, 1);
+}
+
 * {
   font-family: 'Atkinson Hyperlegible', sans-serif;
+}
+
+body {
+  background-color: var(--purple-bg);
+  color: black;
+}
+
+.dark body {
+  background-color: var(--purple-bgdark);
+  color: var(--purple-textdark);
 }
 
 .sticker {
   -webkit-filter: drop-shadow(0px 1px 0.2px white) drop-shadow(1px 0px 0.2px white) drop-shadow(0px -1px 0.2px white) drop-shadow(-1px 0px 0.2px white) drop-shadow(0px 1px 0.2px white) drop-shadow(1px 0px 0.2px white) drop-shadow(0px -1px 0.2px white) drop-shadow(-1px 0px 0.2px white) drop-shadow(0px 0px 4px black);
   filter: drop-shadow(0px 1px 0.2px white) drop-shadow(1px 0px 0.2px white) drop-shadow(0px -1px 0.2px white) drop-shadow(-1px 0px 0.2px white) drop-shadow(0px 1px 0.2px white) drop-shadow(1px 0px 0.2px white) drop-shadow(0px -1px 0.2px white) drop-shadow(-1px 0px 0.2px white) drop-shadow(0px 0px 4px black);
+}
+
+@media (prefers-reduced-motion) {
+  .reduced-motion {
+    transition: none;
+  }
 }

@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <site-header />
-    <nuxt class="bg-purple-bg dark:bg-purple-bgdark" />
+    <nuxt />
     <site-footer />
   </div>
 </template>

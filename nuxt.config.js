@@ -31,6 +31,9 @@ export default {
   tailwindcss: {
     config: {
       darkMode: "class",
+      corePlugins: {
+        container: false,
+      },
       theme: {
         extend: {
           spacing: {
@@ -73,6 +76,7 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '@/assets/css/tailwind-reset.css',
     '@/assets/css/main.css'
   ],
 
@@ -86,7 +90,7 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
-    '@nuxtjs/tailwindcss',
+    // '@nuxtjs/tailwindcss',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
