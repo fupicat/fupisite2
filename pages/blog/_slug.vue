@@ -19,11 +19,18 @@ export default {
     PageHeader,
     Container,
   },
+  data() {
+    return {
+      url: "",
+    }
+  },
   async asyncData({ $content, params, app }) {
-    const url = encodeURIComponent(window.location.origin + window.location.pathname);
     const post = await $content(`${app.i18n.locale}/blog`, params.slug).fetch();
 
-    return { post, url }
+    return { post }
+  },
+  mounted() {
+    this.url = encodeURIComponent(window.location.origin + window.location.pathname);
   },
   head() {
     return {
