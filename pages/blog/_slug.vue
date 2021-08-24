@@ -3,7 +3,9 @@
     <page-header :title="post.title" :description="post.description" :icon="post.icon" :posted="post.posted" :edited="post.edited" :tags="post.tags" />
     <container pad>
       <nuxt-content :document="post" />
-      <div class="commentbox"></div>
+      <div class="commentbox">
+        <iframe :src="`https://app.commentbox.io/5707504335978496-proj?id=commentbox&amp;url=${url}%23commentbox&amp;tlc_param=tlc&amp;background_color=&amp;text_color=${$store.state.dark.dark ? 'white' : 'black'}&amp;subtext_color=&amp;sort_order=best`" scrolling="no" style="width: 100%" data-comments-loaded="true" height="377px" frameborder="0"></iframe>
+      </div>
     </container>
   </div>
 </template>
@@ -12,28 +14,16 @@
 import PageHeader from "~/components/PageHeader.vue";
 import Container from '~/components/Container.vue';
 
-import commentBox from 'commentbox.io';
-
 export default {
   components: {
     PageHeader,
     Container,
   },
-  mounted() {
-    let removeComments = commentBox('5707504335978496-proj');
-
-    window.onkeydown = function() {
-      removeComments();
-      console.log("oh");
-      removeComments = commentBox('5707504335978496-proj', {
-        textColor: '#fff',
-      });
-    }
-  },
   async asyncData({ $content, params, app }) {
+    const url = encodeURIComponent(window.location.origin + window.location.pathname);
     const post = await $content(`${app.i18n.locale}/blog`, params.slug).fetch();
 
-    return { post }
+    return { post, url }
   },
   head() {
     return {

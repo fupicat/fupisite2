@@ -15,6 +15,22 @@ export default {
     SiteHeader,
     SiteFooter,
   },
+  computed: {
+    dark () {
+      return this.$store.state.dark.dark;
+    }
+  },
+  watch: {
+    dark(dark) {
+      if (!!dark == true) {
+        localStorage.dark = true;
+        document.documentElement.classList.add('dark')
+      } else {
+        localStorage.dark = false;
+        document.documentElement.classList.remove('dark')
+      }
+    }
+  }
 }
 </script>
 

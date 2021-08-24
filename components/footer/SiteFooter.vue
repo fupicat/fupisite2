@@ -7,8 +7,8 @@
         </a>
       </div>
       <div class="toolbar">
-        <i v-show="!dark" @click="darkMode(true)" class="fas fa-sun fa-lg theme-switch"></i>
-        <i v-show="dark" @click="darkMode(false)" class="fas fa-moon fa-lg theme-switch"></i>
+        <i v-show="!$store.state.dark.dark" @click="darkMode(true)" class="fas fa-sun fa-lg theme-switch"></i>
+        <i v-show="$store.state.dark.dark" @click="darkMode(false)" class="fas fa-moon fa-lg theme-switch"></i>
         <div class="lang-switch">
           <i class="fas fa-globe"></i>
           <select name="Idioma" @change="langChanged">
@@ -55,15 +55,7 @@ export default {
         dark = window.matchMedia('(prefers-color-scheme: dark)').matches;
       }
 
-      if (!!dark == true) {
-        this.dark = true;
-        localStorage.dark = true;
-        document.documentElement.classList.add('dark')
-      } else {
-        this.dark = false;
-        localStorage.dark = false;
-        document.documentElement.classList.remove('dark')
-      }
+      this.$store.commit('dark/change', dark)
     }
   },
   mounted() {
