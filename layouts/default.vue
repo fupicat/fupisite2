@@ -2,6 +2,7 @@
   <div id="app">
     <site-header />
     <nuxt />
+    <div class="filler"></div>
     <site-footer />
   </div>
 </template>
