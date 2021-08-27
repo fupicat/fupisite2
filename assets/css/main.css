@@ -6,7 +6,7 @@ html {
   --purple-hov2: #a660ce;
   --purple-bg: #e8d7e6;
   --purple-navdark: #2B122D;
-  --purple-hovdark: #352540;
+  --purple-hovdark: #4a2344;
   --purple-hov2dark: #523c62;
   --purple-bgdark: #120a18;
   --purple-textdark: #e3dee8;
@@ -33,7 +33,7 @@ body {
 
 /* Faz o footer grudar no fim da janela */
 
-html, body, #__nuxt, #__layout {
+html, body, #__nuxt, #__layout, #app .filler {
   height: 100%;
 }
 
@@ -44,15 +44,15 @@ html, body, #__nuxt, #__layout {
   justify-content: space-between;
 }
 
-#app .filler {
-  height: 100%;
-}
-
 /* Util */
 
 .sticker {
   -webkit-filter: drop-shadow(0px 1px 0.2px white) drop-shadow(1px 0px 0.2px white) drop-shadow(0px -1px 0.2px white) drop-shadow(-1px 0px 0.2px white) drop-shadow(0px 1px 0.2px white) drop-shadow(1px 0px 0.2px white) drop-shadow(0px -1px 0.2px white) drop-shadow(-1px 0px 0.2px white) drop-shadow(0px 0px 4px black);
   filter: drop-shadow(0px 1px 0.2px white) drop-shadow(1px 0px 0.2px white) drop-shadow(0px -1px 0.2px white) drop-shadow(-1px 0px 0.2px white) drop-shadow(0px 1px 0.2px white) drop-shadow(1px 0px 0.2px white) drop-shadow(0px -1px 0.2px white) drop-shadow(-1px 0px 0.2px white) drop-shadow(0px 0px 4px black);
+}
+
+.fill-content {
+  min-height: calc(100vh - 144px);
 }
 
 @media (prefers-reduced-motion) {

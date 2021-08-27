@@ -40,14 +40,17 @@ export default {
   },
   async asyncData({ $content, app }) {
     const content = `${app.i18n.locale}/blog`;
-    const posts = await $content(content)
-      .only(['title', 'description', 'slug', 'icon', 'tags', 'posted'])
-      .sortBy('posted', 'desc')
-      .fetch();
-
-    return {
-      posts,
-      content,
+    let posts = []
+    try {
+      posts = await $content(content)
+        .only(['title', 'description', 'slug', 'icon', 'tags', 'posted'])
+        .sortBy('posted', 'desc')
+        .fetch();
+    } finally {
+      return {
+        posts,
+        content,
+      }
     }
   },
   methods: {

@@ -12,10 +12,11 @@
     "@nuxt/content": "^1.14.0",
     "@nuxtjs/axios": "^5.13.6",
     "@nuxtjs/i18n": "^7.0.2",
-    "commentbox.io": "^2.1.0",
+    "@vssue/api-github-v3": "^1.4.7",
     "core-js": "^3.15.1",
     "fs": "0.0.1-security",
-    "nuxt": "^2.15.7"
+    "nuxt": "^2.15.7",
+    "vssue": "^1.4.8"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^4.2.0",
