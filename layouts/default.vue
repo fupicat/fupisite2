@@ -24,10 +24,8 @@ export default {
   watch: {
     dark(dark) {
       if (!!dark == true) {
-        localStorage.dark = true;
         document.documentElement.classList.add('dark')
       } else {
-        localStorage.dark = false;
         document.documentElement.classList.remove('dark')
       }
     }

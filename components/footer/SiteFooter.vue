@@ -50,16 +50,9 @@ export default {
     langChanged(event) {
       this.$i18n.setLocale(event.target.value);
     },
-    darkMode(dark = localStorage.dark) {
-      if (dark === undefined) {
-        dark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      }
-
+    darkMode(dark) {
       this.$store.commit('dark/change', dark)
     }
-  },
-  mounted() {
-    this.darkMode();
   },
 }
 </script>

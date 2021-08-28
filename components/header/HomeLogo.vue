@@ -1,9 +1,9 @@
 <template>
   <div id="home-logo" @mouseover="logoHover(true)" @mouseout="logoHover(false)">
     <nuxt-link to="/" class="home-link">
-      <img src="~/assets/img/LogoSmallNoButtons.png" alt="Fupi logo" class="small-logo no-buttons reduced-motion">
-      <img src="~/assets/img/LogoSmall.png" alt="Fupi logo" class="small-logo buttons reduced-motion">
-      <img src="~/assets/img/Logo.png" alt="Fupi logo" class="big-logo reduced-motion">
+      <img src="~/assets/img/LogoSmallNoButtons.svg" alt="Fupi logo" class="small-logo no-buttons reduced-motion">
+      <img src="~/assets/img/LogoSmall.svg" alt="Fupi logo" class="small-logo buttons reduced-motion">
+      <img src="~/assets/img/Logo.svg" alt="Fupi logo" class="big-logo reduced-motion">
       <img :src="$t('stopPlz')" alt="para pfv ;-;" class="para reduced-motion">
     </nuxt-link>
   </div>
