@@ -29,48 +29,6 @@ export default {
     ]
   },
 
-  tailwindcss: {
-    config: {
-      darkMode: "class",
-      corePlugins: {
-        container: false,
-      },
-      theme: {
-        extend: {
-          spacing: {
-            pc: "10%",
-          },
-          colors: {
-            transparent: 'transparent',
-            purple: {
-              nav: '#6E438D',
-              hov: '#8C4DBA',
-              hov2: '#a660ce',
-              bg: '#e8d7e6',
-              navdark: '#1C1620',
-              hovdark: '#352540',
-              hov2dark: '#523c62',
-              bgdark: '#2e2633',
-            },
-          },
-          zIndex: {
-            '1': '1',
-          },
-          translate: {
-            '200': '200%',
-            '-200': '-200%',
-          },
-          rotate: {
-            '360': '360deg',
-          },
-        }
-      },
-      variants: {
-        transitionProperty: ['responsive', 'motion-safe', 'motion-reduce']
-      },
-    }
-  },
-
   content: {
     fullTextSearchFields: ['title', 'description', 'tags', 'text'],
   },
