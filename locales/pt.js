@@ -24,4 +24,10 @@ export default {
   aboutDesc: "Coisas sobre coisas",
 
   stopPlz: "/img/ParaPfv.png",
+
+  theme: "Tema",
+  nfe: "Filtro de conteúdo",
+  nfeDesc: "Alguns dos conteúdos nesse site contêm violência fantasiosa e palavrões. Nada extremo demais, nenhum conteúdo para adultos, mas ainda assim não aparecem por padrão. Desative o filtro abaixo se você está ciente e deseja ver conteúdo que pode não ser apropriado para todos.",
+  nfeOn: "Filtro ativado",
+  nfeOff: "Filtro desativado",
 }

@@ -7,23 +7,42 @@
         </a>
       </div>
       <div class="toolbar">
-        <i v-show="!$store.state.dark.dark" @click="darkMode(true)" class="fas fa-sun fa-lg theme-switch"></i>
-        <i v-show="$store.state.dark.dark" @click="darkMode(false)" class="fas fa-moon fa-lg theme-switch"></i>
-        <div class="lang-switch">
-          <i class="fas fa-globe"></i>
+        <div class="theme-switch tool" @click="darkMode()">
+          <!-- Mostra o ícone certo para o tema -->
+          <i :class="{ 'fas fa-lg' : true, 'fa-sun': !$store.state.dark.dark, 'fa-moon': $store.state.dark.dark }"></i>
+          <p>{{ $t("theme") }}</p>
+        </div>
+
+        <div class="nfe tool" @click="nfeShow = true">
+          <i class="fas fa-lg fa-child"></i>
+          <p>{{ $t('nfe') }}</p>
+        </div>
+        
+        <div class="lang-switch tool">
+          <i class="fas fa-globe" @click="openLang()"></i>
           <select name="Idioma" @change="langChanged">
             <option v-for="locale in availableLocales" :key="locale.code" :value="locale.code" :selected="locale.code == $i18n.locale ? true : null">{{ locale.name }}</option>
           </select>
         </div>
       </div>
     </container>
+
+    <modal :show="nfeShow" @close="nfeShow = false" :title="$t('nfe')" :description="$t('nfeDesc')">
+      <div class="nfe-switch" @click="nfe()">
+        <i :class="{ 'fas fa-lg' : true, 'fa-toggle-on': !$store.state.nfe.nfe, 'fa-toggle-off': $store.state.nfe.nfe }"></i>
+        <p>{{ $t($store.state.nfe.nfe ? "nfeOff" : "nfeOn") }}</p>
+      </div>
+    </modal>
+
   </footer>
 </template>
 
 <script>
 import Container from '../Container.vue';
+import Modal from '../Modal.vue';
+
 export default {
-  components: { Container },
+  components: { Container, Modal },
   data() {
     return {
       social: [
@@ -39,6 +58,7 @@ export default {
         { name: "Freesound", url: "https://freesound.org/people/Fupicat/" },
       ],
       dark: false,
+      nfeShow: false,
     }
   },
   computed: {
@@ -47,12 +67,18 @@ export default {
     }
   },
   methods: {
+    openLang() {
+      document.querySelector(".lang-switch select").click();
+    },
     langChanged(event) {
       this.$i18n.setLocale(event.target.value);
     },
-    darkMode(dark) {
-      this.$store.commit('dark/change', dark)
-    }
+    darkMode() {
+      this.$store.commit('dark/change', !this.$store.state.dark.dark);
+    },
+    nfe() {
+      this.$store.commit('nfe/change', !this.$store.state.nfe.nfe);
+    },
   },
 }
 </script>
@@ -99,10 +125,17 @@ footer {
 
 .toolbar {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   gap: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .toolbar {
+    flex-direction: row;
+  }
 }
 
 .theme-switch {
@@ -115,27 +148,36 @@ footer {
   opacity: 1;
 }
 
-.lang-switch {
+.tool {
   display: flex;
   align-items: center;
-  gap: 0.25rem;
-}
-
-.lang-switch i {
+  gap: 0.5rem;
   color: white;
   opacity: 0.5;
+}
+
+.tool:hover {
+  opacity: 1;
 }
 
 .lang-switch select {
   width: min-content;
-  color: white;
   background-color: transparent;
   cursor: pointer;
-  opacity: 0.5;
 }
 
-.lang-switch select:hover {
-  opacity: 1;
+.nfe {
+  cursor: pointer;
+}
+
+.nfe-switch {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  padding-bottom: 1rem;
 }
 
 </style>
