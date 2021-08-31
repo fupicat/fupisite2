@@ -1,10 +1,10 @@
 <template>
-  <nuxt-link :to="'/blog/?q=' + encodeURIComponent(tag)" class="tag reduced-motion">{{ tag }}</nuxt-link>
+  <nuxt-link :to="`/${url}/?q=${encodeURIComponent(tag)}`" class="tag reduced-motion">{{ tag }}</nuxt-link>
 </template>
 
 <script>
 export default {
-  props: ['tag']
+  props: ['tag', 'url']
 }
 </script>
 
@@ -23,5 +23,15 @@ export default {
 
 .dark .tag:hover {
   background-color: var(--purple-hovdark);
+}
+
+/* Cores */
+
+.game .tag:hover {
+  background-color: var(--game-hov);
+}
+
+.dark .game .tag:hover {
+  background-color: var(--game-hovdark);
 }
 </style>

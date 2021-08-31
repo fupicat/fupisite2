@@ -10,6 +10,14 @@ html {
   --purple-hov2dark: #523c62;
   --purple-bgdark: #120a18;
   --purple-textdark: #e3dee8;
+  --purple-linkdark: #C072EC;
+
+  --game-bg: #a5bfdb;
+  --game-button: #567699;
+  --game-hov: #6595ca;
+  --game-bgdark: #223c59;
+  --game-buttondark: #2f4e71;
+  --game-hovdark: #426995;
   
   --trans-smooth: cubic-bezier(0.4, 0, 0.2, 1);
   --trans-out: cubic-bezier(0, 0, 0.2, 1);
@@ -22,7 +30,7 @@ html {
 }
 
 body {
-  background-color: var(--purple-bg);
+  background-color: #e6e6e6;
   color: black;
 }
 
@@ -47,7 +55,6 @@ html, body, #__nuxt, #__layout, #app .filler {
 /* Util */
 
 .sticker {
-  -webkit-filter: drop-shadow(0px 1px 0.2px white) drop-shadow(1px 0px 0.2px white) drop-shadow(0px -1px 0.2px white) drop-shadow(-1px 0px 0.2px white) drop-shadow(0px 1px 0.2px white) drop-shadow(1px 0px 0.2px white) drop-shadow(0px -1px 0.2px white) drop-shadow(-1px 0px 0.2px white) drop-shadow(0px 0px 4px black);
   filter: drop-shadow(0px 1px 0.2px white) drop-shadow(1px 0px 0.2px white) drop-shadow(0px -1px 0.2px white) drop-shadow(-1px 0px 0.2px white) drop-shadow(0px 1px 0.2px white) drop-shadow(1px 0px 0.2px white) drop-shadow(0px -1px 0.2px white) drop-shadow(-1px 0px 0.2px white) drop-shadow(0px 0px 4px black);
 }
 
@@ -59,4 +66,151 @@ html, body, #__nuxt, #__layout, #app .filler {
   .reduced-motion {
     transition: none;
   }
+}
+
+/* Botão */
+
+.fupi-btn {
+  transition-property: box-shadow, background-color;
+  transition-timing-function: var(--trans-smooth);
+  transition-duration: 150ms;
+  border-radius: 0.4rem;
+  box-shadow: inset 0em -0.4em rgba(0, 0, 0, 0.15);
+}
+
+.fupi-btn:hover {
+  box-shadow: inset 0em -0.6em rgba(0, 0, 0, 0.15);
+}
+
+.fupi-btn:disabled {
+  box-shadow: inset 0em 0.6em rgba(0, 0, 0, 0.15);
+}
+
+/* Vssue */
+
+.dark .markdown-body {
+  color: var(--purple-textdark) !important;
+}
+
+.vssue .vssue-comments .vssue-comment .vssue-comment-body {
+  background-color: white;
+  border-radius: 0px 10px 10px 10px;
+}
+
+.dark .vssue .vssue-comments .vssue-comment .vssue-comment-body {
+  background-color: var(--purple-navdark) !important;
+}
+
+.vssue .vssue-comments .vssue-comment .vssue-comment-body div {
+  padding: 6px 12px;
+  border: 0px;
+}
+
+.vssue .vssue-comments .vssue-comment .vssue-comment-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.vssue .vssue-comments .vssue-comment .vssue-comment-footer .vssue-comment-reactions {
+  display: flex;
+  gap: 6px;
+}
+
+.vssue .vssue-comments .vssue-comment .vssue-comment-footer .vssue-comment-reactions .vssue-comment-reaction {
+  color: var(--purple-nav) !important;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.dark .vssue .vssue-comments .vssue-comment .vssue-comment-footer .vssue-comment-reactions .vssue-comment-reaction {
+  color: var(--purple-linkdark) !important;
+}
+
+.vssue .vssue-icon {
+  fill: var(--purple-nav) !important;
+}
+
+.dark .vssue-icon {
+  fill: var(--purple-linkdark) !important;
+}
+
+.vssue .vssue-comments .vssue-comment .vssue-comment-footer .vssue-comment-operations {
+  display: flex;
+  align-items: center;
+}
+
+.vssue :not(.vssue-comment-content) a {
+  color: var(--purple-nav) !important;
+}
+
+.dark .vssue :not(.vssue-comment-content) a {
+  color: var(--purple-linkdark) !important;
+}
+
+.vssue .vssue-header, .vssue .vssue-new-comment {
+  border: 0px !important;
+}
+
+.vssue {
+  color: var(--purple-hovdark) !important;
+  font-size: 1em;
+}
+
+.dark .vssue {
+  color: var(--purple-textdark) !important;
+}
+
+.vssue .vssue-comments .vssue-comment .vssue-comment-header .vssue-comment-created-at {
+  color: var(--purple-hov2) !important;
+}
+
+.vssue .vssue-button {
+  transition-property: background-color, box-shadow;
+  transition-timing-function: var(--trans-smooth);
+  transition-duration: 150ms;
+
+  border-radius: 0.4rem;
+  box-shadow: inset 0em -0.4em rgba(0, 0, 0, 0.15);
+  border: 0px !important;
+  background: var(--purple-hov) !important;
+}
+
+.vssue .vssue-button:hover {
+  box-shadow: inset 0em -0.6em rgba(0, 0, 0, 0.15);
+  background: var(--purple-hov2) !important;
+}
+
+.vssue .vssue-button:disabled {
+  box-shadow: inset 0em 0.6em rgba(0, 0, 0, 0.15);
+  background: var(--purple-hov2dark) !important;
+}
+
+.vssue .vssue-new-comment .vssue-new-comment-footer .vssue-current-user {
+  color: var(--purple-hovdark) !important;
+}
+
+.dark .vssue .vssue-new-comment .vssue-new-comment-footer .vssue-current-user {
+  color: var(--purple-textdark) !important;
+}
+
+.vssue .vssue-pagination {
+  color: var(--purple-hovdark) !important;
+}
+
+.vssue .vssue-pagination select {
+  border: 0px !important;
+  background-color: transparent !important;
+}
+
+.dark .vssue .vssue-pagination {
+  color: var(--purple-textdark) !important;
+}
+
+.vssue .vssue-button:not(:disabled).vssue-button-primary {
+  color: white !important;
+}
+
+.vssue-icon-loading {
+  float: left;
 }

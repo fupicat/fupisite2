@@ -1,24 +1,30 @@
 <template>
-  <input
-    v-model="searchQuery"
-    type="search"
-    autocomplete="off"
-    placeholder="Pesquisar..."
-  />
+  <div class="search">
+    <input
+      v-model="searchQuery"
+      type="search"
+      autocomplete="off"
+      placeholder="Pesquisar..."
+    />
+    <loading v-show="loading" />
+  </div>
 </template>
 
 <script>
+import Loading from '~/components/Loading.vue'
+
 export default {
+  components: {
+    Loading,
+  },
   props: {
     type: String,
-    query: {
-      type: String,
-      default: "",
-    },
+    query: String,
   },
   data() {
     return {
-      searchQuery: ''
+      searchQuery: '',
+      loading: false,
     }
   },
   watch: {
@@ -26,12 +32,17 @@ export default {
       this.searchQuery = query;
     },
     async searchQuery(searchQuery) {
+      this.loading = true;
+
       let results = [];
+
       if (!searchQuery) {
         results = await this.$content(this.type)
           .only(['title', 'description', 'slug', 'icon', 'tags', 'posted'])
           .sortBy('posted', 'desc')
           .fetch()
+        
+        this.loading = false;
         this.$emit("SearchChanged", results)
         return
       }
@@ -40,13 +51,20 @@ export default {
         .only(['title', 'description', 'slug', 'icon', 'tags', 'posted'])
         .sortBy('posted', 'desc')
         .fetch()
-      this.$emit("SearchChanged", results)
+      
+      this.loading = false;
+      this.$emit("SearchChanged", results);
     }
   }
 }
 </script>
 
 <style scoped>
+.search {
+  display: flex;
+  align-items: center;
+}
+
 input {
   padding: 0.25rem;
   width: 100%;

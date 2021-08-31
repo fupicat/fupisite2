@@ -1,0 +1,54 @@
+<template>
+  <div class="game">
+    <page-header url="projects/games" :title="post.title" :description="post.description" :icon="post.icon" :posted="post.posted" :edited="post.edited" :tags="post.tags" />
+    <container pad>
+      <nuxt-content class="project" :document="post" />
+      <project-info :document="post" />
+      <client-only>
+        <vssue v-if="$store.state.nfe.nfe" :title="post.title" />
+      </client-only>
+    </container>
+  </div>
+</template>
+
+<script>
+import PageHeader from "~/components/PageHeader.vue";
+import Container from '~/components/Container.vue';
+import ProjectInfo from '~/components/project/ProjectInfo.vue';
+
+export default {
+  components: {
+    PageHeader,
+    Container,
+    ProjectInfo,
+  },
+  async asyncData({ $content, params, app }) {
+    const post = await $content(`${app.i18n.locale}/projects/games`, params.slug).fetch();
+
+    return { post }
+  },
+  head() {
+    return {
+      title: this.post.title,
+      meta: [
+        { hid: 'description', name: 'description', content: this.post.description, },
+        // Open Graph
+        { hid: 'og:title', property: 'og:title', content: this.post.title },
+        { hid: 'og:description', property: 'og:description', content: this.post.description },
+        // Twitter
+        { hid: 'twitter:title', name: 'twitter:title', content: this.post.title },
+        { hid: 'twitter:description', name: 'twitter:description', content: this.post.description }
+      ]
+    }
+  },
+}
+</script>
+
+<style>
+/* Content */
+
+.project .nuxt-content {
+  display: flex;
+  justify-content: center;
+}
+</style>

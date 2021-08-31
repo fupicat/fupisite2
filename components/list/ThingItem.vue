@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink :to="`/blog/${slug}`" class="thing">
+  <NuxtLink :to="`/blog/${slug}`" class="thing fupi-btn">
     <div class="main">
       <img :src="icon ? icon : '/img/Eu.png'" alt="ícone da postagem" class="sticker">
       <div>
@@ -36,10 +36,6 @@ export default {
 
 <style scoped>
 .thing {
-  transition-property: background-color;
-  transition-timing-function: var(--trans-smooth);
-  transition-duration: 150ms;
-
   display: flex;
   flex-direction: column;
   justify-content: center;

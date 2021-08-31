@@ -14,7 +14,7 @@
       </div>
     </div>
     <div v-if="tags" class="tags">
-      <tag-link v-for="tag in tags.split(' ')" :key="tag" :tag="tag" />
+      <tag-link :url="url" v-for="tag in tags.split(' ')" :key="tag" :tag="tag" />
     </div>
   </div>
 </template>
@@ -26,7 +26,7 @@ export default {
   components: {
     TagLink,
   },
-  props: ['title', 'description', 'icon', 'posted', 'edited', 'tags'],
+  props: ['url', 'title', 'description', 'icon', 'posted', 'edited', 'tags'],
   methods: {
     formatDate(date) {
       const options = { year: 'numeric', month: 'long', day: 'numeric' }
@@ -41,6 +41,7 @@ export default {
   padding: 1.25rem 1.75rem;
   background-color: var(--purple-hov);
   width: 100%;
+  color: white;
 }
 
 .dark .thing-header {
@@ -52,7 +53,6 @@ export default {
   gap: 1.25rem;
   justify-content: center;
   align-items: center;
-  color: white;
 }
 
 .thing-header .main img {
@@ -86,7 +86,6 @@ export default {
   text-align: center;
   justify-content: center;
   align-items: center;
-  color: white;
   opacity: 0.5;
   gap: 1.25rem;
 }
@@ -102,5 +101,25 @@ export default {
 
 .dark .tags {
   background-color: var(--purple-navdark);
+}
+
+/* Cores */
+
+.game .thing-header {
+  background-color: var(--game-bg);
+  color: black;
+}
+
+.game .tags {
+  background-color: var(--game-button);
+}
+
+.dark .game .thing-header {
+  background-color: var(--game-bgdark);
+  color: white;
+}
+
+.dark .game .tags {
+  background-color: var(--game-buttondark);
 }
 </style>

@@ -30,4 +30,8 @@ export default {
   nfeDesc: "Alguns dos conteúdos nesse site contêm violência fantasiosa e palavrões. Nada extremo demais, nenhum conteúdo para adultos, mas ainda assim não aparecem por padrão. Desative o filtro abaixo se você está ciente e deseja ver conteúdo que pode não ser apropriado para todos.",
   nfeOn: "Filtro ativado",
   nfeOff: "Filtro desativado",
+
+  projInstructions: "Como jogar",
+  projAbout: "Sobre",
+  projLinks: "Links",
 }

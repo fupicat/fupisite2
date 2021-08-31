@@ -30,4 +30,8 @@ export default {
   nfeDesc: "Some of the content on this site contains depictions of cartoon violence and profanity. It's nothing too extreme, no adult content, but still it's hidden by default. Deactivate the filter below if you are willing to see content that might not be apropriate for everyone.",
   nfeOn: "Filter on",
   nfeOff: "Filter off",
+
+  projInstructions: "How to play",
+  projAbout: "About",
+  projLinks: "Links",
 }

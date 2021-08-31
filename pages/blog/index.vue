@@ -56,8 +56,7 @@ export default {
   methods: {
     refresh(results) {
       this.posts = results;
-      console.log(results);
-    }
+    },
   },
   mounted() {
     let query = this.$route.query.q;
