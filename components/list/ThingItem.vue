@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink :to="`/blog/${slug}`" class="thing fupi-btn">
+  <NuxtLink :to="`/${path}/${slug}`" class="thing fupi-btn">
     <div class="main">
       <img :src="icon ? icon : '/img/Eu.png'" alt="ícone da postagem" class="sticker">
       <div>
@@ -16,6 +16,7 @@
 <script>
 export default {
   props: {
+    path: String,
     slug: String,
     title: String,
     description: String,
@@ -84,5 +85,23 @@ export default {
 .date {
   text-align: center;
   opacity: 0.5;
+}
+
+/* Game */
+
+.game .thing {
+  background-color: var(--game-button);
+}
+
+.game .thing:hover {
+  background-color: var(--game-hov);
+}
+
+.dark .game .thing {
+  background-color: var(--game-buttondark);
+}
+
+.dark .game .thing:hover {
+  background-color: var(--game-hovdark);
 }
 </style>

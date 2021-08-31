@@ -1,18 +1,18 @@
 <template>
-  <div>
+  <div class="blog">
     <page-header :title="$t('blog')" :description="$t('blogDesc')" />
     <container>
       <search :query="query" :type="content" @SearchChanged="refresh" />
     </container>
     <thing-list>
       <thing-item v-for="post of posts" :key="post.slug"
+        path="blog"
         :slug="post.slug"
         :title="post.title"
         :description="post.description"
         :icon="post.icon"
         :posted="post.posted"
         showdate
-        class="blog"
       />
     </thing-list>
   </div>

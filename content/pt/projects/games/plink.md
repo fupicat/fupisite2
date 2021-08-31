@@ -3,7 +3,7 @@ title: Plink! Demake
 description: Faça música com outras pessoas online!
 posted: 1622516400000
 icon: /img/icons/plink.svg
-tags: "#música #online #scratch"
+tags: "#música #online #scratch #mobile"
 instructions:
   - Clique para tocar uma nota.
   - Mexa o mouse pra cima e pra baixo pra mudar a nota.
@@ -19,4 +19,4 @@ links:
     link: https://scratch.mit.edu/projects/537059256/
 alone: https://turbowarp.org/537059256/embed
 ---
-<iframe src="https://turbowarp.org/537059256/embed?addons=remove-curved-stage-border,pause" width="499" height="416" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen></iframe>
+<iframe src="https://turbowarp.org/537059256/embed?addons=remove-curved-stage-border,pause" width="100%" height="416" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen></iframe>
