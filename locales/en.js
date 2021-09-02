@@ -1,4 +1,8 @@
 export default {
+  index: "Home",
+  fupiDesc: "A place for all my stuff! Games, music, tech demos and more!",
+  fupiTags: "fupi, fupicat, fupi437, scratch, godot, engine, html5, online, games, sz, scratcherz, music, royalty-free, public domain, videos",
+
   projects: 'Projects',
   projectsDesc: 'All the stuff I made',
 
@@ -31,6 +35,8 @@ export default {
   nfeOn: "Filter on",
   nfeOff: "Filter off",
 
+  posted: "Posted:",
+  edited: "Edited:",
   projInstructions: "How to play",
   projAbout: "About",
   projLinks: "Links",

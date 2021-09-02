@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink :to="`/${path}/${slug}`" class="thing fupi-btn">
+  <NuxtLink :to="localePath(`/${path}/${slug}`)" class="thing fupi-btn">
     <div class="main">
       <img :src="icon ? icon : '/img/Eu.png'" alt="ícone da postagem" class="sticker">
       <div>
@@ -29,7 +29,7 @@ export default {
   methods: {
     formatDate(date) {
       const options = { year: 'numeric', month: 'long', day: 'numeric' }
-      return new Date(date).toLocaleDateString('pt', options)
+      return new Date(date).toLocaleDateString(this.$i18n.locale, options)
     }
   }
 }

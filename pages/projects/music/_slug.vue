@@ -29,10 +29,13 @@ export default {
     return { post, category }
   },
   head() {
+    console.log(this.post.tags);
+    const tags = this.post.tags.replace(/#/g, "").replace(/ /g, ", ");
     return {
-      title: this.post.title,
+      title: `${this.post.title} · "Fupi"`,
       meta: [
         { hid: 'description', name: 'description', content: this.post.description, },
+        { hid: 'keywords', name: 'keywords', content: tags},
         // Open Graph
         { hid: 'og:title', property: 'og:title', content: this.post.title },
         { hid: 'og:description', property: 'og:description', content: this.post.description },

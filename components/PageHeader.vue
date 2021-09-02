@@ -9,8 +9,8 @@
         </div>
       </div>
       <div v-if="posted || edited" class="date">
-        <p>Postado:<br>{{ formatDate(posted) }}</p>
-        <p v-if="edited && (posted != edited)">Editado:<br>{{ formatDate(edited) }}</p>
+        <p>{{ $t("posted") }}<br>{{ formatDate(posted) }}</p>
+        <p v-if="edited && (posted != edited)">{{ $t("edited") }}<br>{{ formatDate(edited) }}</p>
       </div>
     </div>
     <div v-if="tags" class="tags">
@@ -30,7 +30,7 @@ export default {
   methods: {
     formatDate(date) {
       const options = { year: 'numeric', month: 'long', day: 'numeric' }
-      return new Date(date).toLocaleDateString('pt', options)
+      return new Date(date).toLocaleDateString(this.$i18n.locale, options)
     }
   }
 }

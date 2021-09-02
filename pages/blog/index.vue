@@ -61,6 +61,21 @@ export default {
   mounted() {
     let query = this.$route.query.q;
     if (query) this.query = query;
+  },
+  head() {
+    return {
+      title: this.$t("blog") + " · Fupi",
+      meta: [
+        { hid: 'description', name: 'description', content: this.$t("fupiDesc"), },
+        { hid: 'keywords', name: 'keywords', content: this.$t("fupiTags")},
+        // Open Graph
+        { hid: 'og:title', property: 'og:title', content: "Fupi" },
+        { hid: 'og:description', property: 'og:description', content: this.$t("fupiDesc") },
+        // Twitter
+        { hid: 'twitter:title', name: 'twitter:title', content: "Fupi" },
+        { hid: 'twitter:description', name: 'twitter:description', content: this.$t("fupiDesc") }
+      ]
+    }
   }
 }
 </script>
