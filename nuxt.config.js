@@ -30,6 +30,7 @@ export default {
   },
 
   content: {
+    liveEdit: false,
     fullTextSearchFields: ['title', 'description', 'tags', 'text'],
   },
 

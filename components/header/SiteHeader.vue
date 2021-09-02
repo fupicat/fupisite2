@@ -67,6 +67,7 @@ header #menu {
   width: 100%;
   display: flex;
   flex-direction: column;
+  box-shadow: 0em 1em 1em rgba(0, 0, 0, 0.3);
 
   transform: scaleY(0%);
   transition-property: transform;
@@ -86,6 +87,7 @@ header #menu.open {
     transform: none;
     width: auto;
     gap: 0.5rem;
+    box-shadow: none;
   }
 }
 </style>

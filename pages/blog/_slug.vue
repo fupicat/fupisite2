@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <div class="post">
     <page-header url="blog" :title="post.title" :description="post.description" :icon="post.icon" :posted="post.posted" :edited="post.edited" :tags="post.tags" />
     <container pad>
-      <nuxt-content class="post" :document="post" />
+      <nuxt-content :document="post" />
       <client-only>
         <vssue v-if="$store.state.nfe.nfe" :title="post.title" />
       </client-only>
@@ -64,6 +64,11 @@ export default {
 
 .post .nuxt-content a {
   color: var(--purple-nav);
+  text-decoration: none;
+}
+
+.post .nuxt-content a:hover {
+  text-decoration: underline;
 }
 
 .dark .post .nuxt-content a {

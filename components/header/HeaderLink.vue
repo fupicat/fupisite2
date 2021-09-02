@@ -1,7 +1,7 @@
 <template>
   <nuxt-link :to="to"
     class="header-link">
-  <slot></slot>
+    <slot></slot>
   </nuxt-link>
 </template>
 
@@ -37,6 +37,7 @@ export default {
 
 @media (min-width: 768px) {
   .header-link {
+    border-radius: 0.4rem;
     padding: 0.75rem;
   }
 }

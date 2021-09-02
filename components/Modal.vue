@@ -23,6 +23,11 @@ export default {
     description: String,
     show: Boolean,
   },
+  watch: {
+    show(show) {
+      document.body.classList.toggle("block-scroll", show);
+    }
+  }
 }
 </script>
 
@@ -107,6 +112,7 @@ export default {
 
 .window .content {
   overflow-y: auto;
+  color: black;
 }
 
 .window .description {

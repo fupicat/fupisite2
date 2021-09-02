@@ -1,4 +1,4 @@
-/* Vars */
+/* Theme */
 
 html {
   --purple-nav: #6E438D;
@@ -12,15 +12,60 @@ html {
   --purple-textdark: #e3dee8;
   --purple-linkdark: #C072EC;
 
-  --game-bg: #a5bfdb;
-  --game-button: #567699;
-  --game-hov: #6595ca;
-  --game-bgdark: #223c59;
-  --game-buttondark: #2f4e71;
-  --game-hovdark: #426995;
+  --theme-main: #8C4DBA;
+  --theme-btn: #8C4DBA;
+  --theme-hov: #a660ce;
+  --theme-nav: #6E438D;
+  --theme-panel: #d189db;
+  --theme-title: #6E438D;
   
   --trans-smooth: cubic-bezier(0.4, 0, 0.2, 1);
   --trans-out: cubic-bezier(0, 0, 0.2, 1);
+}
+
+.dark {
+  --theme-main: #4a2344;
+  --theme-btn: #4a2344;
+  --theme-hov: #523c62;
+  --theme-nav: #2B122D;
+  --theme-panel: #352242;
+  --theme-title: #9B66C1;
+}
+
+.games {
+  --theme-main: #608da4;
+  --theme-btn: #567699;
+  --theme-hov: #568cc8;
+  --theme-nav: #32557b;
+  --theme-panel: #7dabdf;
+  --theme-title: #223c59;
+}
+
+.dark .games {
+  --theme-main: #1d3d4d;
+  --theme-btn: #132f4f;
+  --theme-hov: #335880;
+  --theme-nav: #0c1d31;
+  --theme-panel: #152a42;
+  --theme-title: #7ea6d2;
+}
+
+.music {
+  --theme-main: #6b9d50;
+  --theme-btn: #497120;
+  --theme-hov: #51952c;
+  --theme-nav: #497120;
+  --theme-panel: #92e663;
+  --theme-title: #437114;
+}
+
+.dark .music {
+  --theme-main: #2d4421;
+  --theme-btn: #234d17;
+  --theme-hov: #356a22;
+  --theme-nav: #1b280e;
+  --theme-panel: #213516;
+  --theme-title: #97d756;
 }
 
 /* Default */
@@ -68,6 +113,11 @@ html, body, #__nuxt, #__layout, #app .filler {
   }
 }
 
+.block-scroll {
+  height: 100%;
+  overflow-y: hidden;
+}
+
 /* Botão */
 
 .fupi-btn {
@@ -84,6 +134,13 @@ html, body, #__nuxt, #__layout, #app .filler {
 
 .fupi-btn:disabled {
   box-shadow: inset 0em 0.6em rgba(0, 0, 0, 0.15);
+}
+
+/* Páginas de projeto */
+
+.project .nuxt-content {
+  display: flex;
+  justify-content: center;
 }
 
 /* Vssue */

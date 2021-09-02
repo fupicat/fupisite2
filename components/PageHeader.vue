@@ -39,13 +39,9 @@ export default {
 <style scoped>
 .thing-header {
   padding: 1.25rem 1.75rem;
-  background-color: var(--purple-hov);
+  background-color: var(--theme-main);
   width: 100%;
   color: white;
-}
-
-.dark .thing-header {
-  background-color: var(--purple-hovdark);
 }
 
 .thing-header .main {
@@ -92,34 +88,10 @@ export default {
 
 .tags {
   padding: 0.5rem 0px;
-  background-color: var(--purple-nav);
+  background-color: var(--theme-nav);
   color: white;
   display: flex;
   justify-content: center;
   gap: 0.25rem;
-}
-
-.dark .tags {
-  background-color: var(--purple-navdark);
-}
-
-/* Cores */
-
-.game .thing-header {
-  background-color: var(--game-bg);
-  color: black;
-}
-
-.game .tags {
-  background-color: var(--game-button);
-}
-
-.dark .game .thing-header {
-  background-color: var(--game-bgdark);
-  color: white;
-}
-
-.dark .game .tags {
-  background-color: var(--game-buttondark);
 }
 </style>

@@ -12,26 +12,13 @@ export default {
 .tag {
   display: inline-block;
   padding: 0.25rem 0.5rem;
+  border-radius: 0.4rem;
   transition-property: background-color;
   transition-duration: 150ms;
   transition-timing-function: var(--trans-smooth);
 }
 
 .tag:hover {
-  background-color: var(--purple-hov);
-}
-
-.dark .tag:hover {
-  background-color: var(--purple-hovdark);
-}
-
-/* Cores */
-
-.game .tag:hover {
-  background-color: var(--game-hov);
-}
-
-.dark .game .tag:hover {
-  background-color: var(--game-hovdark);
+  background-color: var(--theme-hov);
 }
 </style>

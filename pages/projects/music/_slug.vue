@@ -23,7 +23,7 @@ export default {
     ProjectInfo,
   },
   async asyncData({ $content, params, app }) {
-    const category = "games";
+    const category = "music";
     const post = await $content(`${app.i18n.locale}/projects/${category}`, params.slug).fetch();
 
     return { post, category }
@@ -46,5 +46,8 @@ export default {
 </script>
 
 <style>
-
+.nuxt-content audio {
+  width: 100%;
+  border-radius: 0.4rem;
+}
 </style>

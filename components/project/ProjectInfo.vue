@@ -41,6 +41,7 @@ export default {
   text-align: center;
   margin-top: -0.3rem;
   font-weight: bold;
+  color: var(--theme-title);
 }
 
 .instructions, .about {
@@ -62,6 +63,12 @@ export default {
 
 .links a {
   padding: 0.5rem 1rem;
+  background: var(--theme-btn);
+  color: white;
+}
+
+.links a:hover {
+  background: var(--theme-hov);
 }
 
 .links div {
@@ -115,37 +122,7 @@ export default {
   box-shadow: inset 0em 0.4em rgba(0, 0, 0, 0.15);
 }
 
-/* Game */
-
-.game .project-info .main div {
-  background-color: var(--game-hov);
-}
-
-.dark .game .project-info .main div {
-  background-color: var(--game-bgdark);
-}
-
-.game .project-info .main h1, .game .project-info .links h1 {
-  color: var(--game-bgdark);
-}
-
-.game .links a {
-  background: var(--game-hov);
-}
-
-.dark .game .links a {
-  background: var(--game-buttondark);
-}
-
-.game .links a:hover {
-  background: var(--game-bg);
-}
-
-.dark .game .links a:hover {
-  background: var(--game-hovdark);
-}
-
-.dark .game .project-info .main h1, .dark .game .project-info .links h1 {
-  color: var(--game-bg);
+.project-info .main div {
+  background-color: var(--theme-panel);
 }
 </style>

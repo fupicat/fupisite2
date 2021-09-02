@@ -39,7 +39,7 @@ export default {
     }
   },
   async asyncData({ $content, app }) {
-    const category = "games";
+    const category = "music";
     const content = `${app.i18n.locale}/projects/${category}`;
     let posts = []
     try {

@@ -43,19 +43,11 @@ export default {
   gap: 0.5rem;
   padding: 1.25rem 1.75rem;
   color: white;
-  background-color: var(--purple-hov);
+  background-color: var(--theme-btn);
 }
 
 .thing:hover {
-  background-color: var(--purple-hov2);
-}
-
-.dark .thing {
-  background-color: var(--purple-hovdark);
-}
-
-.dark .thing:hover {
-  background-color: var(--purple-hov2dark);
+  background-color: var(--theme-hov);
 }
 
 .thing .main {
@@ -85,23 +77,5 @@ export default {
 .date {
   text-align: center;
   opacity: 0.5;
-}
-
-/* Game */
-
-.game .thing {
-  background-color: var(--game-button);
-}
-
-.game .thing:hover {
-  background-color: var(--game-hov);
-}
-
-.dark .game .thing {
-  background-color: var(--game-buttondark);
-}
-
-.dark .game .thing:hover {
-  background-color: var(--game-hovdark);
 }
 </style>
