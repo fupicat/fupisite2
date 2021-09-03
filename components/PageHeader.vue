@@ -26,7 +26,7 @@ export default {
   components: {
     TagLink,
   },
-  props: ['url', 'title', 'description', 'icon', 'posted', 'edited', 'tags'],
+  props: ['url', 'icon', 'title', 'description', 'posted', 'edited', 'tags'],
   methods: {
     formatDate(date) {
       const options = { year: 'numeric', month: 'long', day: 'numeric' }

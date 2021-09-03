@@ -37,7 +37,7 @@ export default {
       let results = [];
 
       if (!searchQuery) {
-        results = await this.$content(this.type)
+        results = await this.$content(`${this.$i18n.locale}/${this.type}`)
           .only(['title', 'description', 'slug', 'icon', 'tags', 'posted'])
           .sortBy('posted', 'desc')
           .fetch()
@@ -46,7 +46,7 @@ export default {
         this.$emit("SearchChanged", results)
         return
       }
-      results = await this.$content(this.type)
+      results = await this.$content(`${this.$i18n.locale}/${this.type}`)
         .search(searchQuery)
         .only(['title', 'description', 'slug', 'icon', 'tags', 'posted'])
         .sortBy('posted', 'desc')
@@ -70,5 +70,6 @@ input {
   width: 100%;
   margin-top: 0.5rem;
   color: black;
+  border-radius: 0.4rem;
 }
 </style>

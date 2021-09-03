@@ -2,11 +2,11 @@
   <div :class="category">
     <page-header :icon="`/img/${category}.png`" :title="$t(category)" :description="$t(`${category}Desc`)" />
     <container>
-      <search :query="query" :type="content" @SearchChanged="refresh" />
+      <search :query="query" :type="category" @SearchChanged="refresh" />
     </container>
     <thing-list>
       <thing-item v-for="post of posts" :key="post.slug"
-        :path="`projects/${category}`"
+        :path="category"
         :slug="post.slug"
         :title="post.title"
         :description="post.description"
@@ -33,26 +33,13 @@ export default {
     ThingItem,
     Search,
   },
+  props: {
+    category: String,
+    posts: Array,
+  },
   data() {
     return {
       query: "",
-    }
-  },
-  async asyncData({ $content, app }) {
-    const category = "music";
-    const content = `${app.i18n.locale}/projects/${category}`;
-    let posts = []
-    try {
-      posts = await $content(content)
-        .only(['title', 'description', 'slug', 'icon', 'tags', 'posted'])
-        .sortBy('posted', 'desc')
-        .fetch();
-    } finally {
-      return {
-        posts,
-        content,
-        category,
-      }
     }
   },
   methods: {
@@ -68,14 +55,14 @@ export default {
     return {
       title: this.$t(this.category) + " · Fupi",
       meta: [
-        { hid: 'description', name: 'description', content: this.$t("fupiDesc"), },
+        { hid: 'description', name: 'description', content: this.$t(`${this.category}Desc`), },
         { hid: 'keywords', name: 'keywords', content: this.$t("fupiTags")},
         // Open Graph
-        { hid: 'og:title', property: 'og:title', content: "Fupi" },
-        { hid: 'og:description', property: 'og:description', content: this.$t("fupiDesc") },
+        { hid: 'og:title', property: 'og:title', content: this.$t(this.category) + " · Fupi" },
+        { hid: 'og:description', property: 'og:description', content: this.$t(`${this.category}Desc`) },
         // Twitter
-        { hid: 'twitter:title', name: 'twitter:title', content: "Fupi" },
-        { hid: 'twitter:description', name: 'twitter:description', content: this.$t("fupiDesc") }
+        { hid: 'twitter:title', name: 'twitter:title', content: this.$t(this.category) + " · Fupi" },
+        { hid: 'twitter:description', name: 'twitter:description', content: this.$t(`${this.category}Desc`) }
       ]
     }
   }
