@@ -29,7 +29,7 @@ export default {
   head() {
     const tags = this.document.tags.replace(/#/g, "").replace(/ /g, ", ");
     return {
-      title: `${this.document.title} · "Fupi"`,
+      title: `${this.document.title} · Fupi`,
       meta: [
         { hid: 'description', name: 'description', content: this.document.description, },
         { hid: 'keywords', name: 'keywords', content: tags},

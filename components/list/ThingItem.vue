@@ -42,12 +42,6 @@ export default {
   justify-content: center;
   gap: 0.5rem;
   padding: 1.25rem 1.75rem;
-  color: white;
-  background-color: var(--theme-btn);
-}
-
-.thing:hover {
-  background-color: var(--theme-hov);
 }
 
 .thing .main {

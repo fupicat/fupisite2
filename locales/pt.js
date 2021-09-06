@@ -40,4 +40,5 @@ export default {
   projInstructions: "Como jogar",
   projAbout: "Sobre",
   projLinks: "Links",
+  accessProject: "Clique para acessar",
 }

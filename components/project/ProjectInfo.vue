@@ -63,12 +63,6 @@ export default {
 
 .links a {
   padding: 0.5rem 1rem;
-  background: var(--theme-btn);
-  color: white;
-}
-
-.links a:hover {
-  background: var(--theme-hov);
 }
 
 .links div {
