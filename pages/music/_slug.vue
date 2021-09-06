@@ -5,7 +5,7 @@
 <script>
 import ProjectPage from "~/components/project/ProjectPage.vue";
 
-const category = "music";
+const category = "musica";
 
 export default {
   components: { ProjectPage, },

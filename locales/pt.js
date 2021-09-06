@@ -37,7 +37,7 @@ export default {
 
   posted: "Postado:",
   edited: "Editado:",
-  projInstructions: "Como jogar",
+  projInstructions: "Instruções",
   projAbout: "Sobre",
   projLinks: "Links",
   accessProject: "Clique para acessar",

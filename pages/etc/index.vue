@@ -5,7 +5,7 @@
 <script>
 import CategoryView from '~/components/list/CategoryView.vue';
 
-const category = "jogos";
+const category = "etc";
 
 export default {
   components: {

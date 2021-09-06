@@ -6,7 +6,7 @@
 import ProjectPage from "~/components/project/ProjectPage.vue";
 import ProjectLink from "~/components/project/ProjectLink.vue";
 
-const category = "tools";
+const category = "ferramentas";
 
 export default {
   components: { ProjectPage, ProjectLink, },
@@ -24,7 +24,7 @@ export default {
 </script>
 
 <style>
-.tools .nuxt-content {
+.ferramentas .nuxt-content {
   display: flex;
   justify-content: center;
 }

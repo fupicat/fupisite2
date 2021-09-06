@@ -32,7 +32,7 @@ html {
   --theme-title: #9B66C1;
 }
 
-.games {
+.jogos {
   --theme-main: #608da4;
   --theme-btn: #567699;
   --theme-hov: #568cc8;
@@ -41,7 +41,7 @@ html {
   --theme-title: #223c59;
 }
 
-.dark .games {
+.dark .jogos {
   --theme-main: #1d3d4d;
   --theme-btn: #132f4f;
   --theme-hov: #335880;
@@ -50,7 +50,7 @@ html {
   --theme-title: #7ea6d2;
 }
 
-.music {
+.musica {
   --theme-main: #6b9d50;
   --theme-btn: #497120;
   --theme-hov: #51952c;
@@ -59,7 +59,7 @@ html {
   --theme-title: #437114;
 }
 
-.dark .music {
+.dark .musica {
   --theme-main: #2d4421;
   --theme-btn: #234d17;
   --theme-hov: #356a22;
@@ -86,7 +86,7 @@ html {
   --theme-title: #e8c178;
 }
 
-.tools {
+.ferramentas {
   --theme-main: #ea6a6a;
   --theme-btn: #d24a4a;
   --theme-hov: #e8666c;
@@ -95,7 +95,7 @@ html {
   --theme-title: #9d1f31;
 }
 
-.dark .tools {
+.dark .ferramentas {
   --theme-main: #512424;
   --theme-btn: #792222;
   --theme-hov: #a83439;

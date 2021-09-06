@@ -4,11 +4,12 @@
 
 <script>
 import ProjectPage from "~/components/project/ProjectPage.vue";
+import ProjectLink from "~/components/project/ProjectLink.vue";
 
-const category = "jogos";
+const category = "etc";
 
 export default {
-  components: { ProjectPage, },
+  components: { ProjectPage, ProjectLink, },
   data() {
     return {
       category,
@@ -23,8 +24,14 @@ export default {
 </script>
 
 <style>
-.nuxt-content {
+.etc .nuxt-content {
   display: flex;
   justify-content: center;
+  width: 100%;
+}
+
+.etc .nuxt-content iframe {
+  min-height: 400px;
+  width: 100%;
 }
 </style>
