@@ -20,7 +20,7 @@ export default {
     let posts = []
     try {
       posts = await $content(`${app.i18n.locale}/${category}`)
-        .only(['title', 'description', 'slug', 'icon', 'tags', 'posted'])
+        .only(['title', 'description', 'slug', 'icon', 'tags', 'posted', 'nfe'])
         .sortBy('posted', 'desc')
         .fetch();
     } finally {

@@ -68,6 +68,24 @@ html {
   --theme-title: #97d756;
 }
 
+.videos {
+  --theme-main: #df9332;
+  --theme-btn: #e87f33;
+  --theme-hov: #c66b28;
+  --theme-nav: #ac4b11;
+  --theme-panel: #f0ca81;
+  --theme-title: #976c1a;
+}
+
+.dark .videos {
+  --theme-main: #463115;
+  --theme-btn: #6a3a17;
+  --theme-hov: #572908;
+  --theme-nav: #2f1405;
+  --theme-panel: #312715;
+  --theme-title: #e8c178;
+}
+
 /* Default */
 
 * {

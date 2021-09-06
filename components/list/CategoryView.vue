@@ -5,7 +5,7 @@
       <search :query="query" :type="category" @SearchChanged="refresh" />
     </container>
     <thing-list>
-      <thing-item v-for="post of posts" :key="post.slug"
+      <thing-item v-for="post of filteredPosts" :key="post.slug"
         :path="category"
         :slug="post.slug"
         :title="post.title"
@@ -40,6 +40,15 @@ export default {
   data() {
     return {
       query: "",
+    }
+  },
+  computed: {
+    filteredPosts() {
+      if (!this.$store.state.nfe.nfe) {
+        return this.posts.filter(x => x.nfe !== true);
+      } else {
+        return this.posts;
+      }
     }
   },
   methods: {
