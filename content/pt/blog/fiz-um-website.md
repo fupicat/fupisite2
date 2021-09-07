@@ -3,7 +3,7 @@ title: Fiz um website
 description: Postagem antiga, feita em 21/1/2020 quando o site foi criado.
 posted: 1579575600000
 icon: /img/SiteIcon.png
-tags: "#site #antiga"
+tags: "#web #antiga"
 ---
 ![](/img/SiteVelho.png)
 

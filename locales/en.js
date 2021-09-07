@@ -41,4 +41,9 @@ export default {
   projAbout: "About",
   projLinks: "Links",
   accessProject: "Click to view",
+
+  404: "This page doesn't exist!",
+  500: "Something went wrong!",
+  errorDesc: "Either you mistyped the address, this page doesn't have an English translation, or my code is acting up. If you think this is a mistake, ",
+  errorContact: "contact me.",
 }

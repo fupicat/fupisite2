@@ -140,7 +140,13 @@ html, body, #__nuxt, #__layout, #app .filler {
 }
 
 .fill-content {
-  min-height: calc(100vh - 144px);
+  min-height: calc(100vh - 208px);
+}
+
+@media (min-width: 768px) {
+  .fill-content {
+    min-height: calc(100vh - 144px);
+  }
 }
 
 @media (prefers-reduced-motion) {

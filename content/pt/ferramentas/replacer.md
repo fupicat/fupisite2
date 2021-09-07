@@ -3,7 +3,7 @@ title: Replacer
 description: Formate texto rapidamente.
 posted: 1630932592015
 icon: /img/icons/replacer.png
-tags: "#criação #site #texto"
+tags: "#criação #web #texto"
 instructions:
   - Clique em "+ Adicionar regra" para criar uma regra de substituição.
   - Qualquer aparência do primeiro fragmento de texto na entrada será substituída pelo segundo.
@@ -15,7 +15,7 @@ about:
   - Uma ferramenta para editar texto rapidamente. Eu criei ela pra fazer um trabalho pro meu pai mais fácil, mas acabei desenvolvendo ela pra ser capaz de fazer bastante coisa.
   - Eu fiz isso antes de descobrir que Regex existia então eu tava reinventando a roda e nem sabia kdsk. Mesmo assim essa ferramentinha ainda é útil às vezes.
 links:
-  - text: Repositório
+  - text: GitHub
     link: https://github.com/fupicat/replacer
 ---
 <project-link href="https://fupicat.github.io/replacer/"></project-link>

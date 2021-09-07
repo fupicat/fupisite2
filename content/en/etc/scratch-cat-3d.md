@@ -1,15 +1,15 @@
 ---
 title: Scratch Cat 3D
-description: Modelo 3D do mascote do Scratch.
+description: 3D model of Scratch's mascot.
 posted: 1630947216650
 icon: /img/icons/scratchcat3d.png
 tags: "#3d #scratch #blender"
 about:
-  - Esse modelo ficou bastante popular no Scratch, esteve na barra de “Projetos que a comunidade gosta” por acho que uma semana inteira, foi bem louco.
-  - Um cara inclusive me pediu o modelo por email e imprimiu ele em 3D!
-  - Famosamente assustador se observado de qualquer outra direção.
+  - This model was very popular in Scratch, it stayed in the "What the community is loving" tab for a whole week I think, pretty crazy.
+  - One guy even asked for the file in an email and 3D printed it!
+  - Famously scary when looked from... any direction.
 links:
-  - text: Baixar .blend
+  - text: Download .blend
     link: https://drive.google.com/open?id=1-9S4z1lf0PgKuJCCAj5fFGBq_hmNeAGD
   - text: Scratch
     link: https://scratch.mit.edu/projects/357731094/

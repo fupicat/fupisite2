@@ -3,7 +3,7 @@ title: I made a website
 description: Old post I made in 21/1/2020 when my previous site was created.
 posted: 1579575600000
 icon: /img/SiteIcon.png
-tags: "#old #website"
+tags: "#old #web"
 ---
 ![](/img/SiteVelho.png)
 
