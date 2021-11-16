@@ -19,4 +19,4 @@ links:
     link: https://scratch.mit.edu/projects/537059256/
 alone: https://turbowarp.org/537059256/embed
 ---
-<iframe src="https://turbowarp.org/537059256/embed?addons=remove-curved-stage-border,pause" width="100%" height="416" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen></iframe>
+<iframe src="https://turbowarp.org/537059256/embed?addons=remove-curved-stage-border,pause" width="100%" class="scratch" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen></iframe>

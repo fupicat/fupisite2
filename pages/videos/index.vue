@@ -16,7 +16,7 @@ export default {
       category
     }
   },
-  async asyncData({ $content, app }) {
+  async asyncData({ $content, store, app }) {
     let posts = []
     try {
       posts = await $content(`${app.i18n.locale}/${category}`)

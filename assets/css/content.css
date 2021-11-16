@@ -1,0 +1,58 @@
+/* Content */
+
+.dark .blog .nuxt-content {
+  color: var(--purple-textdark);
+}
+
+.blog .nuxt-content img {
+  margin: 1em 0px;
+  display: block;
+  width: 100%;
+  max-height: 50vh;
+  object-fit: contain;
+}
+
+.blog .nuxt-content p {
+  text-indent: 1.6em;
+  margin: 1em 0px;
+  text-align: justify;
+}
+
+.blog .nuxt-content a {
+  color: var(--purple-nav);
+  text-decoration: none;
+}
+
+.blog .nuxt-content a:hover {
+  text-decoration: underline;
+}
+
+.dark .blog .nuxt-content a {
+  color: var(--purple-hov);
+}
+
+.blog .nuxt-content h1 {
+  display: block;
+  font-size: 2em;
+  margin: 0.67em 0px;
+  font-weight: bold;
+}
+
+.blog .nuxt-content h2 {
+  display: block;
+  font-size: 1.5em;
+  margin: 0.83em 0px;
+  font-weight: bold;
+}
+
+.blog .nuxt-content h3 {
+  display: block;
+  font-size: 1.17em;
+  margin: 1em 0px;
+  font-weight: bold;
+}
+
+.blog .nuxt-content ol {
+  list-style: decimal;
+  padding: 1rem 2rem;
+}

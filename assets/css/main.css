@@ -120,6 +120,10 @@ body {
   color: var(--purple-textdark);
 }
 
+p a {
+  text-decoration: underline;
+}
+
 /* Faz o footer grudar no fim da janela */
 
 html, body, #__nuxt, #__layout, #app .filler {

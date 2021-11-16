@@ -6,9 +6,9 @@
         <menu-icon :open="open" @click.native="toggleMenu()" />
         <div id="menu" class="reduced-motion"
             @click="toggleMenu()">
-          <header-link :to="localePath('/projects')">{{ $t("projects") }}</header-link>
+          <header-link :to="localePath('/projetos')">{{ $t("projetos") }}</header-link>
           <header-link :to="localePath('/blog')">{{ $t("blog") }}</header-link>
-          <header-link :to="localePath('/about')">{{ $t("about") }}</header-link>
+          <header-link :to="localePath('/sobre')">{{ $t("sobre") }}</header-link>
         </div>
       </div>
     </container>

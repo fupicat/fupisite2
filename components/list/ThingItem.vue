@@ -63,7 +63,8 @@ export default {
 }
 
 .description {
-  font-size: 0.875rem;
+  font-style: italic;
+  font-size: 1rem;
   line-height: 1.25rem;
   text-align: center;
 }

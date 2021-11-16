@@ -7,7 +7,7 @@ tags: "#jam #jogo #ludum-dare #antiga"
 ---
 Olá! Estou fazendo este post para falar como foi minha experiência na Ludum Dare, a maior competição de desenvolvimento de jogos (game jam) da internet. A fase de votação terminou dois dias atrás e estou bem feliz porque consegui fazer um jogo bastante polido em praticamente só um dia!
 
-<iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/2_DaXlkwK4o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<vid-yt url="https://youtu.be/2_DaXlkwK4o"></vid-yt>
 
 ## O que é
 
@@ -61,11 +61,11 @@ Minha última ideia foi fazer um daqueles jogos em que tem um planeta no meio da
 
 Nas primeiras quatro horas, já tinha implementado a base do jogo todo:
 
-<iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/amcFTXCqxXU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<vid-yt url="https://youtu.be/amcFTXCqxXU"></vid-yt>
 
 Aí já era 1 da manhã, e eu tive que ir dormir. No dia seguinte, não tinha muito o que eu fazer, então a primeira coisa que eu adicionei foi gráficos melhores:
 
-<iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/Q8Qf0zAogx4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<vid-yt url="https://youtu.be/Q8Qf0zAogx4"></vid-yt>
 
 Depois eu adicionei um menu para acessar dois modos de jogo. Como ia ser super fácil de adicionar multiplayer local, eu adicionei isso também. Um jogador ia usar WASD e o outro ia usar IJKL.
 

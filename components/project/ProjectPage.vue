@@ -15,19 +15,21 @@
 import PageHeader from "~/components/PageHeader.vue";
 import Container from '~/components/Container.vue';
 import ProjectInfo from '~/components/project/ProjectInfo.vue';
+import VidYt from "~/components/blog/VidYt.vue";
 
 export default {
   components: {
     PageHeader,
     Container,
     ProjectInfo,
+    VidYt,
   },
   props: {
     document: Object,
     category: String,
   },
   head() {
-    const tags = this.document.tags.replace(/#/g, "").replace(/ /g, ", ");
+    const tags = this.document.tags ? this.document.tags.replace(/#/g, "").replace(/ /g, ", ") : "";
     return {
       title: `${this.document.title} · Fupi`,
       meta: [
@@ -46,5 +48,13 @@ export default {
 </script>
 
 <style>
+.scratch {
+  height: 367px;
+}
 
+@media (min-width: 768px) {
+  .scratch {
+    height: 416px;
+  }
+}
 </style>

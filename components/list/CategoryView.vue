@@ -4,17 +4,19 @@
     <container>
       <search :query="query" :type="category" @SearchChanged="refresh" />
     </container>
-    <thing-list>
-      <thing-item v-for="post of filteredPosts" :key="post.slug"
-        :path="category"
-        :slug="post.slug"
-        :title="post.title"
-        :description="post.description"
-        :icon="post.icon"
-        :posted="post.posted"
-        showdate
-      />
-    </thing-list>
+    <container pad>
+      <thing-list>
+        <thing-item v-for="post of filteredPosts" :key="post.slug"
+          :path="category"
+          :slug="post.slug"
+          :title="post.title"
+          :description="post.description"
+          :icon="post.icon"
+          :posted="post.posted"
+          showdate
+        />
+      </thing-list>
+    </container>
   </div>
 </template>
 

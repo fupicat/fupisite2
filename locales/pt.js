@@ -3,20 +3,20 @@ export default {
   fupiDesc: "Um lugar para todas as minhas coisas! Jogos, música, tech demos e mais!",
   fupiTags: "fupi, fupicat, fupi437, scratch, godot, engine, html5, online, jogos, games, sz, scratcherz, música, royalty-free, domínio público, vídeos",
 
-  projects: 'Projetos',
-  projectsDesc: 'Todas as coisas que eu fiz',
+  projetos: 'Projetos',
+  projetosDesc: 'Todas as coisas que eu fiz',
 
-  games: 'Jogos',
-  gamesDesc: "Coisas para jogar",
+  jogos: 'Jogos',
+  jogosDesc: "Coisas para jogar",
 
-  music: "Música",
-  musicDesc: "Coisas para escutar",
+  musica: "Música",
+  musicaDesc: "Coisas para escutar",
 
   videos: "Vídeos",
   videosDesc: "Coisas para assistir",
 
-  tools: "Ferramentas",
-  toolsDesc: "Coisas para usar",
+  ferramentas: "Ferramentas",
+  ferramentasDesc: "Coisas para usar",
 
   blog: "Blog",
   blogDesc: "Coisas para ler",
@@ -24,8 +24,8 @@ export default {
   etc: "Etc.",
   etcDesc: "Coisas que eu não consegui encaixar nas outras categorias",
   
-  about: "Sobre",
-  aboutDesc: "Coisas sobre coisas",
+  sobre: "Sobre",
+  sobreDesc: "Coisas sobre coisas",
 
   stopPlz: "/img/ParaPfv.png",
 

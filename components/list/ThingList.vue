@@ -1,9 +1,7 @@
 <template>
-  <container pad>
-    <transition-group name="list" tag="div" class="thing-list">
-      <slot />
-    </transition-group>
-  </container>
+  <transition-group name="list" tag="div" class="thing-list">
+    <slot />
+  </transition-group>
 </template>
 
 <script>

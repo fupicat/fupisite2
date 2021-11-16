@@ -15,7 +15,9 @@ about:
   - A tool to edit text quickly. I created it to automate a task for my father's job, but I ended up developing it to be capable of a lot more.
   - I made this before I knew Regex was a thing so I was reinventing the wheel and didn't even know it :d Even so, this little tool is still useful sometimes.
 links:
+  - text: Website
+    link: https://fupicat.github.io/replacer/en
   - text: GitHub
     link: https://github.com/fupicat/replacer
 ---
-<project-link href="https://fupicat.github.io/replacer/en"></project-link>
+<iframe src="https://fupicat.github.io/replacer/en" width="100%" style="height: 90vh" allowtransparency="true"allowfullscreen></iframe>
