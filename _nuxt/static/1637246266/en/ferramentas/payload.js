@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/en/ferramentas", {data:[{posts:[{slug:"replacer",description:"Automatic text editor.",title:"Replacer",posted:1630932592015,icon:"\u002Fimg\u002Ficons\u002Freplacer.png",tags:"#creative #web #text"}]}],fetch:{},mutations:[]});

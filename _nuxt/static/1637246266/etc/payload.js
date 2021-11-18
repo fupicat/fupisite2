@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/etc", {data:[{posts:[{slug:"scratch-cat-3d",description:"Modelo 3D do mascote do Scratch.",title:"Scratch Cat 3D",posted:1630947216650,icon:"\u002Fimg\u002Ficons\u002Fscratchcat3d.png",tags:"#3d #scratch #blender"}]}],fetch:{},mutations:[]});
