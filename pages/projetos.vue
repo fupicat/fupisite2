@@ -61,6 +61,21 @@ export default {
       }
     }
   },
+  head() {
+    return {
+      title: this.$t("projetos") + " · Fupi",
+      meta: [
+        { hid: 'description', name: 'description', content: this.$t("projetosDesc"), },
+        { hid: 'keywords', name: 'keywords', content: this.$t("fupiTags")},
+        // Open Graph
+        { hid: 'og:title', property: 'og:title', content: this.$t("projetos") + " · Fupi" },
+        { hid: 'og:description', property: 'og:description', content: this.$t("projetosDesc") },
+        // Twitter
+        { hid: 'twitter:title', name: 'twitter:title', content: this.$t("projetos") + " · Fupi" },
+        { hid: 'twitter:description', name: 'twitter:description', content: this.$t("projetosDesc") }
+      ]
+    }
+  }
 }
 </script>
 

@@ -71,7 +71,7 @@ export default {
 }
 
 .description {
-  font-size: 0.875rem;
+  font-style: italic;
   line-height: 1.25rem;
   text-align: center;
 }

@@ -5,6 +5,7 @@ export default {
 
   projetos: 'Projects',
   projetosDesc: 'All the stuff I made',
+  mais: "See More +",
 
   jogos: 'Games',
   jogosDesc: "Stuff you can play",

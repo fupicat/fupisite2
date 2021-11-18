@@ -2,7 +2,7 @@
   <div :class="'category-compact ' + cat">
     <div class="header">
       <h1>{{ title }}</h1>
-      <nuxt-link class="fupi-btn" :to="localePath('/' + cat)">Mais +</nuxt-link>
+      <nuxt-link class="fupi-btn" :to="localePath('/' + cat)">{{ $t("mais") }}</nuxt-link>
     </div>
     <thing-list>
       <thing-item v-for="post of filteredPosts" :key="post.slug"

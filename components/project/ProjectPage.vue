@@ -5,7 +5,7 @@
       <nuxt-content class="project" :document="document" />
       <project-info :document="document" />
       <client-only>
-        <vssue v-if="$store.state.nfe.nfe" :title="document.title" />
+        <vssue v-if="$store.state.nfe.nfe && !document.nocomment" :title="document.title" />
       </client-only>
     </container>
   </div>

@@ -54,5 +54,10 @@
 
 .blog .nuxt-content ol {
   list-style: decimal;
-  padding: 1rem 2rem;
+  padding: 0rem 2rem;
+}
+
+.blog .nuxt-content ul {
+  padding: 0rem 2rem;
+  list-style: outside disc;
 }
