@@ -43,6 +43,7 @@ export default {
   projLinks: "Links",
   accessProject: "Clique para acessar",
 
+  error: "Erro!",
   404: "Essa página não existe!",
   500: "Algo deu errado!",
   errorDesc: "Ou você digitou o endereço errado, ou o meu código desistiu de funcionar. Se você suspeita que isso é um erro, ",
