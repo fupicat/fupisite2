@@ -5,6 +5,8 @@ posted: 1637097124640
 updated: 1637097124640
 nocomment: true
 ---
+<sobre-mim></sobre-mim>
+
 Olá, eu sou o **Fupi**. Faço *coisas* na internet desde 2013, e este site vai servir para eu mostrá-las. Você encontrará vários tipos de *coisas* aqui, por exemplo:
 
 - Jogos
@@ -26,29 +28,29 @@ Se você quer saber os programas e outras *coisas* que eu uso, aqui vai uma list
 
 ### Código aberto
 
-- Godot Engine (jogos e motion graphics)
-- Krita (gráficos e edição de imagem)
-- Blender (modelagem 3D, animação, motion graphics e efeitos de vídeo)
-- Tahoma2D (animação frame a frame)
-- Audacity (editor de áudio super útil)
-- Firefox (tem um inspetor bem completo, dá pra tirar print de elementos HTML específicos, e abrir arquivos baixados sem precisar salvá-los)
-- Kdenlive (editor de vídeo que eu uso pra vídeos simples sem muitas transições e animação)
-- LMMS (DAW simples para composição de música)
+- [Godot Engine](https://godotengine.org/) (jogos e motion graphics)
+- [Krita](https://krita.org/) (gráficos e edição de imagem)
+- [Blender](https://www.blender.org/) (modelagem 3D, animação, motion graphics e efeitos de vídeo)
+- [Tahoma2D](https://tahoma2d.org/) (animação frame a frame)
+- [Audacity](https://www.audacityteam.org/) (editor de áudio super útil)
+- [Firefox](https://www.mozilla.org/pt-BR/firefox/new/) (tem um inspetor bem completo, dá pra tirar print de elementos HTML específicos, e abrir arquivos baixados sem precisar salvá-los)
+- [Kdenlive](https://kdenlive.org/en/download/) (<span title="super instável e ruim na verdade sry ;n;">editor de vídeo</span> que eu uso pra vídeos simples sem muitas transições e efeitos)
+- [LMMS](https://lmms.io/) (DAW simples para composição de música)
 
 ### Grátis
 
-- Visual Studio Code (editor de código que eu usei pra fazer esse site)
-- Figma (gráficos em vetorial, por exemplo meu logo)
+- [Visual Studio Code](https://code.visualstudio.com/) (editor de código que eu usei pra fazer esse site)
+- [Figma](https://www.figma.com/) (gráficos em vetorial, por exemplo meu logo)
 
 ### Pago
 
-- FL Studio (DAW fantástica pra compor e mixar música - tem uma versão grátis bem generosa)
-- VEGAS Movie Studio 13 Platinum (editor de vídeo que eu uso que, apesar de antigo, é bom e barato - se você comprar em promoção)
+- [FL Studio](https://www.image-line.com/) (DAW fantástica pra compor e mixar música - tem uma versão grátis bem generosa)
+- VEGAS Movie Studio 13 Platinum (editor de vídeo que eu uso que, apesar de antigo, é bom e barato - parece que não está mais disponível para compra)
 
 ## Contato
 
 Eu nunca tô ocupado demais pra conversar então vem falar comigo ;w;
 
 - Discord: Fupi#4400
-- Mande DM no Twitter: @fupibr
+- Mande DM no Twitter: [@fupibr](https://twitter.com/fupibr)
 - Email: fupicat (arroba) gmail (ponto) com

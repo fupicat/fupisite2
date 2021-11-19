@@ -25,8 +25,8 @@ html {
 
 .dark {
   --theme-main: #4a2344;
-  --theme-btn: #4a2344;
-  --theme-hov: #523c62;
+  --theme-btn: #5b396a;
+  --theme-hov: #684d7b;
   --theme-nav: #2B122D;
   --theme-panel: #352242;
   --theme-title: #9B66C1;
@@ -43,7 +43,7 @@ html {
 
 .dark .jogos {
   --theme-main: #1d3d4d;
-  --theme-btn: #132f4f;
+  --theme-btn: #254466;
   --theme-hov: #335880;
   --theme-nav: #0c1d31;
   --theme-panel: #152a42;
@@ -61,7 +61,7 @@ html {
 
 .dark .musica {
   --theme-main: #2d4421;
-  --theme-btn: #234d17;
+  --theme-btn: #2b591e;
   --theme-hov: #356a22;
   --theme-nav: #1b280e;
   --theme-panel: #213516;
@@ -71,7 +71,7 @@ html {
 .videos {
   --theme-main: #df9332;
   --theme-btn: #e87f33;
-  --theme-hov: #c66b28;
+  --theme-hov: #f2933f;
   --theme-nav: #ac4b11;
   --theme-panel: #f0ca81;
   --theme-title: #976c1a;
@@ -80,7 +80,7 @@ html {
 .dark .videos {
   --theme-main: #463115;
   --theme-btn: #6a3a17;
-  --theme-hov: #572908;
+  --theme-hov: #8a4f25;
   --theme-nav: #2f1405;
   --theme-panel: #312715;
   --theme-title: #e8c178;
@@ -97,7 +97,7 @@ html {
 
 .dark .ferramentas {
   --theme-main: #512424;
-  --theme-btn: #792222;
+  --theme-btn: #842d2d;
   --theme-hov: #a83439;
   --theme-nav: #461419;
   --theme-panel: #4d1f1f;
@@ -120,8 +120,13 @@ body {
   color: var(--purple-textdark);
 }
 
-p a {
+a {
   text-decoration: underline;
+  transition: 100ms color;
+}
+
+a:hover {
+  color: var(--purple-hov);
 }
 
 /* Faz o footer grudar no fim da janela */
@@ -167,6 +172,7 @@ html, body, #__nuxt, #__layout, #app .filler {
 /* Botão */
 
 .fupi-btn {
+  text-decoration: none;
   transition-property: box-shadow, background-color;
   transition-timing-function: var(--trans-smooth);
   transition-duration: 150ms;
@@ -179,6 +185,7 @@ html, body, #__nuxt, #__layout, #app .filler {
 .fupi-btn:hover {
   box-shadow: inset 0em -0.6em rgba(0, 0, 0, 0.15);
   background-color: var(--theme-hov);
+  color: white;
 }
 
 .fupi-btn:disabled {

@@ -18,19 +18,6 @@
   text-align: justify;
 }
 
-.blog .nuxt-content a {
-  color: var(--purple-nav);
-  text-decoration: none;
-}
-
-.blog .nuxt-content a:hover {
-  text-decoration: underline;
-}
-
-.dark .blog .nuxt-content a {
-  color: var(--purple-hov);
-}
-
 .blog .nuxt-content h1 {
   display: block;
   font-size: 2em;

@@ -10,6 +10,8 @@ export default {
 
 <style scoped>
 .tag {
+  color: white;
+  text-decoration: none;
   display: inline-block;
   padding: 0.25rem 0.5rem;
   border-radius: 0.4rem;
@@ -19,6 +21,7 @@ export default {
 }
 
 .tag:hover {
+  color: white;
   background-color: var(--theme-hov);
 }
 </style>

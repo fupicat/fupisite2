@@ -16,6 +16,7 @@ import PageHeader from "~/components/PageHeader.vue";
 import Container from '~/components/Container.vue';
 import ProjectInfo from '~/components/project/ProjectInfo.vue';
 import VidYt from "~/components/blog/VidYt.vue";
+import SobreMim from "~/components/unique/SobreMim.vue";
 
 export default {
   components: {
@@ -23,6 +24,7 @@ export default {
     Container,
     ProjectInfo,
     VidYt,
+    SobreMim,
   },
   props: {
     document: Object,
@@ -48,13 +50,5 @@ export default {
 </script>
 
 <style>
-.scratch {
-  height: 367px;
-}
 
-@media (min-width: 768px) {
-  .scratch {
-    height: 416px;
-  }
-}
 </style>

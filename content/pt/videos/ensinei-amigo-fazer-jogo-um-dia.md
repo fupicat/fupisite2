@@ -15,4 +15,4 @@ links:
     link: https://github.com/Fupicat/jogo-foda
 nfe: true
 ---
-<iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/XksZfQ_za5E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<vid-yt url="https://youtu.be/XksZfQ_za5E"></vid-yt>

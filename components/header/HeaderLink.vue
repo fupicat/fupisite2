@@ -13,6 +13,7 @@ export default {
 
 <style>
 .header-link {
+  text-decoration: none;
   display: block;
   text-align: center;
   color: white;
@@ -24,6 +25,7 @@ export default {
 }
 
 .header-link:hover {
+  color: white;
   background-color: var(--purple-hov);
 }
 

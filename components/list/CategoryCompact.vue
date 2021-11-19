@@ -27,7 +27,7 @@ export default {
   props: {
     cat: String,
     title: String,
-    posts: Object,
+    posts: Array,
   },
   computed: {
     filteredPosts() {
