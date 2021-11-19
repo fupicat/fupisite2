@@ -6,6 +6,10 @@ export default {
     fallback: true,
   },
 
+  router: {
+    base: '/fupisite2/'
+  },
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'fupisite2',
