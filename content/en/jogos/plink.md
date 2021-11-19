@@ -18,4 +18,4 @@ links:
   - text: Scratch
     link: https://scratch.mit.edu/projects/537059256/
 ---
-<iframe src="https://turbowarp.org/537059256/embed?addons=remove-curved-stage-border,pause" width="100%" class="scratch" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen></iframe>
+<scratch url="https://scratch.mit.edu/projects/537059256/"></scratch>

@@ -17,6 +17,7 @@ import Container from '~/components/Container.vue';
 import ProjectInfo from '~/components/project/ProjectInfo.vue';
 import VidYt from "~/components/blog/VidYt.vue";
 import SobreMim from "~/components/unique/SobreMim.vue";
+import Scratch from "~/components/blog/Scratch.vue";
 
 export default {
   components: {
@@ -25,6 +26,7 @@ export default {
     ProjectInfo,
     VidYt,
     SobreMim,
+    Scratch,
   },
   props: {
     document: Object,

@@ -30,6 +30,7 @@ export default {
 .scratch iframe {
   width: 100%;
   max-width: 499px;
-  height: 416px;
+  height: 80vw;
+  max-height: 416px;
 }
 </style>
