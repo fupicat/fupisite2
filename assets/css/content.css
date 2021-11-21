@@ -48,3 +48,38 @@
   padding: 0rem 2rem;
   list-style: outside disc;
 }
+
+.blog .nuxt-content .nuxt-content-highlight {
+  border-radius: 0.3rem;
+  background-color: #1e1e1e;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .blog .nuxt-content .nuxt-content-highlight {
+    width: 80%;
+  }
+}
+
+.blog .nuxt-content .nuxt-content-highlight .filename {
+  padding: 0.6rem 1rem 0rem 1rem;
+  width: 100%;
+  color: #a6a6a6;
+  display: flex;
+  justify-content: end;
+}
+
+.blog .nuxt-content .nuxt-content-highlight pre {
+  padding-top: 0rem;
+  margin-top: 0rem;
+}
+
+.blog .nuxt-content .nuxt-content-highlight pre code, .blog .nuxt-content .nuxt-content-highlight pre code * {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 1rem;
+}
+
+pre[class*="language-"] {
+  background: none !important;
+}

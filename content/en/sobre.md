@@ -3,6 +3,7 @@ title: About
 description: Stuff about me!
 posted: 1637097124640
 updated: 1637097124640
+icon: /img/blog.png
 nocomment: true
 ---
 <sobre-mim></sobre-mim>

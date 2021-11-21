@@ -6,10 +6,6 @@ export default {
     fallback: true,
   },
 
-  router: {
-    base: '/fupisite2/'
-  },
-
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'fupisite2',
@@ -36,6 +32,11 @@ export default {
   content: {
     liveEdit: false,
     fullTextSearchFields: ['title', 'description', 'tags', 'text'],
+    markdown: {
+      prism: {
+        theme: 'prism-themes/themes/prism-vsc-dark-plus.css'
+      }
+    },
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css

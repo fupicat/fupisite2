@@ -1,7 +1,7 @@
 <template>
   <div :class="'category-compact ' + cat">
     <div class="header">
-      <h1>{{ title }}</h1>
+      <div class="title"><img :src="`/img/${cat}.png`" :alt="cat" /><h1>{{ title }}</h1></div>
       <nuxt-link class="fupi-btn" :to="localePath('/' + cat)">{{ $t("mais") }}</nuxt-link>
     </div>
     <thing-list>
@@ -48,11 +48,21 @@ export default {
   justify-content: space-between;
 }
 
-.category-compact .header h1 {
+.category-compact .header .title {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+.category-compact .header .title h1 {
   font-size: 1.625rem;
   text-align: center;
   font-weight: bold;
   color: var(--theme-title);
+}
+
+.category-compact .header .title img {
+  height: 2rem;
 }
 
 .category-compact .header a {

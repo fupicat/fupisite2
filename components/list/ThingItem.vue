@@ -1,7 +1,7 @@
 <template>
   <NuxtLink :to="localePath(`/${path}/${slug}`)" class="thing fupi-btn">
     <div class="main">
-      <img :src="icon ? icon : '/img/Eu.png'" alt="ícone da postagem" class="sticker">
+      <img :src="icon ? icon : '/img/icons/Jigsaw.png'" alt="ícone da postagem" class="sticker">
       <div>
         <p class="title">{{ title }}</p>
         <p class="description">{{ description }}</p>

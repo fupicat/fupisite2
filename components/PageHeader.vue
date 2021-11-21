@@ -2,7 +2,7 @@
   <div>
     <div class="thing-header">
       <div class="main">
-        <img :src="icon ? icon : '/img/blog.png'" alt="ícone da postagem" class="reduced-motion sticker">
+        <img :src="icon ? icon : '/img/icons/Jigsaw.png'" alt="ícone da postagem" class="reduced-motion sticker">
         <div>
           <p class="title">{{ title }}</p>
           <p class="description">{{ description }}</p>
