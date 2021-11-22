@@ -34,7 +34,7 @@ Isso funcionou, mas tem um problema: só funciona com o meu tamanho de tela. Se 
 
 ## A solução
 
-Portanto, um jeito mais elegante e prático de resolver esse problema é usando uma flexbox - uma caixa redimensionável que distribui os elementos dentro dela automaticamente de acordo com o seu tamanho. Eu vou transformar o corpo inteiro do documento em uma flexbox e mudar o seu tamanho para ```100vh``` para que ele ocupe 100% da altura da tela:
+Portanto, um jeito mais elegante e prático de resolver esse problema é usando uma flexbox - uma caixa redimensionável que distribui os elementos dentro dela automaticamente de acordo com o seu próprio tamanho. Eu vou transformar o corpo inteiro do documento em uma flexbox e mudar a sua altura para ```100vh``` para que ele ocupe 100% da altura da tela:
 
 ```css{2-4}[main.css]
 body {
@@ -44,7 +44,7 @@ body {
 }
 ```
 
-Agora é só eu ir nos estilos do elemento ```section``` e mudar o seu tamanho para ```100%```. Isso fará com que a página do site se expanda e tome conta do maior espaço possível na flexbox, respeitando o espaço do cabeçalho e do rodapé:
+Agora é só eu ir nos estilos do elemento ```section``` e mudar a sua altura para ```100%```. Isso fará com que a página do site se expanda e tome conta do maior espaço possível na flexbox, respeitando o espaço do cabeçalho e do rodapé:
 
 ```css{3}[main.css]
 section {
