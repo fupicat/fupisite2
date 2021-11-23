@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/videos", {data:[{posts:[{slug:"ensinei-amigo-fazer-jogo-um-dia",description:"Fizemos Yakuza 2D de tiro, eu acho.",title:"Ensinei meu amigo a fazer um jogo em 1 dia",posted:1619060400000,icon:"\u002Fimg\u002Ficons\u002Fensinando-charis.png",tags:"#dev #charis #godot #jogo",nfe:true}]}],fetch:{},mutations:[]});
