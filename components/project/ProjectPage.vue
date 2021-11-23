@@ -18,6 +18,7 @@ import ProjectInfo from '~/components/project/ProjectInfo.vue';
 import VidYt from "~/components/blog/VidYt.vue";
 import SobreMim from "~/components/unique/SobreMim.vue";
 import Scratch from "~/components/blog/Scratch.vue";
+import Itch from "~/components/blog/Itch.vue";
 
 export default {
   components: {
@@ -27,6 +28,7 @@ export default {
     VidYt,
     SobreMim,
     Scratch,
+    Itch,
   },
   props: {
     document: Object,

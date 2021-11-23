@@ -48,4 +48,6 @@ export default {
   500: "Something went wrong!",
   errorDesc: "Either you mistyped the address, this page doesn't have an English translation, or my code is acting up. If you think this is a mistake, ",
   errorContact: "contact me.",
+
+  showgame: "Click to play",
 }

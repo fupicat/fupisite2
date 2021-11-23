@@ -61,10 +61,6 @@ export default {
   text-align: justify;
 }
 
-.links a {
-  padding: 0.5rem 1rem;
-}
-
 .links div {
   margin-top: 0.5rem;
   display: flex;

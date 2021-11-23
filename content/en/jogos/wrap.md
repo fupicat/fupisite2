@@ -1,7 +1,7 @@
 ---
 title: Wrap
 description: Wrap around the screen and get the star.
-posted: 1637076365500
+posted: 1632970800000
 icon: /img/icons/Wrap.png
 tags: "#platformer #scratch #mobile"
 instructions:

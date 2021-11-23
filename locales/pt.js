@@ -48,4 +48,6 @@ export default {
   500: "Algo deu errado!",
   errorDesc: "Ou você digitou o endereço errado, ou o meu código desistiu de funcionar. Se você suspeita que isso é um erro, ",
   errorContact: "me avise.",
+
+  showgame: "Clique para jogar",
 }

@@ -42,20 +42,21 @@ export default {
   data() {
     return {
       query: "",
+      tempPosts: this.posts,
     }
   },
   computed: {
     filteredPosts() {
       if (!this.$store.state.nfe.nfe) {
-        return this.posts.filter(x => x.nfe !== true);
+        return this.tempPosts.filter(x => x.nfe !== true);
       } else {
-        return this.posts;
+        return this.tempPosts;
       }
     }
   },
   methods: {
     refresh(results) {
-      this.posts = results;
+      this.tempPosts = results;
     },
   },
   mounted() {

@@ -3,7 +3,7 @@ title: Ensinei meu amigo a fazer um jogo em 1 dia
 description: Fizemos Yakuza 2D de tiro, eu acho.
 posted: 1619060400000
 icon: /img/icons/ensinando-charis.png
-tags: "#dev #charis #godot #jogo"
+tags: "#dev #charis #godot #jogo #nfe"
 about:
   - Eu tento ensinar o meu amigo a programar um jogo antes da próxima Ludum Dare! Fizemos Yakuza 2D de tiro, eu acho.
 links:
