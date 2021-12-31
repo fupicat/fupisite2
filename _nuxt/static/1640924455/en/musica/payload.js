@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/en/musica", {data:[{posts:[{slug:"slampe",description:"Synthwave House",title:"Slampe",posted:1616900400000,icon:"\u002Fimg\u002Ficons\u002Fslampe.png",tags:"#house #fun #sampling"}]}],fetch:{},mutations:[]});
