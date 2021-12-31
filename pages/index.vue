@@ -6,7 +6,17 @@
       </div>
       <div class="intro">
         <div class="quotes" @click="nextQuote()">
-          <quote v-for="quote in quotes" :key="quote.text" :text="quote.text" :author="quote.author" :selected="quote.selected"></quote>
+
+          <div @animationend="animationEnd()" :class="`quote${animating ? ' transition' : ''}`">
+            <div class="text"><p class="lq">&ldquo;</p><p class="main">{{ quotes[currQ].text }}</p><p class="rq">&rdquo;</p></div>
+            <p @click.stop class="author">~ <a v-if="quotes[currQ].link" :href="quotes[currQ].link">{{ quotes[currQ].author }}</a><span v-else>{{ quotes[currQ].author }}</span></p>
+          </div>
+
+          <div :class="`quote${animating ? ' transition' : ''}`">
+            <div class="text"><p class="lq">&ldquo;</p><p class="main">{{ quotes[nextQ].text }}</p><p class="rq">&rdquo;</p></div>
+            <p @click.stop class="author">~ <a v-if="quotes[nextQ].link" tabindex="-1" :href="quotes[nextQ].link">{{ quotes[nextQ].author }}</a><span v-else>{{ quotes[nextQ].author }}</span></p>
+          </div>
+
         </div>
       </div>
     </div>
@@ -15,10 +25,9 @@
 
 <script>
 import Container from '~/components/Container.vue'
-import Quote from '~/components/home/Quote.vue'
 
-const quotes = [];
-const addQuote = (text, author) => { quotes.push({ text, author, selected: false }) };
+const allQuotes = [];
+const addQuote = (text, author, nfe = false, link) => { allQuotes.push({ text, author, nfe, link }) };
 function shuffleArray(array) {
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -26,20 +35,31 @@ function shuffleArray(array) {
   }
 }
 
-addQuote("É gostosinho", "<a tabindex='-1' href='#'>Charis</a>");
-addQuote("É gostosinho2", "<a tabindex='-1' href='#'>Charis2</a>");
-addQuote("É gostosinho3", "<a tabindex='-1' href='#'>Charis3</a>");
+addQuote("É gostosinho", "Charis", true, "https://twitter.com/char_alian/");
+addQuote("É gostosinho2", "Charis2");
+addQuote("É gostosinho3", "Charis3");
 
-shuffleArray(quotes);
+shuffleArray(allQuotes);
 
-quotes[0].selected = true;
+const filteredQuotes = allQuotes.filter((x) => !x.nfe);
 
 export default {
-  components: { Container, Quote, },
+  components: { Container, },
   data() {
     return {
-      quotes,
-      currQuote: 0,
+      currQ: 0,
+      nextQ: 1,
+      animating: false,
+    }
+  },
+  computed: {
+    quotes() {
+      this.currQ = 0;
+      this.nextQ = 1;
+      if (this.$store.state.nfe.nfe) {
+        return allQuotes;
+      }
+      return filteredQuotes;
     }
   },
   head() {
@@ -64,19 +84,24 @@ export default {
   },
   methods: {
     nextQuote() {
-      this.quotes[this.currQuote].selected = false;
-      this.currQuote += 1;
-      if (this.currQuote >= this.quotes.length) {
-        this.currQuote = 0;
+      this.animating = true;
+    },
+    animationEnd() {
+      this.animating = false;
+      this.currQ += 1;
+      if (this.currQ >= this.quotes.length) {
+        this.currQ = 0;
       }
-      this.currQuote
-      this.quotes[this.currQuote].selected = true;
+      this.nextQ += 1;
+      if (this.nextQ >= this.quotes.length) {
+        this.nextQ = 0;
+      }
     }
   }
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .main {
   display: flex;
   gap: 0.875rem;
@@ -91,16 +116,86 @@ export default {
 
 .intro {
   width: 100%;
-}
 
-.intro .quotes {
-  position: relative;
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  align-items: center;
-  cursor: default;
-  overflow: hidden;
-  height: 3.5625rem;
+  .quotes {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    cursor: default;
+    overflow: hidden;
+    height: 3.5625rem;
+
+    .quote {
+      width: fit-content;
+      transform: translateY(0%);
+
+      &.transition {
+        animation-duration: 0.6s;
+
+        &:nth-child(1) {
+          animation-name: fadeOut;
+        }
+
+        &:nth-child(2) {
+          animation-name: fadeIn;
+        }
+
+        @keyframes fadeIn {
+          from {
+            transform: translateY(0%);
+            opacity: 0;
+          }
+
+          to {
+            transform: translateY(-100%);
+            opacity: 1;
+          }
+        }
+
+        @keyframes fadeOut {
+          from {
+            transform: translateY(0%);
+            opacity: 1;
+          }
+
+          to {
+            transform: translateY(-100%);
+            opacity: 0;
+          }
+        }
+      }
+
+      .text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        p {
+          font-size: 2.25rem;
+          font-weight: bold;
+          line-height: 100%;
+        }
+
+        .main {
+          font-size: 0.875rem;
+          font-weight: normal;
+          font-style: italic;
+          margin: 0 0.6rem 0 0.6rem;
+          text-align: center;
+        }
+
+        .lq {
+          margin-bottom: -1.5rem;
+        }
+      }
+
+      .author {
+        font-size: 0.875rem;
+        text-align: right;
+        margin-right: 1rem;
+      }
+    }
+  }
 }
 </style>
