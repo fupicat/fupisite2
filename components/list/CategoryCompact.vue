@@ -66,7 +66,11 @@ export default {
 }
 
 .category-compact .header a {
-  padding: 0.3rem 0.6rem;
+  padding-bottom: 0.6rem;
+  font-style: italic;
+  line-height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .category-compact {

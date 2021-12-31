@@ -2,7 +2,7 @@
 title: Uma postagem longa demais sobre a minha participação na Ludum Dare
 description: Postagem antiga, feita em 15/5/2020 quando eu participei da Ludum Dare 46.
 posted: 1589511600000
-icon: /img/HeartyDose.png
+icon: /img/icons/curassaum.png
 tags: "#jam #jogo #ludum-dare #antiga"
 ---
 Olá! Estou fazendo este post para falar como foi minha experiência na Ludum Dare, a maior competição de desenvolvimento de jogos (game jam) da internet. A fase de votação terminou dois dias atrás e estou bem feliz porque consegui fazer um jogo bastante polido em praticamente só um dia!

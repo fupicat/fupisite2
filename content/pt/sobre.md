@@ -3,7 +3,7 @@ title: Sobre
 description: Coisas sobre mim!
 posted: 1637097124640
 updated: 1637097124640
-icon: /img/blog.png
+icon: /img/icons/blog.png
 nocomment: true
 ---
 <sobre-mim></sobre-mim>

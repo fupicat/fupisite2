@@ -2,7 +2,7 @@
 title: Como fazer um rodapé HTML
 description: Como fazer um rodapé que gruda no fim da página do jeito certo!
 posted: 1637437784270
-icon: /img/SiteIcon.png
+icon: /img/icons/site.png
 tags: "#web #dev #tutorial #html #css"
 ---
 ## O problema

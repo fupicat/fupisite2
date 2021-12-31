@@ -2,7 +2,7 @@
 title: How to make an HTML footer
 description: How to make an HTML footer that sticks to the bottom of the window as it should!
 posted: 1637437784270
-icon: /img/SiteIcon.png
+icon: /img/icons/site.png
 tags: "#web #dev #tutorial #html #css"
 ---
 ## The problem

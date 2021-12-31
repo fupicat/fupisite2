@@ -2,7 +2,7 @@
 title: Plink! Demake
 description: Make music with others online!
 posted: 1622516400000
-icon: /img/icons/plink.svg
+icon: /img/icons/plink.png
 tags: "#music #online #scratch #mobile"
 instructions:
   - Click to play a note.

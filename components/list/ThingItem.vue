@@ -1,7 +1,7 @@
 <template>
   <NuxtLink :to="localePath(`/${path}/${slug}`)" class="thing fupi-btn">
     <div class="main">
-      <img :src="icon ? icon : '/img/icons/Jigsaw.png'" alt="ícone da postagem" class="sticker">
+      <img :src="icon ? icon : '/img/icons/Jigsaw.png'" alt="ícone da postagem">
       <div>
         <p class="title">{{ title }}</p>
         <p class="description">{{ description }}</p>
@@ -51,8 +51,15 @@ export default {
   align-items: center;
 }
 
+.thing .main div {
+  width: 100%;
+}
+
 .thing .main img {
-  height: 4rem;
+  height: 6rem;
+  width: 6rem;
+  margin: -1rem;
+  object-fit: contain;
 }
 
 .title {

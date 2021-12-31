@@ -67,7 +67,7 @@
   width: 100%;
   color: #a6a6a6;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .blog .nuxt-content .nuxt-content-highlight pre {

@@ -2,7 +2,7 @@
 title: A way too long post about my Ludum Dare experience
 description: Old post I made in 15/5/2020 when I took part in Ludum Dare 46.
 posted: 1589511600000
-icon: /img/HeartyDose.png
+icon: /img/icons/curassaum.png
 tags: "#jam #game #ludum-dare #old"
 ---
 Hello! I'm writing this post to tell you about my experience at Ludum Dare, the biggest game jam on the internet. The voting phase ended two days ago and I am very happy because I managed to make a very polished game in practically just one day!

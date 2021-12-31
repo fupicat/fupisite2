@@ -1,6 +1,6 @@
 <template>
   <div :class="category">
-    <page-header :icon="`/img/${category}.png`" :title="$t(category)" :description="$t(`${category}Desc`)" />
+    <page-header :icon="`/img/icons/${category}.png`" :title="$t(category)" :description="$t(`${category}Desc`)" />
     <container>
       <search :query="query" :type="category" @SearchChanged="refresh" />
     </container>

@@ -2,7 +2,7 @@
   <div>
     <div class="thing-header">
       <div class="main">
-        <img :src="icon ? icon : '/img/icons/Jigsaw.png'" alt="ícone da postagem" class="reduced-motion sticker">
+        <img :src="icon ? icon : '/img/icons/Jigsaw.png'" alt="ícone da postagem" class="reduced-motion">
         <div>
           <p class="title">{{ title }}</p>
           <p class="description">{{ description }}</p>
@@ -56,7 +56,10 @@ export default {
   transition-timing-function: var(--trans-smooth);
   transition-duration: 200ms;
 
-  height: 4rem;
+  height: 6rem;
+  width: 6rem;
+  margin: -1rem;
+  object-fit: contain;
 }
 
 .thing-header .main img:hover {

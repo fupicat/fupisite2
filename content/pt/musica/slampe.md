@@ -2,7 +2,7 @@
 title: Slampe
 description: Synthwave House
 posted: 1616900400000
-icon: /img/icons/slampe.svg
+icon: /img/icons/slampe.png
 tags: "#house #divertida #sampling"
 about:
   - Uma música feita de samples de outras músicas minhas! Ficou como se fosse uma fusão entre música synthwave e house.
