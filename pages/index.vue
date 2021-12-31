@@ -18,6 +18,28 @@
           </div>
 
         </div>
+        <div class="welcome">
+          <img class="fupihey" src="/img/FupiHey.png" alt="Avatar do Fupi" title="oi" />
+          <img class="seta" src="/img/SetaLoka.png" alt="Seta apontando para o Fupi" />
+          <div class="info">
+            <h1>Olá! Eu sou o Fupi!</h1>
+            <p>Neste site você verá as coisas que eu faço!<br>Entre elas:</p>
+            <div class="cats">
+              <NuxtLink to="/jogos">
+                <img class="reduced-motion" src="/img/icons/jogos.png" alt="Jogos">
+                <h1>Jogos</h1>
+              </NuxtLink>
+              <NuxtLink to="/musica">
+                <img class="reduced-motion" src="/img/icons/musica.png" alt="Música">
+                <h1>Música</h1>
+              </NuxtLink>
+              <NuxtLink to="/musica">
+                <img class="reduced-motion" src="/img/icons/videos.png" alt="Vídeos">
+                <h1>Vídeos</h1>
+              </NuxtLink>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </container>
@@ -36,8 +58,8 @@ function shuffleArray(array) {
 }
 
 addQuote("É gostosinho", "Charis", true, "https://twitter.com/char_alian/");
-addQuote("É gostosinho2", "Charis2");
-addQuote("É gostosinho3", "Charis3");
+addQuote(":d", "Fupi");
+addQuote(":v", "Fupi");
 
 shuffleArray(allQuotes);
 
@@ -106,96 +128,197 @@ export default {
   display: flex;
   gap: 0.875rem;
   margin: 2.625rem 0;
-}
 
-.featured {
-  background: var(--theme-main);
-  border-radius: 10px;
-  width: 100%;
-}
+  @media (max-width: 1024px) {
+    flex-direction: column-reverse;
+  }
 
-.intro {
-  width: 100%;
-
-  .quotes {
-    display: flex;
+  .featured {
+    background: var(--theme-main);
+    border-radius: 10px;
     width: 100%;
-    flex-direction: column;
-    align-items: center;
-    cursor: default;
-    overflow: hidden;
-    height: 3.5625rem;
 
-    .quote {
-      width: fit-content;
-      transform: translateY(0%);
+    @media (max-width: 1024px) {
+      height: 50vw;
+    }
+  }
 
-      &.transition {
-        animation-duration: 0.6s;
+  .intro {
+    width: 100%;
 
-        &:nth-child(1) {
-          animation-name: fadeOut;
+    .quotes {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      cursor: default;
+      overflow: hidden;
+      height: 3.5625rem;
+
+      .quote {
+        width: fit-content;
+        transform: translateY(0%);
+
+        &.transition {
+          animation-duration: 0.6s;
+
+          &:nth-child(1) {
+            animation-name: fadeOut;
+          }
+
+          &:nth-child(2) {
+            animation-name: fadeIn;
+          }
+
+          @keyframes fadeIn {
+            from {
+              transform: translateY(0%);
+              opacity: 0;
+            }
+
+            to {
+              transform: translateY(-100%);
+              opacity: 1;
+            }
+          }
+
+          @keyframes fadeOut {
+            from {
+              transform: translateY(0%);
+              opacity: 1;
+            }
+
+            to {
+              transform: translateY(-100%);
+              opacity: 0;
+            }
+          }
         }
 
-        &:nth-child(2) {
-          animation-name: fadeIn;
+        .text {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          p {
+            font-size: 2.25rem;
+            font-weight: bold;
+            line-height: 100%;
+          }
+
+          .main {
+            font-size: 0.875rem;
+            font-weight: normal;
+            font-style: italic;
+            margin: 0 0.6rem 0 0.6rem;
+            text-align: center;
+          }
+
+          .lq {
+            margin-bottom: -1.5rem;
+          }
         }
 
-        @keyframes fadeIn {
-          from {
-            transform: translateY(0%);
-            opacity: 0;
-          }
-
-          to {
-            transform: translateY(-100%);
-            opacity: 1;
-          }
-        }
-
-        @keyframes fadeOut {
-          from {
-            transform: translateY(0%);
-            opacity: 1;
-          }
-
-          to {
-            transform: translateY(-100%);
-            opacity: 0;
-          }
+        .author {
+          font-size: 0.875rem;
+          text-align: right;
+          margin-right: 1rem;
         }
       }
+    }
 
-      .text {
+    .welcome {
+      background: #FFFFFF;
+      box-shadow: inset 0px 9.6px 0px rgba(0, 0, 0, 0.05);
+      border-radius: 10px;
+
+      padding: 2.1875rem 1.6875rem 0 6rem;
+      margin-left: 3.6563rem;
+      margin-top: 1.2rem;
+      margin-bottom: 4rem;
+      position: relative;
+
+      .fupihey {
+        left: -3.9rem;
+        top: 2.5625rem;
+        position: absolute;
+        width: 9.4375rem;
+        height: 8.25rem;
+      }
+
+      .seta {
+        left: 3.1563rem;
+        top: -0.5437rem;
+        position: absolute;
+        width: 8.125rem;
+        height: 3.6875rem;
+      }
+
+      .info {
         display: flex;
-        align-items: center;
-        justify-content: center;
+        flex-direction: column;
+        gap: 0.3125rem;
+        
+        h1 {
+          text-shadow: 0px 0px 5px rgb(255, 255, 255);
+          font-weight: bold;
+          font-size: 20px;
+          line-height: 23px;
+          text-align: center;
+          z-index: 1;
+        }
 
         p {
-          font-size: 2.25rem;
-          font-weight: bold;
-          line-height: 100%;
-        }
-
-        .main {
-          font-size: 0.875rem;
-          font-weight: normal;
           font-style: italic;
-          margin: 0 0.6rem 0 0.6rem;
+          font-size: 16px;
+          line-height: 18px;
           text-align: center;
+          z-index: 1;
         }
 
-        .lq {
-          margin-bottom: -1.5rem;
-        }
-      }
+        .cats {
+          margin-bottom: -3.125rem;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: 0.5rem;
 
-      .author {
-        font-size: 0.875rem;
-        text-align: right;
-        margin-right: 1rem;
+          a {
+            text-decoration: none;
+            color: black;
+
+            &:hover {
+              img {
+                transform: rotate(6deg) scale(110%);
+              }
+            }
+
+            img {
+              min-width: 4.1563rem;
+              max-width: 7.625rem;
+              width: 100%;
+              position: relative;
+
+              transition-property: transform;
+              transition-timing-function: var(--trans-smooth);
+              transition-duration: 200ms;
+
+              &:nth-child(3) {
+                width: 8.3125rem;
+                width: 100%;
+              }
+            }
+
+            h1 {
+              text-shadow: none;
+              margin-top: -1rem;
+            }
+          }
+        }
       }
     }
   }
 }
+
+
 </style>
