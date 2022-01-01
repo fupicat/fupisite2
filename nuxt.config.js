@@ -44,12 +44,14 @@ export default {
     '@/assets/css/tailwind-reset.css',
     '@/assets/css/main.css',
     '@/assets/css/content.css',
+    'swiper/css/swiper.css',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     { src: '~/plugins/vssue', mode: 'client' },
     { src: '~/plugins/vuex-persist', ssr: false },
+    { src: '@/plugins/swiper.js', mode: 'client' },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

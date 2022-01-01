@@ -173,9 +173,7 @@ html, body, #__nuxt, #__layout, #app .filler {
 
 .fupi-btn {
   text-decoration: none;
-  transition-property: box-shadow, background-color;
-  transition-timing-function: var(--trans-smooth);
-  transition-duration: 150ms;
+  transition: box-shadow 150ms var(--trans-smooth), background-color 150ms var(--trans-smooth);
   border-radius: 0.4rem;
   box-shadow: inset 0em -0.4em rgba(0, 0, 0, 0.15);
   background-color: var(--theme-btn);

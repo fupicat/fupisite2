@@ -1,8 +1,21 @@
 <template>
   <container>
     <div class="main">
-      <div class="featured">
-
+      <div class="featured" v-swiper="swiperOptions">
+        <div class="swiper-wrapper">
+          <NuxtLink to="/jogos/wrap" class="project swiper-slide" v-for="index in 6" :key="index">
+            <div style="background-image: url('/img/covers/wrap.png')" class="cover"></div>
+            <div class="btn jogos">
+              <img src="/img/icons/Wrap.png" alt="ícone da postagem">
+              <div class="info">
+                <p class="title">Wrap</p>
+                <p class="description">Atravesse os cantos da tela e pegue a estrela.</p>
+              </div>
+            </div>
+          </NuxtLink>
+        </div>
+        <img src="/img/Left.png" class="swiper-button-prev" slot="button-prev">
+        <img src="/img/Right.png" class="swiper-button-next" slot="button-next">
       </div>
       <div class="intro">
         <div class="quotes" @click="nextQuote()">
@@ -33,7 +46,7 @@
                 <img class="reduced-motion" src="/img/icons/musica.png" alt="Música">
                 <h1>Música</h1>
               </NuxtLink>
-              <NuxtLink to="/musica">
+              <NuxtLink to="/videos">
                 <img class="reduced-motion" src="/img/icons/videos.png" alt="Vídeos">
                 <h1>Vídeos</h1>
               </NuxtLink>
@@ -72,6 +85,15 @@ export default {
       currQ: 0,
       nextQ: 1,
       animating: false,
+      swiperOptions: {
+        loop: true,
+        slidesPerView: 'auto',
+        centeredSlides: true,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        }
+      },
     }
   },
   computed: {
@@ -134,12 +156,101 @@ export default {
   }
 
   .featured {
-    background: var(--theme-main);
     border-radius: 10px;
+    overflow: hidden;
     width: 100%;
 
-    @media (max-width: 1024px) {
-      height: 50vw;
+    .swiper-button-prev, .swiper-button-next {
+      object-fit: contain;
+      width: 0.875rem;
+      height: 1.5625rem;
+      top: auto;
+      bottom: 2.4rem;
+      transition: transform 300ms;
+      transform: scale(100%);
+
+      &:hover {
+        transform: scale(120%);
+      }
+    }
+
+    .swiper-button-next {
+      right: 1rem;
+    }
+
+    .swiper-button-prev {
+      left: 1rem;
+    }
+
+    .project {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      max-height: 20rem;
+      text-decoration: none;
+      color: white;
+
+      @media (max-width: 1024px) {
+        height: 60vw;
+      }
+
+      &:hover {
+        .cover {
+          background-size: 110%;
+        }
+
+        .btn {
+          background: var(--theme-hov);
+          box-shadow: inset 0em -0.6em rgba(0, 0, 0, 0.15);
+        }
+      }
+
+      .cover {
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-size: 100%;
+        transition: background-size 300ms var(--trans-smooth);
+      }
+
+      .btn {
+        background: var(--theme-btn);
+        padding: 1.25rem 3.75rem;
+        min-height: 6.25rem;
+        display: flex;
+        gap: 1.25rem;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0 0 10px 10px;
+        box-shadow: inset 0em -0.4em rgba(0, 0, 0, 0.15);
+
+        transition: box-shadow 150ms var(--trans-smooth), background-color 150ms var(--trans-smooth);
+
+        img {
+          height: 6rem;
+          width: 6rem;
+          margin: -1rem;
+          object-fit: contain;
+        }
+
+        .info {
+          width: 100%;
+
+          .title {
+            font-weight: bold;
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+            text-align: center;
+          }
+
+          .description {
+            font-style: italic;
+            font-size: 1rem;
+            line-height: 1.25rem;
+            text-align: center;
+          }
+        }
+      }
     }
   }
 
@@ -279,7 +390,7 @@ export default {
         .cats {
           margin-bottom: -3.125rem;
           display: flex;
-          justify-content: space-between;
+          justify-content: space-around;
           align-items: center;
           gap: 0.5rem;
 
