@@ -3,13 +3,13 @@
     <div class="main">
       <div class="featured" v-swiper="swiperOptions">
         <div class="swiper-wrapper">
-          <NuxtLink to="/jogos/wrap" class="project swiper-slide" v-for="index in 6" :key="index">
-            <div style="background-image: url('/img/covers/wrap.png')" class="cover"></div>
-            <div class="btn jogos">
-              <img src="/img/icons/Wrap.png" alt="ícone da postagem">
+          <NuxtLink :to="localePath(`/${proj.category}/${proj.slug}`)" :class="`project swiper-slide ${proj.category}`" v-for="proj in featured" :key="proj.post.title">
+            <div :style="`background-image: url('/img/covers/${proj.cover}')`" class="cover"></div>
+            <div class="btn">
+              <img :src="proj.post.icon" alt="ícone da postagem">
               <div class="info">
-                <p class="title">Wrap</p>
-                <p class="description">Atravesse os cantos da tela e pegue a estrela.</p>
+                <p class="title">{{ proj.post.title }}</p>
+                <p class="description">{{ proj.post.description }}</p>
               </div>
             </div>
           </NuxtLink>
@@ -61,8 +61,26 @@
 <script>
 import Container from '~/components/Container.vue'
 
-const allQuotes = [];
-const addQuote = (text, author, nfe = false, link) => { allQuotes.push({ text, author, nfe, link }) };
+const allQuotes = {
+  pt: [
+    { text: "É gostosinho", author: "Charis", link: "https://twitter.com/char_alian/", nfe: true },
+    { text: ":d", author: "Fupi" },
+    { text: ":v", author: "Fupi" },
+    { text: "Quantidade > qualidade, para quem está entediado o suficiente.", author: "Fupi" },
+    { text: "QUEM VOCÊ PENSA QUE É??? DILMA ROUSSEFF?????", author: "Fupi de 0 anos", nfe: true },
+    { text: "eu odeio prolapso anal", author: "Charis", link: "https://twitter.com/char_alian/", nfe: true },
+    { text: "nao!!! nao pissa em mim!!", author: "Neon" },
+    { text: "aueguh :V", author: "Charis pós-bufa", link: "https://twitter.com/char_alian/", nfe: true },
+  ],
+  en: [
+    { text: ":d", author: "Fupi" },
+    { text: ":v", author: "Fupi" },
+    { text: "Quantity > quality if you're bored enough", author: "Fupi" },
+    { text: "i hate anal prolapse", author: "Charis", link: "https://twitter.com/char_alian/", nfe: true },
+    { text: "aueguh :V", author: "Charis", link: "https://twitter.com/char_alian/", nfe: true },
+  ]
+}
+
 function shuffleArray(array) {
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -70,13 +88,17 @@ function shuffleArray(array) {
   }
 }
 
-addQuote("É gostosinho", "Charis", true, "https://twitter.com/char_alian/");
-addQuote(":d", "Fupi");
-addQuote(":v", "Fupi");
-
 shuffleArray(allQuotes);
 
-const filteredQuotes = allQuotes.filter((x) => !x.nfe);
+const filteredQuotes = {
+  pt: allQuotes.pt.filter((x) => !x.nfe),
+  en: allQuotes.en.filter((x) => !x.nfe),
+}
+
+const featuredList = [
+  { category: "jogos", slug: "wrap", cover: "wrap.png"},
+  { category: "musica", slug: "slampe", cover: "slampe.png"},
+];
 
 export default {
   components: { Container, },
@@ -92,18 +114,26 @@ export default {
         navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
-        }
+        },
       },
     }
+  },
+  async asyncData({ $content, app }) {
+    let featured = [];
+    for (const i of featuredList) {
+      featured.push({ post: await $content(`${app.i18n.locale}/${i.category}`, i.slug).only(["title", "description", "icon"]).fetch(), cover: i.cover, category: i.category, slug: i.slug, });
+    }
+
+    return { featured }
   },
   computed: {
     quotes() {
       this.currQ = 0;
       this.nextQ = 1;
       if (this.$store.state.nfe.nfe) {
-        return allQuotes;
+        return allQuotes[this.$i18n.locale];
       }
-      return filteredQuotes;
+      return filteredQuotes[this.$i18n.locale];
     }
   },
   head() {
@@ -189,6 +219,7 @@ export default {
       max-height: 20rem;
       text-decoration: none;
       color: white;
+      background: var(--theme-btn);
 
       @media (max-width: 1024px) {
         height: 60vw;
@@ -216,7 +247,6 @@ export default {
       .btn {
         background: var(--theme-btn);
         padding: 1.25rem 3.75rem;
-        min-height: 6.25rem;
         display: flex;
         gap: 1.25rem;
         justify-content: center;
@@ -349,12 +379,25 @@ export default {
       margin-bottom: 4rem;
       position: relative;
 
+      @media (max-width: 768px) {
+        padding: 2.1875rem 1.6875rem 0 1.6875rem;
+        margin-top: 4.6rem;
+        margin-left: 0;
+      }
+
       .fupihey {
         left: -3.9rem;
         top: 2.5625rem;
         position: absolute;
         width: 9.4375rem;
-        height: 8.25rem;
+
+        @media (max-width: 768px) {
+          top: -4.2rem;
+          left: 50%;
+          transform: translateX(-80%);
+
+          width: 7rem;
+        }
       }
 
       .seta {
@@ -362,7 +405,15 @@ export default {
         top: -0.5437rem;
         position: absolute;
         width: 8.125rem;
-        height: 3.6875rem;
+
+        @media (max-width: 768px) {
+          top: -1.2rem;
+          left: 50%;
+          right: 50%;
+          transform: translateX(30%) rotate(30deg);
+          width: 5rem;
+          transform-origin: center;
+        }
       }
 
       .info {
