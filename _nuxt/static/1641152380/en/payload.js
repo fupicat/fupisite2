@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/en", {data:[{featured:[{post:{description:"Wrap around the screen and get the star.",title:"Wrap",icon:"\u002Fimg\u002Ficons\u002FWrap.png"},cover:"wrap.png",category:"jogos",slug:"wrap"},{post:{description:"Synthwave House",title:"Slampe",icon:"\u002Fimg\u002Ficons\u002Fslampe.png"},cover:"slampe.png",category:"musica",slug:"slampe"}]}],fetch:{},mutations:[]});
