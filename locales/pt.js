@@ -1,22 +1,38 @@
 export default {
+
+  // Índice
+
   index: "Início",
   fupiDesc: "Um lugar para todas as minhas coisas! Jogos, música, tech demos e mais!",
   fupiTags: "fupi, fupicat, fupi437, scratch, godot, engine, html5, online, jogos, games, sz, scratcherz, música, royalty-free, domínio público, vídeos",
+  postIcon: "Ícone do projeto",
+  fupiHead: "Cabeça do Fupi",
+  hi: "oi",
+  arrow: "Seta",
+  intro1: "Olá! Eu sou o Fupi!",
+  intro2: "Neste site você verá as coisas que eu faço!",
+  intro3: "Entre elas:",
+
+  // Projetos
 
   projetos: 'Projetos',
   projetosDesc: 'Todas as coisas que eu fiz',
   mais: "Ver mais +",
 
   jogos: 'Jogos',
+  jogosRandom: "Jogos aleatórios",
   jogosDesc: "Coisas para jogar",
 
   musica: "Música",
+  musicaRandom: "Músicas aleatórias",
   musicaDesc: "Coisas para escutar",
 
   videos: "Vídeos",
+  videosRandom: "Vídeos aleatórios",
   videosDesc: "Coisas para assistir",
 
   ferramentas: "Ferramentas",
+  ferramentasRandom: "Ferramentas aleatórias",
   ferramentasDesc: "Coisas para usar",
 
   blog: "Blog",
@@ -28,6 +44,18 @@ export default {
   sobre: "Sobre",
   sobreDesc: "Coisas sobre coisas",
 
+  // Páginas de projeto
+
+  posted: "Postado:",
+  edited: "Editado:",
+  projInstructions: "Instruções",
+  projAbout: "Sobre",
+  projLinks: "Links",
+  accessProject: "Clique para acessar",
+  showgame: "Clique para jogar",
+
+  // Cabeçalho e rodapé
+
   stopPlz: "/img/ParaPfv.png",
 
   theme: "Tema",
@@ -36,18 +64,11 @@ export default {
   nfeOn: "Filtro ativado",
   nfeOff: "Filtro desativado",
 
-  posted: "Postado:",
-  edited: "Editado:",
-  projInstructions: "Instruções",
-  projAbout: "Sobre",
-  projLinks: "Links",
-  accessProject: "Clique para acessar",
+  // Erro
 
   error: "Erro!",
   404: "Essa página não existe!",
   500: "Algo deu errado!",
   errorDesc: "Ou você digitou o endereço errado, ou o meu código desistiu de funcionar. Se você suspeita que isso é um erro, ",
   errorContact: "me avise.",
-
-  showgame: "Clique para jogar",
 }

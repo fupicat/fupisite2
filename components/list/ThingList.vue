@@ -25,11 +25,19 @@ export default {
   .thing-list {
     grid-template-columns: repeat(2, minmax(0, 1fr)); /* 2 column */
   }
+
+  .thing-list :last-child:nth-child(odd) {
+    grid-column: 1 / 3;
+  }
 }
 
 @media (min-width: 1024px) {
   .thing-list {
     grid-template-columns: repeat(3, minmax(0, 1fr)); /* 3 column */
+  }
+
+  .thing-list :last-child:nth-child(odd) {
+    grid-column: unset;
   }
 }
 

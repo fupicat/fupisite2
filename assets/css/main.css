@@ -18,6 +18,9 @@ html {
   --theme-nav: #6E438D;
   --theme-panel: #d189db;
   --theme-title: #6E438D;
+
+  --theme-whitebox: #ffffff;
+  --theme-text: black;
   
   --trans-smooth: cubic-bezier(0.4, 0, 0.2, 1);
   --trans-out: cubic-bezier(0, 0, 0.2, 1);
@@ -30,6 +33,9 @@ html {
   --theme-nav: #2B122D;
   --theme-panel: #352242;
   --theme-title: #9B66C1;
+
+  --theme-whitebox: #302f31;
+  --theme-text: #e3dee8;
 }
 
 .jogos {

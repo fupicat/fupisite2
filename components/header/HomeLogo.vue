@@ -1,6 +1,6 @@
 <template>
   <div id="home-logo" @mouseover="logoHover(true)" @mouseout="logoHover(false)">
-    <nuxt-link to="/" class="home-link">
+    <nuxt-link :to="localePath('/')" class="home-link">
       <img src="~/assets/img/LogoSmallNoButtons.svg" alt="Fupi logo" class="small-logo no-buttons reduced-motion">
       <img src="~/assets/img/LogoSmall.svg" alt="Fupi logo" class="small-logo buttons reduced-motion">
       <img src="~/assets/img/Logo.svg" alt="Fupi logo" class="big-logo reduced-motion">

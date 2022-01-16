@@ -3,7 +3,7 @@ title: SpinPlan
 description: Gire o planeta e colete almôndegas, não deixe o Eggo quebrar!
 posted: 1619406000000
 icon: /img/icons/spinplan.png
-tags: "#labirinto #godot #jam #ludum-dare"
+tags: "#labirinto #godot #jam #ludum-dare #mobile"
 warning: Por enquanto, esse jogo só está disponível em inglês.
 instructions:
   - Clique na tela para começar o jogo e passar as páginas de história.

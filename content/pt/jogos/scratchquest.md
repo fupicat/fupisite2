@@ -14,6 +14,7 @@ about:
   - Jogo feito para uma gamejam do youtuber Amdré Young chamada EvolutronRemake.
   - O motivo da jam é que ele fez um jogo ruim no Scratch, e aí a gente precisava fazer um jogo pra jam baseada no jogo dele.
   - Tudo que o jogo precisava era ter tema de evolução, então eu fiz um jogo baseado na ideia do Scratch evoluindo matando Game Engines.
+  - Apareceu no <a href="https://youtu.be/Ywb0Hyc5Jy0?t=815">vídeo do Amdré Young</a>! :00
 links:
   - text: Game Jolt
     link: https://gamejolt.com/games/scratchquest/512290

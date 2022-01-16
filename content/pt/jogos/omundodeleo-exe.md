@@ -3,7 +3,7 @@ title: OMundoDeLeo.exe
 description: Encontrei o Leo.exe às 3 da manhã (trollagem)
 posted: 1604977200000
 icon: /img/icons/leoexe.png
-tags: "#terror #história #jam #baze #scratch #nfe"
+tags: "#terror #história #jam #baze-jam #scratch #nfe"
 instructions:
   - SETAS para andar e pular (isso é importante)
   - Encontre todas as Pizzas da Memória para desbloquear todos os finais!
@@ -15,7 +15,7 @@ about:
 links:
   - text: Scratch
     link: https://scratch.mit.edu/projects/445122742/
-  - text: Estúdio da Jam
+  - text: "[B]aze Jam"
     link: https://scratch.mit.edu/studios/27525940/
 nfe: true
 ---

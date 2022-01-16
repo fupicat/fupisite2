@@ -5,7 +5,7 @@
       <p>{{ document.warning }}</p>
     </div>
     <div class="main">
-      <div v-if="document.instructions" class="instructions">
+      <div v-if="document.instructions" class="panel instructions">
         <h1><i class="fas fa-question-circle fa-sm"></i> {{ $t("projInstructions") }}</h1>
         <ul class="fa-ul">
           <li v-for="inst in document.instructions" :key="inst">
@@ -13,9 +13,11 @@
           </li>
         </ul>
       </div>
-      <div v-if="document.about" class="about">
+      <div v-if="document.about" class="panel about">
         <h1><i class="fas fa-info-circle fa-sm"></i> {{ $t("projAbout") }}</h1>
-        <p v-for="line in document.about" :key="line">{{ line }}</p>
+        <div>
+          <p v-for="line in document.about" :key="line" v-html="line"></p>
+        </div>
       </div>
     </div>
     <div v-if="document.links" class="links">
@@ -35,11 +37,11 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .project-info h1 {
   font-size: 1.625rem;
   text-align: center;
-  margin-top: -0.3rem;
+  margin: 0rem 0rem 0.2rem 0rem;
   font-weight: bold;
   color: var(--theme-title);
 }
@@ -50,15 +52,33 @@ export default {
   justify-content: center;
 }
 
-.instructions li {
-  margin-bottom: 1rem;
-  text-align: justify;
+.instructions {
+  ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    li {
+      margin-bottom: 1rem;
+      text-align: justify;
+    }
+  }
 }
 
-.about p {
-  text-indent: 1.6rem;
-  margin-bottom: 1rem;
-  text-align: justify;
+.about {
+  div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    p {
+      text-indent: 1.6rem;
+      margin-bottom: 1rem;
+      text-align: justify;
+    }
+  }
 }
 
 .links div {
@@ -105,14 +125,14 @@ export default {
   }
 }
 
-.project-info .main div, .warning {
+.project-info .main .panel, .warning {
   width: 100%;
   padding: 0.625rem 1rem;
   border-radius: 0.625rem;
   box-shadow: inset 0em 0.4em rgba(0, 0, 0, 0.15);
 }
 
-.project-info .main div {
+.project-info .main .panel {
   background-color: var(--theme-panel);
 }
 </style>

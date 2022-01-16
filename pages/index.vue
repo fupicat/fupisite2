@@ -6,7 +6,7 @@
           <NuxtLink :to="localePath(`/${proj.category}/${proj.slug}`)" :class="`project swiper-slide ${proj.category}`" v-for="proj in featured" :key="proj.post.title">
             <div :style="`background-image: url('/img/covers/${proj.cover}')`" class="cover"></div>
             <div class="btn">
-              <img :src="proj.post.icon" alt="ícone da postagem">
+              <img :src="proj.post.icon" :alt="$t('postIcon')">
               <div class="info">
                 <p class="title">{{ proj.post.title }}</p>
                 <p class="description">{{ proj.post.description }}</p>
@@ -14,52 +14,80 @@
             </div>
           </NuxtLink>
         </div>
-        <img src="/img/Left.png" class="swiper-button-prev" slot="button-prev">
-        <img src="/img/Right.png" class="swiper-button-next" slot="button-next">
+        <img src="/img/Left.png" class="swiper-button-prev" slot="button-prev" :style="`bottom: ${swiperBottom}px`">
+        <img src="/img/Right.png" class="swiper-button-next" slot="button-next" :style="`bottom: ${swiperBottom}px`">
       </div>
       <div class="intro">
-        <div class="quotes" @click="nextQuote()">
+        <client-only>
+          <div class="quotes" @click="nextQuote()">
 
-          <div @animationend="animationEnd()" :class="`quote${animating ? ' transition' : ''}`">
-            <div class="text"><p class="lq">&ldquo;</p><p class="main">{{ quotes[currQ].text }}</p><p class="rq">&rdquo;</p></div>
-            <p @click.stop class="author">~ <a v-if="quotes[currQ].link" :href="quotes[currQ].link">{{ quotes[currQ].author }}</a><span v-else>{{ quotes[currQ].author }}</span></p>
+            <div @animationend="animationEnd()" :class="`quote${animating ? ' transition' : ''}`">
+              <div class="text"><p class="lq">&ldquo;</p><p class="main">{{ quotes[currQ].text }}</p><p class="rq">&rdquo;</p></div>
+              <p @click.stop class="author">~ <a v-if="quotes[currQ].link" :href="quotes[currQ].link">{{ quotes[currQ].author }}</a><span v-else>{{ quotes[currQ].author }}</span></p>
+            </div>
+
+            <div :class="`quote${animating ? ' transition' : ''}`">
+              <div class="text"><p class="lq">&ldquo;</p><p class="main">{{ quotes[nextQ].text }}</p><p class="rq">&rdquo;</p></div>
+              <p @click.stop class="author">~ <a v-if="quotes[nextQ].link" tabindex="-1" :href="quotes[nextQ].link">{{ quotes[nextQ].author }}</a><span v-else>{{ quotes[nextQ].author }}</span></p>
+            </div>
+
           </div>
-
-          <div :class="`quote${animating ? ' transition' : ''}`">
-            <div class="text"><p class="lq">&ldquo;</p><p class="main">{{ quotes[nextQ].text }}</p><p class="rq">&rdquo;</p></div>
-            <p @click.stop class="author">~ <a v-if="quotes[nextQ].link" tabindex="-1" :href="quotes[nextQ].link">{{ quotes[nextQ].author }}</a><span v-else>{{ quotes[nextQ].author }}</span></p>
-          </div>
-
-        </div>
+        </client-only>
         <div class="welcome">
-          <img class="fupihey" src="/img/FupiHey.png" alt="Avatar do Fupi" title="oi" />
-          <img class="seta" src="/img/SetaLoka.png" alt="Seta apontando para o Fupi" />
+          <img class="fupihey" src="/img/FupiHey.png" :alt="$t('fupiHead')" :title="$t('hi')" />
+          <img class="seta" src="/img/SetaLoka.png" :alt="$t('arrow')" />
           <div class="info">
-            <h1>Olá! Eu sou o Fupi!</h1>
-            <p>Neste site você verá as coisas que eu faço!<br>Entre elas:</p>
+            <h1>{{ $t("intro1") }}</h1>
+            <p>{{ $t("intro2") }}<br>{{ $t("intro3") }}</p>
             <div class="cats">
-              <NuxtLink to="/jogos">
-                <img class="reduced-motion" src="/img/icons/jogos.png" alt="Jogos">
-                <h1>Jogos</h1>
+              <NuxtLink :to="localePath('/jogos')">
+                <img class="reduced-motion" src="/img/icons/jogos.png" :alt="$t('jogos')">
+                <h1>{{ $t("jogos") }}</h1>
               </NuxtLink>
-              <NuxtLink to="/musica">
-                <img class="reduced-motion" src="/img/icons/musica.png" alt="Música">
-                <h1>Música</h1>
+              <NuxtLink :to="localePath('/musica')">
+                <img class="reduced-motion" src="/img/icons/musica.png" :alt="$t('musica')">
+                <h1>{{ $t("musica") }}</h1>
               </NuxtLink>
-              <NuxtLink to="/videos">
-                <img class="reduced-motion" src="/img/icons/videos.png" alt="Vídeos">
-                <h1>Vídeos</h1>
+              <NuxtLink :to="localePath('/videos')">
+                <img class="reduced-motion" src="/img/icons/videos.png" :alt="$t('videos')">
+                <h1>{{ $t("videos") }}</h1>
               </NuxtLink>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <div class="categories">
+      <category-compact
+        :title="$t('jogosRandom')"
+        cat="jogos"
+        :posts="random.jogos"
+        :postsSafe="randomSafe.jogos"
+      />
+      <category-compact
+        :title="$t('musicaRandom')"
+        cat="musica"
+        :posts="random.musica"
+        :postsSafe="randomSafe.musica"
+      />
+      <category-compact
+        :title="$t('videosRandom')"
+        cat="videos"
+        :posts="random.videos"
+        :postsSafe="randomSafe.videos"
+      />
+    </div>
   </container>
 </template>
 
 <script>
 import Container from '~/components/Container.vue'
+import CategoryCompact from '~/components/list/CategoryCompact.vue';
+
+const featuredList = [
+  { category: "jogos", slug: "wrap", cover: "wrap.png"},
+  { category: "musica", slug: "slampe", cover: "slampe.png"},
+];
 
 const allQuotes = {
   pt: [
@@ -71,6 +99,10 @@ const allQuotes = {
     { text: "eu odeio prolapso anal", author: "Charis", link: "https://twitter.com/char_alian/", nfe: true },
     { text: "nao!!! nao pissa em mim!!", author: "Neon" },
     { text: "aueguh :V", author: "Charis pós-bufa", link: "https://twitter.com/char_alian/", nfe: true },
+    { text: "Toda a vida nesse planeta morreu...", author: "God Complex", link: "/jogos/god-complex" },
+    { text: "Por gentileza, dirija-se as fezes.", author: "PN_Scratching", link: "https://scratch.mit.edu/users/PN_Scratching/" },
+
+    { text: "Sabia que você pode enviar suas próprias frases para aparecer aqui? :O", author: "Contate-me!", link: "/sobre#contato"}
   ],
   en: [
     { text: ":d", author: "Fupi" },
@@ -78,53 +110,113 @@ const allQuotes = {
     { text: "Quantity > quality if you're bored enough", author: "Fupi" },
     { text: "i hate anal prolapse", author: "Charis", link: "https://twitter.com/char_alian/", nfe: true },
     { text: "aueguh :V", author: "Charis", link: "https://twitter.com/char_alian/", nfe: true },
+    { text: "All life has died in this planet...", author: "God Complex", link: "/en/jogos/god-complex"},
+
+    { text: "Did you know you can submit your own quotes for this page? :O", author: "Contact me!", link: "/en/sobre#contato"}
   ]
 }
 
-function shuffleArray(array) {
+function shuffleArray(arr) {
+  let array = arr;
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [array[i], array[j]] = [array[j], array[i]];
   }
+  return array;
 }
 
-shuffleArray(allQuotes);
+// Shuffle all quotes
+for (const i in allQuotes) {
+  if (Object.hasOwnProperty.call(allQuotes, i)) {
+    allQuotes[i] = shuffleArray(allQuotes[i]);
+  }
+}
 
 const filteredQuotes = {
   pt: allQuotes.pt.filter((x) => !x.nfe),
   en: allQuotes.en.filter((x) => !x.nfe),
 }
 
-const featuredList = [
-  { category: "jogos", slug: "wrap", cover: "wrap.png"},
-  { category: "musica", slug: "slampe", cover: "slampe.png"},
-];
-
 export default {
-  components: { Container, },
+  components: { Container, CategoryCompact, },
   data() {
+    const vue = this;
     return {
       currQ: 0,
       nextQ: 1,
       animating: false,
+      swiperBottom: 0,
       swiperOptions: {
-        loop: true,
         slidesPerView: 'auto',
         centeredSlides: true,
         navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
         },
+        on: {
+          init() {
+            vue.swiperBottom = this.slides[this.activeIndex].querySelector(".btn").clientHeight / 2;
+          },
+          slideChangeTransitionStart() {
+            vue.swiperBottom = this.slides[this.activeIndex].querySelector(".btn").clientHeight / 2;
+          }
+        }
       },
     }
   },
-  async asyncData({ $content, app }) {
+  async asyncData({ $content, store, app }) {
     let featured = [];
-    for (const i of featuredList) {
-      featured.push({ post: await $content(`${app.i18n.locale}/${i.category}`, i.slug).only(["title", "description", "icon"]).fetch(), cover: i.cover, category: i.category, slug: i.slug, });
-    }
 
-    return { featured }
+    let random = {
+      jogos: [],
+      musica: [],
+      videos: [],
+    };
+
+    let randomSafe = {
+      jogos: [],
+      musica: [],
+      videos: [],
+    };
+
+    try {
+      // Get featured projects
+      for (const i of featuredList) {
+        featured.push({ post: await $content(`${app.i18n.locale}/${i.category}`, i.slug).only(["title", "description", "icon"]).fetch(), cover: i.cover, category: i.category, slug: i.slug, });
+      }
+
+      // Get random projects
+      for (let cat in random) {
+        let posts = await $content(`${app.i18n.locale}/${cat}`)
+          .only(['title', 'description', 'slug', 'icon', 'tags', 'posted', 'nfe'])
+          .fetch();
+        let postsSafe = posts.filter(x => !x.nfe);
+
+        const clamp = (val, min, max) => {
+          return val > max ? max : val < min ? min : val;
+        }
+
+        for (let i = 0; i < clamp(postsSafe.length, 0, 3); i++) {
+          // Get random post
+          let rand = Math.floor(Math.random()*posts.length);
+          random[cat].push(posts[rand]);
+          posts.splice(rand, 1);
+          console.log(random[cat][i]);
+
+          // Get random safe post
+          rand = Math.floor(Math.random()*postsSafe.length);
+          randomSafe[cat].push(postsSafe[rand]);
+          postsSafe.splice(rand, 1);
+          console.log(randomSafe[cat][i]);
+        }
+      }
+    } finally {
+      return {
+        featured,
+        random,
+        randomSafe,
+      }
+    }
   },
   computed: {
     quotes() {
@@ -134,7 +226,7 @@ export default {
         return allQuotes[this.$i18n.locale];
       }
       return filteredQuotes[this.$i18n.locale];
-    }
+    },
   },
   head() {
     const titles = ["Fupi", "Fupi!!", "Fupi :v", "Fupi ._.", "xX-_fUpI_-Xx", "fupi"];
@@ -195,12 +287,11 @@ export default {
       width: 0.875rem;
       height: 1.5625rem;
       top: auto;
-      bottom: 2.4rem;
-      transition: transform 300ms;
-      transform: scale(100%);
+      transition: transform 300ms, bottom 300ms;
+      transform: translateY(50%) scale(100%);
 
       &:hover {
-        transform: scale(120%);
+        transform: translateY(50%) scale(120%);
       }
     }
 
@@ -369,7 +460,7 @@ export default {
     }
 
     .welcome {
-      background: #FFFFFF;
+      background: var(--theme-whitebox);
       box-shadow: inset 0px 9.6px 0px rgba(0, 0, 0, 0.05);
       border-radius: 10px;
 
@@ -422,7 +513,6 @@ export default {
         gap: 0.3125rem;
         
         h1 {
-          text-shadow: 0px 0px 5px rgb(255, 255, 255);
           font-weight: bold;
           font-size: 20px;
           line-height: 23px;
@@ -447,7 +537,7 @@ export default {
 
           a {
             text-decoration: none;
-            color: black;
+            color: var(--theme-text);
 
             &:hover {
               img {
@@ -482,5 +572,10 @@ export default {
   }
 }
 
-
+.categories {
+  margin-bottom: 2.625rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
 </style>

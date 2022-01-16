@@ -3,7 +3,7 @@ title: SpinPlan
 description: Spin the planet and collect meatballs, don't let the Eggo break!
 posted: 1619406000000
 icon: /img/icons/spinplan.png
-tags: "#maze #godot #jam #ludum-dare"
+tags: "#maze #godot #jam #ludum-dare #mobile"
 instructions:
   - Click anywhere to start the game and skip through the story.
   - Use the left and right arrow keys to rotate the planet.

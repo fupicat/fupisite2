@@ -28,11 +28,12 @@ export default {
     cat: String,
     title: String,
     posts: Array,
+    postsSafe: Array,
   },
   computed: {
     filteredPosts() {
       if (!this.$store.state.nfe.nfe) {
-        return this.posts.filter(x => x.nfe !== true);
+        return this.postsSafe;
       } else {
         return this.posts;
       }

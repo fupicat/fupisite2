@@ -48,6 +48,8 @@ Se você quer saber os programas e outras *coisas* que eu uso, aqui vai uma list
 - [FL Studio](https://www.image-line.com/) (DAW fantástica pra compor e mixar música - tem uma versão grátis bem generosa)
 - VEGAS Movie Studio 13 Platinum (editor de vídeo que eu uso que, apesar de antigo, é bom e barato - parece que não está mais disponível para compra)
 
+<div id="contato">
+
 ## Contato
 
 Eu nunca tô ocupado demais pra conversar então vem falar comigo ;w;
@@ -55,3 +57,5 @@ Eu nunca tô ocupado demais pra conversar então vem falar comigo ;w;
 - Discord: Fupi#4400
 - Mande DM no Twitter: [@fupibr](https://twitter.com/fupibr)
 - Email: fupicat (arroba) gmail (ponto) com
+
+</div>

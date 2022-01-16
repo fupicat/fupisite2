@@ -48,6 +48,8 @@ If you want to know the programs and other *stuff* I use, here's a little list o
 - [FL Studio](https://www.image-line.com/) (fantastic DAW for composing and mixing music - has a very generous free trial)
 - VEGAS Movie Studio 13 Platinum (my main video editor that, although old, is good and cheap - looks like it's no longer available for purchase)
 
+<div id="contato">
+
 ## Contact
 
 I'm never too busy to chat so come talk to me ;w;
@@ -55,3 +57,5 @@ I'm never too busy to chat so come talk to me ;w;
 - Discord: Fupi#4400
 - DM on Twitter: [@fupibr](https://twitter.com/fupibr)
 - Email: fupicat (at) gmail (dot) com
+
+</div>

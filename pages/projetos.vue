@@ -2,30 +2,39 @@
   <div>
     <page-header :title="$t('projetos')" :description="$t('projetosDesc')" />
     <container pad class="categories">
+      <div v-if="$i18n.locale == 'en'" class="warning">
+        <h1><i class="fas fa-exclamation-triangle fa-sm"></i></h1>
+        <p>{{ $t("fullXp") }}</p>
+      </div>
       <category-compact
-        title="Jogos"
+        :title="$t('jogos')"
         cat="jogos"
         :posts="posts.jogos"
+        :postsSafe="postsSafe.jogos"
       />
       <category-compact
-        title="Música"
+        :title="$t('musica')"
         cat="musica"
         :posts="posts.musica"
+        :postsSafe="postsSafe.musica"
       />
       <category-compact
-        title="Vídeos"
+        :title="$t('videos')"
         cat="videos"
         :posts="posts.videos"
+        :postsSafe="postsSafe.videos"
       />
       <category-compact
-        title="Ferramentas"
+        :title="$t('ferramentas')"
         cat="ferramentas"
         :posts="posts.ferramentas"
+        :postsSafe="postsSafe.ferramentas"
       />
       <category-compact
-        title="Etc."
+        :title="$t('etc')"
         cat="etc"
         :posts="posts.etc"
+        :postsSafe="postsSafe.etc"
       />
     </container>
   </div>
@@ -38,7 +47,7 @@ import PageHeader from '~/components/PageHeader.vue'
 
 export default {
   components: { Container, PageHeader, CategoryCompact, },
-  async asyncData({ $content, store, app }) {
+  async asyncData({ $content, app }) {
     let posts = {
       jogos: [],
       musica: [],
@@ -46,18 +55,21 @@ export default {
       ferramentas: [],
       etc: [],
     };
+    let postsSafe = {};
     try {
       for (let cat in posts) {
         posts[cat] = await $content(`${app.i18n.locale}/${cat}`)
           .only(['title', 'description', 'slug', 'icon', 'tags', 'posted', 'nfe'])
           .sortBy('posted', 'desc')
-          .limit(6)
           .fetch();
+        postsSafe[cat] = posts[cat].filter(x => !x.nfe);
+        posts[cat] = posts[cat].slice(0, 6);
+        postsSafe[cat] = postsSafe[cat].slice(0, 6);
       }
-      console.log(posts);
     } finally {
       return {
-        posts
+        posts,
+        postsSafe,
       }
     }
   },
@@ -79,10 +91,40 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .categories {
   display: flex;
   flex-direction: column;
   gap: 0.625rem;
+}
+
+.warning {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 0.4rem;
+  background-color: #ea7e65;
+  width: 100%;
+  padding: 0.625rem 1rem;
+  border-radius: 0.625rem;
+  box-shadow: inset 0em 0.4em rgba(0, 0, 0, 0.15);
+
+  h1 {
+    font-size: 1.625rem;
+    text-align: center;
+    margin-top: -0.3rem;
+    font-weight: bold;
+    color: #7b1717;
+  }
+}
+
+.dark .warning {
+  background-color: #8c1919;
+
+  h1 {
+    color: #ea7e65;
+  }
 }
 </style>
