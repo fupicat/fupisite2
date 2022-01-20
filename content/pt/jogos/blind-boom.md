@@ -8,6 +8,7 @@ warning: Jogo APENAS em inglês.
 instructions:
   - CAPS LOCK, ESPAÇO e ENTER fazem diversas ações no jogo.
   - O cara do jogo vai te falar EM INGLÊS o que você tem que fazer.
+  - Se você perder, recarregue a página para tentar de novo.
 about:
   - O jogo foi feito em 3 horas e pode ser muito confuso..
   - Este jogo foi criado para a game jam Trijam, onde eu tinha 3 horas para fazer um jogo.

@@ -128,11 +128,6 @@ body {
 
 a {
   text-decoration: underline;
-  transition: 100ms color;
-}
-
-a:hover {
-  color: var(--purple-hov);
 }
 
 /* Faz o footer grudar no fim da janela */

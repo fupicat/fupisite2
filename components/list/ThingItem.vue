@@ -57,7 +57,7 @@ export default {
 
 .thing .main img {
   height: 6rem;
-  width: 6rem;
+  min-width: 6rem;
   margin: -1rem;
   object-fit: contain;
 }
