@@ -3,7 +3,7 @@ title: Crie sua Dança
 description: Crie dancinhas escrotas.
 posted: 1577588400000
 icon: /img/icons/crie-sua-danca.png
-tags: "#criatividade #scratch #jam #baze-jam"
+tags: "#criatividade #brinquedo #scratch #jam #baze-jam"
 instructions:
   - Clique em uma parte do corpo (cabeça, cintura, mãos e pés).
   - Aperte R e mexa o mouse.

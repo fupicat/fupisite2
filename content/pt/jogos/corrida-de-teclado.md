@@ -3,7 +3,7 @@ title: Corrida de Teclado
 description: Digite rápido.
 posted: 1590289200000
 icon: /img/icons/corridateclado.png
-tags: "#godot"
+tags: "#brinquedo #godot"
 instructions:
   - No menu, clique no nível que você quer jogar, ou digite algo e clique em “Jogar”.
   - No jogo, espere o countdown terminar, e então digite o que aparece no topo da tela o mais rápido que conseguir.

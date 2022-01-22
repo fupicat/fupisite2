@@ -3,7 +3,7 @@ title: Plink! Demake
 description: Faça música com outras pessoas online!
 posted: 1622516400000
 icon: /img/icons/plink.png
-tags: "#música #online #scratch #mobile"
+tags: "#música #brinquedo #online #scratch #mobile"
 instructions:
   - Clique para tocar uma nota.
   - Mexa o mouse pra cima e pra baixo pra mudar a nota.

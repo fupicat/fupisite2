@@ -3,7 +3,7 @@ title: Criador de Episódio - Mundo de Palitos
 description: Crie seu próprio episódio de Mundo de Palitos! Deve demorar menos que o oficial.
 posted: 1607742000000
 icon: /img/icons/criadormdp.png
-tags: "#criatividade #scratch"
+tags: "#criatividade #brinquedo #scratch"
 warning: Você NÃO PODERÁ PUBLICAR seus episódios aqui. Se quiser fazer isso, clique no link "Scratch" abaixo para jogar no Scratch e siga as instruções. VOCÊ VAI PRECISAR DE UMA CONTA NO SCRATCH.
 instructions:
   - Clique no botão + para adicionar uma nova cena.

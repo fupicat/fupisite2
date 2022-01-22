@@ -3,6 +3,7 @@ title: Wrap
 description: Atravesse os cantos da tela e pegue a estrela.
 posted: 1632970800000
 icon: /img/icons/Wrap.png
+cover: /img/covers/wrap.png
 tags: "#plataforma #scratch #mobile"
 instructions:
   - Clique para pular.
