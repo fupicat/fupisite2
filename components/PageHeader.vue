@@ -96,5 +96,6 @@ export default {
   display: flex;
   justify-content: center;
   gap: 0.25rem;
+  flex-wrap: wrap;
 }
 </style>
