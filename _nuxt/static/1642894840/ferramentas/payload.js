@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/ferramentas", {data:[{posts:[{slug:"replacer",description:"Formate texto rapidamente.",title:"Replacer",posted:1630932592015,icon:"\u002Fimg\u002Ficons\u002Freplacer.png",tags:"#criação #web #texto"}]}],fetch:{},mutations:[]});
