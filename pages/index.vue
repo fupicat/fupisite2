@@ -249,19 +249,6 @@ const filteredQuotes = {
 
 export default {
   components: { Container, CategoryCompact },
-  head() {
-    return {
-      script: [
-        {
-          src: "https://identity.netlify.com/v1/netlify-identity-widget.js",
-        },
-        {
-          src: "/js/identity.js",
-          body: true,
-        },
-      ],
-    };
-  },
   data() {
     const vue = this;
     return {
@@ -385,6 +372,15 @@ export default {
     }
     return {
       title,
+      script: [
+        {
+          src: "https://identity.netlify.com/v1/netlify-identity-widget.js",
+        },
+        {
+          src: "/js/identity.js",
+          body: true,
+        },
+      ],
       meta: [
         {
           hid: "description",
