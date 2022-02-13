@@ -255,19 +255,12 @@ export default {
         {
           src: "https://identity.netlify.com/v1/netlify-identity-widget.js",
         },
+        {
+          src: "/js/identity.js",
+          body: true,
+        },
       ],
     };
-  },
-  mounted() {
-    if (window.netlifyIdentity) {
-      window.netlifyIdentity.on("init", (user) => {
-        if (!user) {
-          window.netlifyIdentity.on("login", () => {
-            document.location.href = "/admin/";
-          });
-        }
-      });
-    }
   },
   data() {
     const vue = this;
