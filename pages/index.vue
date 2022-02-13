@@ -3,10 +3,18 @@
     <div class="main">
       <div class="featured" v-swiper="swiperOptions">
         <div class="swiper-wrapper">
-          <NuxtLink :to="localePath(`/${proj.category}/${proj.slug}`)" :class="`project swiper-slide ${proj.category}`" v-for="proj in featured" :key="proj.post.title">
-            <div :style="`background-image: url('/img/covers/${proj.cover}')`" class="cover"></div>
+          <NuxtLink
+            :to="localePath(`/${proj.category}/${proj.slug}`)"
+            :class="`project swiper-slide ${proj.category}`"
+            v-for="proj in featured"
+            :key="proj.post.title"
+          >
+            <div
+              :style="`background-image: url('/img/covers/${proj.cover}')`"
+              class="cover"
+            ></div>
             <div class="btn">
-              <img :src="proj.post.icon" :alt="$t('postIcon')">
+              <img :src="proj.post.icon" :alt="$t('postIcon')" />
               <div class="info">
                 <p class="title">{{ proj.post.title }}</p>
                 <p class="description">{{ proj.post.description }}</p>
@@ -14,42 +22,92 @@
             </div>
           </NuxtLink>
         </div>
-        <img src="/img/Left.png" class="swiper-button-prev" slot="button-prev" :style="`bottom: ${swiperBottom}px`">
-        <img src="/img/Right.png" class="swiper-button-next" slot="button-next" :style="`bottom: ${swiperBottom}px`">
+        <img
+          src="/img/Left.png"
+          class="swiper-button-prev"
+          slot="button-prev"
+          :style="`bottom: ${swiperBottom}px`"
+        />
+        <img
+          src="/img/Right.png"
+          class="swiper-button-next"
+          slot="button-next"
+          :style="`bottom: ${swiperBottom}px`"
+        />
       </div>
       <div class="intro">
         <client-only>
           <div class="quotes" @click="nextQuote()">
-
-            <div @animationend="animationEnd()" :class="`quote${animating ? ' transition' : ''}`">
-              <div class="text"><p class="lq">&ldquo;</p><p class="main">{{ quotes[currQ].text }}</p><p class="rq">&rdquo;</p></div>
-              <p @click.stop class="author">~ <a v-if="quotes[currQ].link" :href="quotes[currQ].link">{{ quotes[currQ].author }}</a><span v-else>{{ quotes[currQ].author }}</span></p>
+            <div
+              @animationend="animationEnd()"
+              :class="`quote${animating ? ' transition' : ''}`"
+            >
+              <div class="text">
+                <p class="lq">&ldquo;</p>
+                <p class="main">{{ quotes[currQ].text }}</p>
+                <p class="rq">&rdquo;</p>
+              </div>
+              <p @click.stop class="author">
+                ~
+                <a v-if="quotes[currQ].link" :href="quotes[currQ].link">{{
+                  quotes[currQ].author
+                }}</a
+                ><span v-else>{{ quotes[currQ].author }}</span>
+              </p>
             </div>
 
             <div :class="`quote${animating ? ' transition' : ''}`">
-              <div class="text"><p class="lq">&ldquo;</p><p class="main">{{ quotes[nextQ].text }}</p><p class="rq">&rdquo;</p></div>
-              <p @click.stop class="author">~ <a v-if="quotes[nextQ].link" tabindex="-1" :href="quotes[nextQ].link">{{ quotes[nextQ].author }}</a><span v-else>{{ quotes[nextQ].author }}</span></p>
+              <div class="text">
+                <p class="lq">&ldquo;</p>
+                <p class="main">{{ quotes[nextQ].text }}</p>
+                <p class="rq">&rdquo;</p>
+              </div>
+              <p @click.stop class="author">
+                ~
+                <a
+                  v-if="quotes[nextQ].link"
+                  tabindex="-1"
+                  :href="quotes[nextQ].link"
+                  >{{ quotes[nextQ].author }}</a
+                ><span v-else>{{ quotes[nextQ].author }}</span>
+              </p>
             </div>
-
           </div>
         </client-only>
         <div class="welcome">
-          <img class="fupihey" src="/img/FupiHey.png" :alt="$t('fupiHead')" :title="$t('hi')" />
+          <img
+            class="fupihey"
+            src="/img/FupiHey.png"
+            :alt="$t('fupiHead')"
+            :title="$t('hi')"
+          />
           <img class="seta" src="/img/SetaLoka.png" :alt="$t('arrow')" />
           <div class="info">
             <h1>{{ $t("intro1") }}</h1>
-            <p>{{ $t("intro2") }}<br>{{ $t("intro3") }}</p>
+            <p>{{ $t("intro2") }}<br />{{ $t("intro3") }}</p>
             <div class="cats">
               <NuxtLink :to="localePath('/jogos')">
-                <img class="reduced-motion" src="/img/icons/jogos.png" :alt="$t('jogos')">
+                <img
+                  class="reduced-motion"
+                  src="/img/icons/jogos.png"
+                  :alt="$t('jogos')"
+                />
                 <h1>{{ $t("jogos") }}</h1>
               </NuxtLink>
               <NuxtLink :to="localePath('/musica')">
-                <img class="reduced-motion" src="/img/icons/musica.png" :alt="$t('musica')">
+                <img
+                  class="reduced-motion"
+                  src="/img/icons/musica.png"
+                  :alt="$t('musica')"
+                />
                 <h1>{{ $t("musica") }}</h1>
               </NuxtLink>
               <NuxtLink :to="localePath('/videos')">
-                <img class="reduced-motion" src="/img/icons/videos.png" :alt="$t('videos')">
+                <img
+                  class="reduced-motion"
+                  src="/img/icons/videos.png"
+                  :alt="$t('videos')"
+                />
                 <h1>{{ $t("videos") }}</h1>
               </NuxtLink>
             </div>
@@ -81,40 +139,92 @@
 </template>
 
 <script>
-import Container from '~/components/Container.vue'
-import CategoryCompact from '~/components/list/CategoryCompact.vue';
+import Container from "~/components/Container.vue";
+import CategoryCompact from "~/components/list/CategoryCompact.vue";
 
 const featuredList = [
-  { category: "jogos", slug: "wrap", cover: "wrap.png"},
-  { category: "musica", slug: "slampe", cover: "slampe.png"},
+  { category: "jogos", slug: "wrap", cover: "wrap.png" },
+  { category: "musica", slug: "slampe", cover: "slampe.png" },
 ];
 
 const allQuotes = {
   pt: [
-    { text: "É gostosinho", author: "Charis", link: "https://twitter.com/char_alian/", nfe: true },
+    {
+      text: "É gostosinho",
+      author: "Charis",
+      link: "https://twitter.com/char_alian/",
+      nfe: true,
+    },
     { text: ":d", author: "Fupi" },
     { text: ":v", author: "Fupi" },
-    { text: "Quantidade > qualidade, para quem está entediado o suficiente.", author: "Fupi" },
-    { text: "QUEM VOCÊ PENSA QUE É??? DILMA ROUSSEFF?????", author: "Fupi de 0 anos", nfe: true },
-    { text: "eu odeio prolapso anal", author: "Charis", link: "https://twitter.com/char_alian/", nfe: true },
+    {
+      text: "Quantidade > qualidade, para quem está entediado o suficiente.",
+      author: "Fupi",
+    },
+    {
+      text: "QUEM VOCÊ PENSA QUE É??? DILMA ROUSSEFF?????",
+      author: "Fupi de 0 anos",
+      nfe: true,
+    },
+    {
+      text: "eu odeio prolapso anal",
+      author: "Charis",
+      link: "https://twitter.com/char_alian/",
+      nfe: true,
+    },
     { text: "nao!!! nao pissa em mim!!", author: "Neon" },
-    { text: "aueguh :V", author: "Charis pós-bufa", link: "https://twitter.com/char_alian/", nfe: true },
-    { text: "Toda a vida nesse planeta morreu...", author: "God Complex", link: "/jogos/god-complex" },
-    { text: "Por gentileza, dirija-se as fezes.", author: "PN_Scratching", link: "https://scratch.mit.edu/users/PN_Scratching/" },
+    {
+      text: "aueguh :V",
+      author: "Charis pós-bufa",
+      link: "https://twitter.com/char_alian/",
+      nfe: true,
+    },
+    {
+      text: "Toda a vida nesse planeta morreu...",
+      author: "God Complex",
+      link: "/jogos/god-complex",
+    },
+    {
+      text: "Por gentileza, dirija-se as fezes.",
+      author: "PN_Scratching",
+      link: "https://scratch.mit.edu/users/PN_Scratching/",
+    },
 
-    { text: "Sabia que você pode enviar suas próprias frases para aparecer aqui? :O", author: "Contate-me!", link: "/sobre#contato"}
+    {
+      text: "Sabia que você pode enviar suas próprias frases para aparecer aqui? :O",
+      author: "Contate-me!",
+      link: "/sobre#contato",
+    },
   ],
   en: [
     { text: ":d", author: "Fupi" },
     { text: ":v", author: "Fupi" },
     { text: "Quantity > quality if you're bored enough", author: "Fupi" },
-    { text: "i hate anal prolapse", author: "Charis", link: "https://twitter.com/char_alian/", nfe: true },
-    { text: "aueguh :V", author: "Charis", link: "https://twitter.com/char_alian/", nfe: true },
-    { text: "All life has died in this planet...", author: "God Complex", link: "/en/jogos/god-complex"},
+    {
+      text: "i hate anal prolapse",
+      author: "Charis",
+      link: "https://twitter.com/char_alian/",
+      nfe: true,
+    },
+    {
+      text: "aueguh :V",
+      author: "Charis",
+      link: "https://twitter.com/char_alian/",
+      nfe: true,
+    },
+    {
+      text: "All life has died in this planet...",
+      author: "God Complex",
+      link: "/en/jogos/god-complex",
+    },
 
-    { text: "Did you know you can submit your own quotes for this page? :O", author: "Contact me!", link: "/en/sobre#contato"}
-  ]
-}
+    {
+      text: "Did you know you can submit your own quotes for this page? :O",
+      author: "Contact me!",
+      link: "/en/sobre#contato",
+    },
+  ],
+};
 
 function shuffleArray(arr) {
   let array = arr;
@@ -135,10 +245,30 @@ for (const i in allQuotes) {
 const filteredQuotes = {
   pt: allQuotes.pt.filter((x) => !x.nfe),
   en: allQuotes.en.filter((x) => !x.nfe),
-}
+};
 
 export default {
-  components: { Container, CategoryCompact, },
+  components: { Container, CategoryCompact },
+  head() {
+    return {
+      script: [
+        {
+          src: "https://identity.netlify.com/v1/netlify-identity-widget.js",
+        },
+      ],
+    };
+  },
+  mounted() {
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", (user) => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  },
   data() {
     const vue = this;
     return {
@@ -147,22 +277,26 @@ export default {
       animating: false,
       swiperBottom: 0,
       swiperOptions: {
-        slidesPerView: 'auto',
+        slidesPerView: "auto",
         centeredSlides: true,
         navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         },
         on: {
           init() {
-            vue.swiperBottom = this.slides[this.activeIndex].querySelector(".btn").clientHeight / 2;
+            vue.swiperBottom =
+              this.slides[this.activeIndex].querySelector(".btn").clientHeight /
+              2;
           },
           slideChangeTransitionStart() {
-            vue.swiperBottom = this.slides[this.activeIndex].querySelector(".btn").clientHeight / 2;
-          }
-        }
+            vue.swiperBottom =
+              this.slides[this.activeIndex].querySelector(".btn").clientHeight /
+              2;
+          },
+        },
       },
-    }
+    };
   },
   async asyncData({ $content, store, app }) {
     let featured = [];
@@ -182,29 +316,44 @@ export default {
     try {
       // Get featured projects
       for (const i of featuredList) {
-        featured.push({ post: await $content(`${app.i18n.locale}/${i.category}`, i.slug).only(["title", "description", "icon"]).fetch(), cover: i.cover, category: i.category, slug: i.slug, });
+        featured.push({
+          post: await $content(`${app.i18n.locale}/${i.category}`, i.slug)
+            .only(["title", "description", "icon"])
+            .fetch(),
+          cover: i.cover,
+          category: i.category,
+          slug: i.slug,
+        });
       }
 
       // Get random projects
       for (let cat in random) {
         let posts = await $content(`${app.i18n.locale}/${cat}`)
-          .only(['title', 'description', 'slug', 'icon', 'tags', 'posted', 'nfe'])
+          .only([
+            "title",
+            "description",
+            "slug",
+            "icon",
+            "tags",
+            "posted",
+            "nfe",
+          ])
           .fetch();
-        let postsSafe = posts.filter(x => !x.nfe);
+        let postsSafe = posts.filter((x) => !x.nfe);
 
         const clamp = (val, min, max) => {
           return val > max ? max : val < min ? min : val;
-        }
+        };
 
         for (let i = 0; i < clamp(postsSafe.length, 0, 3); i++) {
           // Get random post
-          let rand = Math.floor(Math.random()*posts.length);
+          let rand = Math.floor(Math.random() * posts.length);
           random[cat].push(posts[rand]);
           posts.splice(rand, 1);
           console.log(random[cat][i]);
 
           // Get random safe post
-          rand = Math.floor(Math.random()*postsSafe.length);
+          rand = Math.floor(Math.random() * postsSafe.length);
           randomSafe[cat].push(postsSafe[rand]);
           postsSafe.splice(rand, 1);
           console.log(randomSafe[cat][i]);
@@ -215,7 +364,7 @@ export default {
         featured,
         random,
         randomSafe,
-      }
+      };
     }
   },
   computed: {
@@ -229,7 +378,14 @@ export default {
     },
   },
   head() {
-    const titles = ["Fupi", "Fupi!!", "Fupi :v", "Fupi ._.", "xX-_fUpI_-Xx", "fupi"];
+    const titles = [
+      "Fupi",
+      "Fupi!!",
+      "Fupi :v",
+      "Fupi ._.",
+      "xX-_fUpI_-Xx",
+      "fupi",
+    ];
     let title = "Fupi";
     if (Math.random() > 0.8) {
       title = titles[Math.floor(Math.random() * titles.length)];
@@ -237,16 +393,28 @@ export default {
     return {
       title,
       meta: [
-        { hid: 'description', name: 'description', content: this.$t("fupiDesc"), },
-        { hid: 'keywords', name: 'keywords', content: this.$t("fupiTags")},
+        {
+          hid: "description",
+          name: "description",
+          content: this.$t("fupiDesc"),
+        },
+        { hid: "keywords", name: "keywords", content: this.$t("fupiTags") },
         // Open Graph
-        { hid: 'og:title', property: 'og:title', content: "Fupi" },
-        { hid: 'og:description', property: 'og:description', content: this.$t("fupiDesc") },
+        { hid: "og:title", property: "og:title", content: "Fupi" },
+        {
+          hid: "og:description",
+          property: "og:description",
+          content: this.$t("fupiDesc"),
+        },
         // Twitter
-        { hid: 'twitter:title', name: 'twitter:title', content: "Fupi" },
-        { hid: 'twitter:description', name: 'twitter:description', content: this.$t("fupiDesc") }
-      ]
-    }
+        { hid: "twitter:title", name: "twitter:title", content: "Fupi" },
+        {
+          hid: "twitter:description",
+          name: "twitter:description",
+          content: this.$t("fupiDesc"),
+        },
+      ],
+    };
   },
   methods: {
     nextQuote() {
@@ -262,9 +430,9 @@ export default {
       if (this.nextQ >= this.quotes.length) {
         this.nextQ = 0;
       }
-    }
-  }
-}
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -282,7 +450,8 @@ export default {
     overflow: hidden;
     width: 100%;
 
-    .swiper-button-prev, .swiper-button-next {
+    .swiper-button-prev,
+    .swiper-button-next {
       object-fit: contain;
       width: 0.875rem;
       height: 1.5625rem;
@@ -345,7 +514,8 @@ export default {
         border-radius: 0 0 10px 10px;
         box-shadow: inset 0em -0.4em rgba(0, 0, 0, 0.15);
 
-        transition: box-shadow 150ms var(--trans-smooth), background-color 150ms var(--trans-smooth);
+        transition: box-shadow 150ms var(--trans-smooth),
+          background-color 150ms var(--trans-smooth);
 
         img {
           height: 6rem;
@@ -511,7 +681,7 @@ export default {
         display: flex;
         flex-direction: column;
         gap: 0.3125rem;
-        
+
         h1 {
           font-weight: bold;
           font-size: 20px;
