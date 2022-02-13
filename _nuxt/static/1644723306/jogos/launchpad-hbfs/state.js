@@ -1,0 +1,1 @@
+window.__NUXT__=(function(a,b){return {staticAssetsBase:"\u002F_nuxt\u002Fstatic\u002F1644723306",layout:"default",error:a,state:{dark:{dark:b},nfe:{nfe:b},i18n:{routeParams:{}}},serverRendered:true,routePath:"\u002Fjogos\u002Flaunchpad-hbfs",config:{_app:{basePath:"\u002F",assetsPath:"\u002F_nuxt\u002F",cdnURL:a},content:{dbHash:"6c1a3413"}},__i18n:{langs:{}}}}(null,false));
