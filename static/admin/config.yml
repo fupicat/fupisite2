@@ -49,26 +49,12 @@ collections:
           label: "Instruções",
           name: "instructions",
           widget: "list",
-          field:
-            {
-              label: "Item",
-              name: "item",
-              widget: "code",
-              output_code_only: true,
-              default_language: "html",
-            },
+          field: { label: "Item", name: "item", widget: "string" },
         }
       - {
           label: "Sobre",
           name: "about",
           widget: "list",
-          field:
-            {
-              label: "Item",
-              name: "item",
-              widget: "code",
-              output_code_only: true,
-              default_language: "html",
-            },
+          field: { label: "Item", name: "item", widget: "string" },
         }
       - { label: "Conteúdo", name: "body", widget: "markdown" }
