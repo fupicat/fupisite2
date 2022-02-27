@@ -3,7 +3,6 @@ instructions:
   - Setas para andar e pular.
   - R para reiniciar.
   - Espaço para mudar de música.
-  - teste1
 about:
   - Um jogo que eu fiz para o meu aniversário de 11 anos ;w;
   - No final do jogo aparecem vários web-amigos meus da época.
