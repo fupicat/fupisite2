@@ -1,1 +1,0 @@
-window.__NUXT__=(function(a,b){return {staticAssetsBase:"\u002F_nuxt\u002Fstatic\u002F1644727346",layout:"default",error:a,state:{dark:{dark:b},nfe:{nfe:b},i18n:{routeParams:{}}},serverRendered:true,routePath:"\u002Fjogos\u002Fblind-boom",config:{_app:{basePath:"\u002F",assetsPath:"\u002F_nuxt\u002F",cdnURL:a},content:{dbHash:"41e9238a"}},__i18n:{langs:{}}}}(null,false));
