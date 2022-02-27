@@ -45,5 +45,30 @@ collections:
       - { label: "Ícone", name: "icon", widget: "image", choose_url: true }
       - { label: "Tags", name: "tags", widget: "string" }
       - { label: "NFE", name: "nfe", widget: "boolean", required: false }
-      - { label: "Instruções", name: "instructions", widget: "list" }
+      - {
+          label: "Instruções",
+          name: "instructions",
+          widget: "list",
+          field:
+            {
+              label: "Item",
+              name: "item",
+              widget: "code",
+              output_code_only: true,
+              default_language: "html",
+            },
+        }
+      - {
+          label: "Sobre",
+          name: "about",
+          widget: "list",
+          field:
+            {
+              label: "Item",
+              name: "item",
+              widget: "code",
+              output_code_only: true,
+              default_language: "html",
+            },
+        }
       - { label: "Conteúdo", name: "body", widget: "markdown" }
