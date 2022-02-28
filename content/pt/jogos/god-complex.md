@@ -10,9 +10,13 @@ instructions: |
   - Rodinha do mouse para dar zoom.
   - Botão do meio do mouse para mover a câmera.
   - Siga a quest no topo da tela para descobrir as combinações.
-about: |
+about: >-
   Este jogo foi criado para a game jam Ludum Dare 45.
+
+
   Fiquei em 550º lugar de 2613 participantes.
+
+
   Acho que este é um dos jogos mais criativos que eu fiz! Mesmo que seja lento e desbalanceado, é relaxante e único, e se encaixou com o tema da jam super bem. Mas se prepare para esperar, como um jogo idle você vai ficar um tempinho aguardando o item que você precisa aparecer. Enquanto isso, crie mais planetas de terra para obter mais pontos de adoração!
 links:
   - text: Itch
