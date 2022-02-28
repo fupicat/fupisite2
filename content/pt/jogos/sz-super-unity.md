@@ -1,10 +1,10 @@
 ---
 title: SZ Super Unity
 description: Meu primeiro jogo feito fora do Scratch.
+warning: Jogo cancelado, tem pouco conteúdo.
 posted: 1530414000000
 icon: /img/icons/sz-super-unity.png
 tags: "#simulador #unity"
-warning: Jogo cancelado, tem pouco conteúdo.
 instructions: |
   - Clique em "Play" acima para jogar.
   - A e D para se mover.
@@ -14,8 +14,11 @@ instructions: |
   - Clique no rosto no canto superior direito para mudar de roupa.
   - No seu planeta casa, clique no pincel para editá-lo.
   - (Debug) Segure C para adicionar dinheiro.
-about: |
-  Não tenho nenhum orgulho desse jogo, mas foi a minha primeira vez tentando programação "de verdade", então deixo ele aqui pela história!
+about: >-
+  Não tenho nenhum orgulho desse jogo, mas foi a minha primeira vez tentando
+  programação "de verdade", então deixo ele aqui pela história!
+
+
   Eu costumava atualizar esse jogo periodicamente no meu canal do YouTube, tinha várias ideias grandes para o jogo, mas eu sabia muito pouco sobre programação e acabei abandonando porque comecei a ficar maluco com o meu [código horrendo](https://twitter.com/fupibr/status/1294827897627312128).
 links:
   - text: Game Jolt
