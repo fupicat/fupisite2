@@ -10,6 +10,7 @@ collections:
     folder: "content/pt/blog" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template
+    sortable_fields: ["title", "posted"]
     fields: # The fields for each document, usually in front matter
       - { label: "Título", name: "title", widget: "string" }
       - { label: "Descrição", name: "description", widget: "string" }
@@ -23,6 +24,7 @@ collections:
     folder: "content/en/blog" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template
+    sortable_fields: ["title", "posted"]
     fields: # The fields for each document, usually in front matter
       - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
       - { label: "Title", name: "title", widget: "string" }
@@ -37,6 +39,7 @@ collections:
     folder: "content/pt/jogos" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template
+    sortable_fields: ["title", "posted"]
     fields: # The fields for each document, usually in front matter
       - { label: "Título", name: "title", widget: "string" }
       - { label: "Descrição", name: "description", widget: "string" }
@@ -59,3 +62,251 @@ collections:
             ],
         }
       - { label: "Conteúdo", name: "body", widget: "markdown" }
+  - name: "en_jogos"
+    label: "Jogos (EN)"
+    folder: "content/en/jogos"
+    create: true
+    slug: "{{slug}}"
+    sortable_fields: ["title", "posted"]
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Warning", name: "warning", widget: "string", required: false }
+      - { label: "Posted", name: "posted", widget: "datetime", format: "x" }
+      - { label: "Icon", name: "icon", widget: "image", choose_url: true }
+      - { label: "Tags", name: "tags", widget: "string" }
+      - { label: "NFE", name: "nfe", widget: "boolean", required: false }
+      - { label: "Instructions", name: "instructions", widget: "markdown" }
+      - { label: "About", name: "about", widget: "markdown" }
+      - {
+          label: "Links",
+          name: "links",
+          widget: "list",
+          minimize_collapsed: true,
+          fields:
+            [
+              { label: "Texto", name: "text", widget: "string" },
+              { label: "Link", name: "link", widget: "string" },
+            ],
+        }
+      - { label: "Content", name: "body", widget: "markdown" }
+  - name: "pt_musica"
+    label: "Música (PT)"
+    folder: "content/pt/musica"
+    create: true
+    slug: "{{slug}}"
+    sortable_fields: ["title", "posted"]
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Descrição", name: "description", widget: "string" }
+      - { label: "Aviso", name: "warning", widget: "string", required: false }
+      - { label: "Postado", name: "posted", widget: "datetime", format: "x" }
+      - { label: "Ícone", name: "icon", widget: "image", choose_url: true }
+      - { label: "Tags", name: "tags", widget: "string" }
+      - { label: "NFE", name: "nfe", widget: "boolean", required: false }
+      - { label: "Sobre", name: "about", widget: "markdown" }
+      - {
+          label: "Links",
+          name: "links",
+          widget: "list",
+          minimize_collapsed: true,
+          fields:
+            [
+              { label: "Texto", name: "text", widget: "string" },
+              { label: "Link", name: "link", widget: "string" },
+            ],
+        }
+      - { label: "Conteúdo", name: "body", widget: "markdown" }
+  - name: "en_musica"
+    label: "Música (EN)"
+    folder: "content/en/musica"
+    create: true
+    slug: "{{slug}}"
+    sortable_fields: ["title", "posted"]
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Warning", name: "warning", widget: "string", required: false }
+      - { label: "Posted", name: "posted", widget: "datetime", format: "x" }
+      - { label: "Icon", name: "icon", widget: "image", choose_url: true }
+      - { label: "Tags", name: "tags", widget: "string" }
+      - { label: "NFE", name: "nfe", widget: "boolean", required: false }
+      - { label: "About", name: "about", widget: "markdown" }
+      - {
+          label: "Links",
+          name: "links",
+          widget: "list",
+          minimize_collapsed: true,
+          fields:
+            [
+              { label: "Texto", name: "text", widget: "string" },
+              { label: "Link", name: "link", widget: "string" },
+            ],
+        }
+      - { label: "Content", name: "body", widget: "markdown" }
+  - name: "pt_videos"
+    label: "Vídeos (PT)"
+    folder: "content/pt/videos"
+    create: true
+    slug: "{{slug}}"
+    sortable_fields: ["title", "posted"]
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Descrição", name: "description", widget: "string" }
+      - { label: "Aviso", name: "warning", widget: "string", required: false }
+      - { label: "Postado", name: "posted", widget: "datetime", format: "x" }
+      - { label: "Ícone", name: "icon", widget: "image", choose_url: true }
+      - { label: "Tags", name: "tags", widget: "string" }
+      - { label: "NFE", name: "nfe", widget: "boolean", required: false }
+      - { label: "Sobre", name: "about", widget: "markdown" }
+      - {
+          label: "Links",
+          name: "links",
+          widget: "list",
+          minimize_collapsed: true,
+          fields:
+            [
+              { label: "Texto", name: "text", widget: "string" },
+              { label: "Link", name: "link", widget: "string" },
+            ],
+        }
+      - { label: "Conteúdo", name: "body", widget: "markdown" }
+  - name: "en_videos"
+    label: "Vídeos (EN)"
+    folder: "content/en/videos"
+    create: true
+    slug: "{{slug}}"
+    sortable_fields: ["title", "posted"]
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Warning", name: "warning", widget: "string", required: false }
+      - { label: "Posted", name: "posted", widget: "datetime", format: "x" }
+      - { label: "Icon", name: "icon", widget: "image", choose_url: true }
+      - { label: "Tags", name: "tags", widget: "string" }
+      - { label: "NFE", name: "nfe", widget: "boolean", required: false }
+      - { label: "About", name: "about", widget: "markdown" }
+      - {
+          label: "Links",
+          name: "links",
+          widget: "list",
+          minimize_collapsed: true,
+          fields:
+            [
+              { label: "Texto", name: "text", widget: "string" },
+              { label: "Link", name: "link", widget: "string" },
+            ],
+        }
+      - { label: "Content", name: "body", widget: "markdown" }
+  - name: "pt_ferramentas"
+    label: "Ferramentas (PT)"
+    folder: "content/pt/ferramentas"
+    create: true
+    slug: "{{slug}}"
+    sortable_fields: ["title", "posted"]
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Descrição", name: "description", widget: "string" }
+      - { label: "Aviso", name: "warning", widget: "string", required: false }
+      - { label: "Postado", name: "posted", widget: "datetime", format: "x" }
+      - { label: "Ícone", name: "icon", widget: "image", choose_url: true }
+      - { label: "Tags", name: "tags", widget: "string" }
+      - { label: "NFE", name: "nfe", widget: "boolean", required: false }
+      - { label: "Instruções", name: "instructions", widget: "markdown" }
+      - { label: "Sobre", name: "about", widget: "markdown" }
+      - {
+          label: "Links",
+          name: "links",
+          widget: "list",
+          minimize_collapsed: true,
+          fields:
+            [
+              { label: "Texto", name: "text", widget: "string" },
+              { label: "Link", name: "link", widget: "string" },
+            ],
+        }
+      - { label: "Conteúdo", name: "body", widget: "markdown" }
+  - name: "en_ferramentas"
+    label: "Ferramentas (EN)"
+    folder: "content/en/ferramentas"
+    create: true
+    slug: "{{slug}}"
+    sortable_fields: ["title", "posted"]
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Warning", name: "warning", widget: "string", required: false }
+      - { label: "Posted", name: "posted", widget: "datetime", format: "x" }
+      - { label: "Icon", name: "icon", widget: "image", choose_url: true }
+      - { label: "Tags", name: "tags", widget: "string" }
+      - { label: "NFE", name: "nfe", widget: "boolean", required: false }
+      - { label: "Instructions", name: "instructions", widget: "markdown" }
+      - { label: "About", name: "about", widget: "markdown" }
+      - {
+          label: "Links",
+          name: "links",
+          widget: "list",
+          minimize_collapsed: true,
+          fields:
+            [
+              { label: "Texto", name: "text", widget: "string" },
+              { label: "Link", name: "link", widget: "string" },
+            ],
+        }
+      - { label: "Content", name: "body", widget: "markdown" }
+  - name: "pt_etc"
+    label: "Etc (PT)"
+    folder: "content/pt/etc"
+    create: true
+    slug: "{{slug}}"
+    sortable_fields: ["title", "posted"]
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Descrição", name: "description", widget: "string" }
+      - { label: "Aviso", name: "warning", widget: "string", required: false }
+      - { label: "Postado", name: "posted", widget: "datetime", format: "x" }
+      - { label: "Ícone", name: "icon", widget: "image", choose_url: true }
+      - { label: "Tags", name: "tags", widget: "string" }
+      - { label: "NFE", name: "nfe", widget: "boolean", required: false }
+      - { label: "Instruções", name: "instructions", widget: "markdown" }
+      - { label: "Sobre", name: "about", widget: "markdown" }
+      - {
+          label: "Links",
+          name: "links",
+          widget: "list",
+          minimize_collapsed: true,
+          fields:
+            [
+              { label: "Texto", name: "text", widget: "string" },
+              { label: "Link", name: "link", widget: "string" },
+            ],
+        }
+      - { label: "Conteúdo", name: "body", widget: "markdown" }
+  - name: "en_etc"
+    label: "Etc (EN)"
+    folder: "content/en/etc"
+    create: true
+    slug: "{{slug}}"
+    sortable_fields: ["title", "posted"]
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Warning", name: "warning", widget: "string", required: false }
+      - { label: "Posted", name: "posted", widget: "datetime", format: "x" }
+      - { label: "Icon", name: "icon", widget: "image", choose_url: true }
+      - { label: "Tags", name: "tags", widget: "string" }
+      - { label: "NFE", name: "nfe", widget: "boolean", required: false }
+      - { label: "Instructions", name: "instructions", widget: "markdown" }
+      - { label: "About", name: "about", widget: "markdown" }
+      - {
+          label: "Links",
+          name: "links",
+          widget: "list",
+          minimize_collapsed: true,
+          fields:
+            [
+              { label: "Texto", name: "text", widget: "string" },
+              { label: "Link", name: "link", widget: "string" },
+            ],
+        }
+      - { label: "Content", name: "body", widget: "markdown" }

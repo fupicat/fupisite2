@@ -11,7 +11,9 @@ instructions: |
   - Press EDIT to return to edit mode.
 about: |
   This game was created for Instal Jam, a brazilian game jam organized by the dev team I'm part of, where I had one week to make a game.
+
   The theme was "Cartoon", so I made a game that resembles a video editing program, and you have to arrange the clips to make the animation play the right way!
+
   I ended up misusing my time real bad and making 1/10 of the game I wanted to make. :p
 links:
   - text: Itch

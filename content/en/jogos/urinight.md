@@ -14,6 +14,7 @@ instructions: |
   - If your patience runs out, you lose a life.
 about: |
   Made for GMTK Jam 2020.
+
   The theme for the jam was "Out of Control", and what's more out of control than peeing standing up?
 links:
   - text: Itch

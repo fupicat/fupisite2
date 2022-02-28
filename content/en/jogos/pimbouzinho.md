@@ -14,6 +14,7 @@ instructions: |
   - TAB to change camera position.
 about: |
   Just a silly, barely finished game that I made in like 2 days. Try to get the ball as far as possible!
+
   Inspired by a [Wii Play Motion](https://youtu.be/_sh39MLV7MQ?t=460) mini-game.
 links:
   - text: Game Jolt

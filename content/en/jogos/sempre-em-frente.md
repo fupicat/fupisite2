@@ -8,8 +8,11 @@ instructions: |
   - Hold any button to jump forward.
 about: |
   This game was created for the Game Maker's Toolkit game jam.
+
   The theme was 'only one', so I made a game that uses only one button.
+
   I was inspired by the game Getting Over It, the initial idea was to have a big, tall level, without checkpoints, where it was easy to fall back to the beginning, but in the end I think I forgot this idea and went the easy way. :d
+
   I ranked 717th out of 2618 participants.
 links:
   - text: Itch

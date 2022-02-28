@@ -7,6 +7,7 @@ cover: /img/covers/espelhar.png
 tags: "#dance #hype"
 about: |
   My first song made in FL Studio. I made a melody and then vocoded it with itself, then I sampled it and made a whole song out of it.
+
   It's a very strange song which is definitely not for everyone, but I like it. :d
 links:
   - text: YouTube

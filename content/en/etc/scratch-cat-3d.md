@@ -6,7 +6,9 @@ icon: /img/icons/scratchcat3d.png
 tags: "#3d #scratch #blender"
 about: |
   This model was very popular in Scratch, it stayed in the "What the community is loving" tab for a whole week I think, pretty crazy.
+
   One guy even asked for the file in an email and 3D printed it!
+
   Famously scary when looked from... any direction.
 links:
   - text: Download .blend

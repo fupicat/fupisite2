@@ -13,6 +13,7 @@ instructions: |
   - Press the Shift key and click the buttons to make the rule go up to the top, or down to the bottom of the list.
 about: |
   A tool to edit text quickly. I created it to automate a task for my father's job, but I ended up developing it to be capable of a lot more.
+
   I made this before I knew Regex was a thing so I was reinventing the wheel and didn't even know it :d Even so, this little tool is still useful sometimes.
 links:
   - text: Website

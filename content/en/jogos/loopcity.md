@@ -14,7 +14,9 @@ instructions: |
   - Press ESC or Enter to pause the game and review the controls.
 about: |
   This game was created for Ludum Dare 47, where I had 72 hours to make a game.
+
   The theme was "Stuck in a Loop," so I made a game where you endlessly fall through a looping city!
+
   To this day I think it is my most creative game.
 links:
   - text: Itch

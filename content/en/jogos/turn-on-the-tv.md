@@ -10,7 +10,9 @@ instructions: |
   - Right click to turn them over.
 about: |
   This game was created for Not A Game Jam, where we had to create games that are not games.
+
   I created this bizarre game that has no objective and you can only play once.
+
   This was the first jam I ever took part in! I was able to prove to myself that I could quickly and easily create silly little games if I wanted to, something that is surprisingly important to me.
 links:
   - text: Itch

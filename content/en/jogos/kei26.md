@@ -11,8 +11,11 @@ instructions: |
   - Collect coins .
 about: |
   Kei26 is an experimental game about an aspiring game dev.
+
   Explore their broken, abandoned projects, and learn more about who they are.
+
   Sometimes this is more of a walking simulator than an actual platforming game, but my intention with this game was to try and tell a story in an unconventional way.
+
   Made in 48 hours for Ludum Dare 49!
 links:
   - text: Itch

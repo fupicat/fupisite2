@@ -11,7 +11,8 @@ instructions: |
   - Press C to change the colors.
 about: |
   The first game I ever made. A single-player clone of Pong.
-  Actually, this game was updated once. The first version of it had more stiff controls and no jump feature, but in August 2013 I changed the controls because... I don't know actually.
+
+  Actually, this game was updated once. The first version of it had more stiff controls and no jump feature but in August 2013 I changed the controls because... I don't know actually.
 links:
   - text: Scratch
     link: https://scratch.mit.edu/projects/10561547/

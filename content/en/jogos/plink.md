@@ -10,7 +10,9 @@ instructions: |
   - Click the buttons to change instrument.
 about: |
   This is an online multiplayer music-making toy! Call your friends and make music together!
+
   Heavily inspired by the online game Plink! by Dinahmoe. I used no samples from the original game, I made them on Auxy and Beepbox.
+
   This was the first multiplayer game I've ever made... or at least the first one where I actually knew what I was doing. :d
 links:
   - text: Original game

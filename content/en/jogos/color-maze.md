@@ -9,7 +9,9 @@ instructions: |
   - Space to change color.
 about: |
   This was made for the Trijam game jam, where I had 3 hours to make a game.
+
   The theme was '8-bit', so I made a game with pixel graphics.
+
   I got 4th place out of 15 participants.
 links:
   - text: Itch

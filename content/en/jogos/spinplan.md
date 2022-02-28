@@ -11,7 +11,9 @@ instructions: |
   - You can also use mouse-only controls. Drag one of the arrows on the edges of the screen to rotate the planet, and double click the middle of the screen to restart.
 about: |
   The Eggo species has waged war against the planets! Luckily, the planets are benevolent, and decide to help the Eggos get what they want.
+
   Use gravity to get the Eggo combatant to your core! Rotate yourself!
+
   Made in 48 hours for Ludum Dare 48! It was my worst placed game. :d People didn't like the physics.
 links:
   - text: Game Jolt

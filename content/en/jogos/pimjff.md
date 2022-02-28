@@ -11,7 +11,9 @@ instructions: |
   - X to use the shadow paster (after unlocking).
 about: |
   I made this game because I really felt like making a platform game. Finished in 2 days.
+
   The name of the game is an acronym for "Platformer I Made Just For Fun".
+
   The mood and story of this game are very much inspired by the game Portal 2, even the songs are all from there! Except the last one, which I made myself.
 links:
   - text: Scratch

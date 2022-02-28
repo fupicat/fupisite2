@@ -10,6 +10,7 @@ instructions: |
   - "In MULTIPLAYER mode: Use WASD to move the black cell, and IJKL to move the white cell."
 about: |
   Made for Ludum Dare 46.
+
   I came in 716th place out of 4959 games! I'm starting to think I didn't do so bad.
 links:
   - text: Itch
