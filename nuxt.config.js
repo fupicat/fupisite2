@@ -109,7 +109,6 @@ export default {
 
   hooks: {
     "content:file:beforeInsert": async (document, database) => {
-      console.log(document.title);
       if (document.extension === ".md" && document.instructions) {
         document.instructions = await database.markdown.toJSON(
           document.instructions
