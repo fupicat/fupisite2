@@ -10,8 +10,10 @@ instructions: |
   - Clique nos balões para mudar a fala.
   - Clique nos quadrinhos para mudar o cenário.
   - Clique em esconder balões para deixar só os balões de fala na cena.
-about: |
+about: >-
   Outro joguinho que só dava pra jogar em um site antigo meu.
+
+
   Esse é um criador de tirinha básico mas divertidinho baseado em uns OCs meus da escola.
 links:
   - text: Scratch

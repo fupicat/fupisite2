@@ -7,9 +7,13 @@ tags: "#música #ritmo #scratch"
 instructions: |
   - Aperte 1, 2 ou 3 para escolher uma música.
   - Aperte as setas na hora certa.
-about: |
+about: >-
   Outro joguinho que antes só dava pra jogar em um site antigo meu.
+
+
   Clone de DDR (antes do FNF) só que sem ritmo, porque era muito difícil de programar. Então só aperte as teclas na hora certa.
+
+
   Esse Steve era um personagem meu da escola que eu fazia HQs.
 links:
   - text: Scratch

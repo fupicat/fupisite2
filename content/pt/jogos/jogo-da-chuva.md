@@ -8,8 +8,10 @@ instructions: |
   - Setas para andar.
   - Colete as gotas azuis.
   - Não colete as gotas verdes.
-about: |
+about: >-
   Joguinho feito para um site antigo meu mas nunca postado.
+
+
   Baseado naqueles jogos do Iguinho de pegar coisas caindo que duram uma eternidade.
 links:
   - text: Scratch

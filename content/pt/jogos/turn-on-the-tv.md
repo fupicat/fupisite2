@@ -1,17 +1,22 @@
 ---
 title: Turn on the TV
 description: Ligue a TV e veja o que acontece!
+warning: Jogo em inglês e sem versão para navegador.
 posted: 1558494000000
 icon: /img/icons/tv.png
 tags: "#godot #jam"
-warning: Jogo em inglês e sem versão para navegador.
 instructions: |
   - Clique esquerdo para pegar itens.
   - Clique direito para virar.
-about: |
-  Este jogo foi criado para a Not A Game Jam, onde tinhamos que criar jogos que não são jogos.
+about: >-
+  Este jogo foi criado para a Not A Game Jam, onde tinhamos que criar jogos que
+  não são jogos.
+
+
   Eu criei esse jogo bizarro que não tem objetivo e você só pode jogar uma vez.
-  Essa foi a primeira jam que eu participei! Com ela, consegui provar a mim mesmo que eu conseguia criar joguinhos bobos com facilidade se eu quisesse, algo surpreendentemente importante pra mim.
+
+
+  Essa foi a primeira jam que eu participei! Com ela, consegui provar a mim mesmo que eu conseguia criar joguinhos bobos com facilidade se eu quisesse, algo estranhamente importante pra mim.
 links:
   - text: Itch
     link: https://fupi.itch.io/tv

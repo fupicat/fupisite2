@@ -6,8 +6,10 @@ icon: /img/icons/propaganda.png
 tags: "#história #godot"
 instructions: |
   - Clique no botão de fechar para fechar.
-about: |
+about: >-
   Fiz esse jogo em uma tarde porque eu quis.
+
+
   Essa história interativa representa a vida triste de uma propaganda na internet.
 links:
   - text: Itch

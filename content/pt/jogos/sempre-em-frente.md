@@ -6,10 +6,16 @@ icon: /img/icons/sempre-em-frente.png
 tags: "#plataforma #godot #jam #gmtk-jam #mobile"
 instructions: |
   - Segure qualquer botão para pular para frente.
-about: |
+about: >-
   Este jogo foi criado para a game jam do canal Game Maker's Toolkit.
+
+
   O tema era 'apenas um', então eu fiz um jogo que usa apenas um botão.
+
+
   Me inspirei no jogo Getting Over It, a ideia inicial era ter um nível alto e grandão, sem checkpoints, em que era fácil você cair de volta pro início, mas no fim eu acho que me esqueci dessa ideia e fui pelo caminho mais fácil. :d
+
+
   Fiquei em 717º lugar de 2618 participantes.
 links:
   - text: Itch

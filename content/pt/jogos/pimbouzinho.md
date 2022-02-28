@@ -12,8 +12,11 @@ instructions: |
   - C para trocar para plataformas do tipo "tigela".
   - R para reiniciar.
   - TAB para trocar a posição da câmera.
-about: |
-  Só um jogo bobo mal-acabado que eu fiz em uns 2 dias. Tente levar a bolinha o mais longe possível!
+about: >-
+  Só um jogo bobo mal-acabado que eu fiz em uns 2 dias. Tente levar a bolinha o
+  mais longe possível!
+
+
   Inspirado em um minijogo do [Wii Play Motion](https://youtu.be/_sh39MLV7MQ?t=460).
 links:
   - text: Game Jolt

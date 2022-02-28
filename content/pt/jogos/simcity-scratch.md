@@ -9,8 +9,11 @@ instructions: |
   - Clique nas lojas para recolher dinheiro.
   - Clique nas casas para consertar seus problemas (requer certos prédios).
   - Não deixe seus habitantes ficarem bravos demais (impossível).
-about: |
-  Um simulador de cidade com os dois habitantes mais insuportáveis no mundo. Eventualmente eles ficam tão impacientes que é impossível continuar o jogo e você perde. Crítica social ou incompetência minha? Você decide.
+about: >-
+  Um simulador de cidade com os dois habitantes mais insuportáveis no mundo.
+
+
+  Eventualmente eles ficam tão impacientes que é impossível continuar o jogo e você perde. Crítica social ou incompetência minha? Você decide.
 links:
   - text: Scratch
     link: https://scratch.mit.edu/projects/57726718/
