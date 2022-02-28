@@ -4,9 +4,9 @@ description: Você quer mais?!?!?!??!
 posted: 1369882800000
 icon: /img/icons/fupi-weird.png
 tags: "#scratch"
-about:
-  - Você chegou ao fim do site... parabéns!! Você merece um prêmio, super-fã obcecado!
-  - Tem muito mais projetos de onde esses vieram; as minhas páginas do Scratch são cheias de desenhos, jogos inacabados, e outras coisas não muito boas que eu deixei de fora deste site por motivos bem óbvios. Porém, se você quiser mesmo tentar procurar alguma pérola, vá em frente! Aqui estão os links.
+about: |
+  Você chegou ao fim do site... parabéns!! Você merece um prêmio, super-fã obcecado!
+  Tem muito mais projetos de onde esses vieram; as minhas páginas do Scratch são cheias de desenhos, jogos inacabados, e outras coisas não muito boas que eu deixei de fora deste site por motivos bem óbvios. Porém, se você quiser mesmo tentar procurar alguma pérola, vá em frente! Aqui estão os links.
 links:
   - text: Fupicat (Minha conta atual)
     link: https://scratch.mit.edu/users/fupicat/

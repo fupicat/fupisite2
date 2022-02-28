@@ -5,7 +5,7 @@ posted: 1594522800000
 icon: /img/icons/urinight.png
 tags: "#puzzle #godot #jam #gmtk #nfe"
 warning: Jogo apenas em inglês.
-instructions:
+instructions: |
   - Seu objetivo é acertar 100% do seu mijo no vaso.
   - Arraste o corpo do cara para girar.
   - Arraste a seta para mudar a força do tiro.
@@ -13,9 +13,9 @@ instructions:
   - Cada fase tem física diferente.
   - Sempre que você não estiver mijando, sua barrinha de paciência desce.
   - Se sua paciência acabar, você perde uma vida.
-about:
-  - Jogo feito para a GMTK Jam 2020.
-  - O tema da jam era “Fora de Controle”, e o que é mais difícil de controlar do que fazer xixi de pé?
+about: |
+  Jogo feito para a GMTK Jam 2020.
+  O tema da jam era “Fora de Controle”, e o que é mais difícil de controlar do que fazer xixi de pé?
 links:
   - text: Itch
     link: https://fupi.itch.io/urinight
@@ -23,4 +23,5 @@ links:
     link: https://itch.io/jam/gmtk-2020/rate/695012
 nfe: true
 ---
+
 <itch url="https://itch.io/embed-upload/2462657?color=1c1e24"></itch>
