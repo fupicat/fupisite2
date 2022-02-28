@@ -8,10 +8,16 @@ instructions: |
   - Setinhas para andar.
   - X para socar.
   - X três vezes rápido para fazer combo.
-about: |
-  Este jogo foi criado para a [B]aze Jam, uma jam do Scratch.
+about: >-
+  Este jogo foi criado para a \[B]aze Jam, uma jam do Scratch.
+
+
   O tema era Beat 'em Up, então eu fiz esse prototipozinho em uma tarde.
-  VOCÊ SABIA?? Enquanto eu estava fazendo o jogo, tinha um bug que às vezes você socava o inimigo e ele levava knockback e congelava no lugar, sem se mexer nem morrer. Ao invés de consertar o bug eu só fiz o inimigo morrer quando o bug acontece. Considere isso um golpe secreto. B)
+
+
+  *VOCÊ SABIA??* Enquanto eu estava fazendo o jogo, tinha um bug que às vezes você socava o inimigo e ele levava knockback e congelava no lugar, sem se mexer nem morrer. Ao invés de consertar o bug eu só fiz o inimigo morrer quando o bug acontece. Considere isso um golpe secreto. B)
+
+
   Apareceu em um [vídeo do MBJ](https://youtu.be/p_EYqK8xHGg?t=803)! :00
 links:
   - text: Scratch
