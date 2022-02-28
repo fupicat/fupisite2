@@ -16,7 +16,7 @@ about: >-
   Eu criei esse jogo bizarro que não tem objetivo e você só pode jogar uma vez.
 
 
-  Essa foi a primeira jam que eu participei! Com ela, consegui provar a mim mesmo que eu conseguia criar joguinhos bobos com facilidade se eu quisesse, algo surpreendentemente importante pra mim.
+  Essa foi a primeira jam que eu participei! Com ela, consegui provar a mim mesmo que eu conseguia criar joguinhos bobos com facilidade se eu quisesse, algo estranhamente importante pra mim.
 links:
   - text: Itch
     link: https://fupi.itch.io/tv
