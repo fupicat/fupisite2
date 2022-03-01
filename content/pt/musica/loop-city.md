@@ -1,13 +1,13 @@
 ---
-title: Loop City
 slug: loop-city
-description: Musiquinha alegre!
-posted: 1601694000000
-icon: /img/icons/loop-city-song.png
-cover: /img/covers/loop-city-song.png
-tags: "#divertida"
 about: |
   Musiquinha alegre feita para o meu jogo Loop City!
+cover: /img/covers/loop-city-song.png
+title: Loop City
+description: Musiquinha alegre!
+posted: 1601694000000
+icon: /img/icons/loopcity.png
+tags: "#divertida"
 links:
   - text: Bandcamp
     link: https://fupicat.bandcamp.com/track/loop-city
