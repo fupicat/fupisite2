@@ -6,24 +6,29 @@
     </div>
     <div class="main">
       <div v-if="document.instructions" class="panel instructions">
-        <h1><i class="fas fa-question-circle fa-sm"></i> {{ $t("projInstructions") }}</h1>
-        <ul class="fa-ul">
-          <li v-for="inst in document.instructions" :key="inst">
-            <span class="fa-li"><i class="fas fa-xs fa-chevron-circle-right"></i></span>{{ inst }}
-          </li>
-        </ul>
+        <h1>
+          <i class="fas fa-question-circle fa-sm"></i>
+          {{ $t("projInstructions") }}
+        </h1>
+        <nuxt-content :document="document.instructions" />
       </div>
       <div v-if="document.about" class="panel about">
         <h1><i class="fas fa-info-circle fa-sm"></i> {{ $t("projAbout") }}</h1>
-        <div>
-          <p v-for="line in document.about" :key="line" v-html="line"></p>
-        </div>
+        <nuxt-content :document="document.about" />
       </div>
     </div>
     <div v-if="document.links" class="links">
-      <h1><i class="fas fa-external-link-alt fa-sm"></i> {{ $t("projLinks") }}</h1>
+      <h1>
+        <i class="fas fa-external-link-alt fa-sm"></i> {{ $t("projLinks") }}
+      </h1>
       <div>
-        <a class="fupi-btn" v-for="link in document.links" :key="link.text" :href="link.link">{{ link.text }}</a>
+        <a
+          class="fupi-btn"
+          v-for="link in document.links"
+          :key="link.text"
+          :href="link.link"
+          >{{ link.text }}</a
+        >
       </div>
     </div>
   </div>
@@ -33,8 +38,8 @@
 export default {
   props: {
     document: Object,
-  }
-}
+  },
+};
 </script>
 
 <style scoped lang="scss">
@@ -46,7 +51,8 @@ export default {
   color: var(--theme-title);
 }
 
-.instructions, .about {
+.instructions,
+.about {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -62,6 +68,7 @@ export default {
     li {
       margin-bottom: 1rem;
       text-align: justify;
+      list-style: inside disc;
     }
   }
 }
@@ -125,7 +132,8 @@ export default {
   }
 }
 
-.project-info .main .panel, .warning {
+.project-info .main .panel,
+.warning {
   width: 100%;
   padding: 0.625rem 1rem;
   border-radius: 0.625rem;

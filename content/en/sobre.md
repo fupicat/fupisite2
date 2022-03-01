@@ -6,9 +6,10 @@ updated: 1637097124640
 icon: /img/blog.png
 nocomment: true
 ---
+
 <sobre-mim></sobre-mim>
 
-Hello, I'm **Fupi**. I've been creating *stuff* on the internet since 2013, and this site is where I show them off. Here, you'll find all kinds of *stuff*, for example:
+Hello, I'm **Fupi**. I've been creating _stuff_ on the internet since 2013, and this site is where I show them off. Here, you'll find all kinds of _stuff_, for example:
 
 - Games
 - Music
@@ -19,13 +20,13 @@ Hello, I'm **Fupi**. I've been creating *stuff* on the internet since 2013, and 
 
 Most of my new games are made for game jams, specifically Ludum Dare.
 
-If you want to know about new projects, works-in-progress, etc., [follow me on Twitter!](https://twitter.com/fupibr) Actually, my Twitter is Portuguese only, so you may have a hard time..
+If you want to know about new projects, works-in-progress, etc., [follow me on Twitter!](https://twitter.com/fupibr) _Actually, my Twitter is Portuguese only, so you may have a hard time.._
 
-All my music, sounds and art are **public domain** (unless another license is specified). So are many of my games and code. Feel free to use my *stuff* as you wish, credit is optional.
+All my music, sounds and art are **public domain** (unless another license is specified). So are many of my games and code. Feel free to use my _stuff_ as you wish, credit is optional.
 
 ## What I use
 
-If you want to know the programs and other *stuff* I use, here's a little list of what I can remember:
+If you want to know the programs and other _stuff_ I use, here's a little list of what I can remember:
 
 ### Open source
 
