@@ -1,5 +1,6 @@
 ---
 title: Wack a Virus
+slug: wack-a-virus
 description: Clique no vírus o máximo que conseguir!
 posted: 1370055600000
 icon: /img/icons/wack-a-virus.png

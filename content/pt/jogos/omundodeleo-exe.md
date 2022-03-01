@@ -1,5 +1,6 @@
 ---
 title: OMundoDeLeo.exe
+slug: omundodeleo-exe
 description: Encontrei o Leo.exe às 3 da manhã (trollagem)
 posted: 1604977200000
 icon: /img/icons/leoexe.png

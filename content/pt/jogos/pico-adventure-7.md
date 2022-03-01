@@ -1,5 +1,6 @@
 ---
 title: Pico Adventure 7 RPG Extra
+slug: pico-adventure-7
 description: Resgate as pizzas supremas :I
 posted: 1474340400000
 icon: /img/icons/pico-7.png

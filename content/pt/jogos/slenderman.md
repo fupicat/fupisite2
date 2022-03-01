@@ -1,5 +1,6 @@
 ---
 title: Slenderman
+slug: slenderman
 description: Leve altos susto
 posted: 1380942000000
 icon: /img/icons/slenderman.png

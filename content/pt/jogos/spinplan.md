@@ -1,5 +1,6 @@
 ---
 title: SpinPlan
+slug: spinplan
 description: Gire o planeta e colete almôndegas, não deixe o Eggo quebrar!
 warning: Por enquanto, esse jogo só está disponível em inglês.
 posted: 1619406000000

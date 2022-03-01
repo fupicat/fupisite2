@@ -1,5 +1,6 @@
 ---
 title: Scratch Fast Food
+slug: scratch-fast-food
 description: Tomar conta de um restaurante é difícil.
 posted: 1467687600000
 icon: /img/icons/scratch-fast-food.png

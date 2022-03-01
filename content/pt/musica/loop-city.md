@@ -1,5 +1,6 @@
 ---
 title: Loop City
+slug: loop-city
 description: Musiquinha alegre!
 posted: 1601694000000
 icon: /img/icons/loop-city-song.png

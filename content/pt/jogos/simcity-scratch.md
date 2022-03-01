@@ -1,5 +1,6 @@
 ---
 title: SimCity Scratch
+slug: simcity-scratch
 description: Tomar conta de uma cidade é IMPOSSÍVEL.
 posted: 1467687600000
 icon: /img/icons/casa.png

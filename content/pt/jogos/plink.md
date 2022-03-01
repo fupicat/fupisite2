@@ -1,5 +1,6 @@
 ---
 title: Plink! Demake
+slug: plink
 description: Faça música com outras pessoas online!
 posted: 1622516400000
 icon: /img/icons/plink.png

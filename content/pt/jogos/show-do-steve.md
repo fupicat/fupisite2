@@ -1,5 +1,6 @@
 ---
 title: Show do Steve
+slug: show-do-steve
 description: Toque guitarra no ritmo.
 posted: 1507086000000
 icon: /img/icons/steve.png

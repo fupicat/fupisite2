@@ -1,5 +1,6 @@
 ---
 title: Pimbouzinho
+slug: pimbouzinho
 description: Rebata a bolinha o mais longe possível.
 posted: 1593831600000
 icon: /img/icons/pimbouzinho.png

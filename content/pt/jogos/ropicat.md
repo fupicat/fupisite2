@@ -1,5 +1,6 @@
 ---
 title: Ropicat
+slug: ropicat
 description: Desvie a corda dos espinhos!
 posted: 1393038000000
 icon: /img/icons/ropicat.png

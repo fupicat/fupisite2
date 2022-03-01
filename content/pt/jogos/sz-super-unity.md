@@ -1,5 +1,6 @@
 ---
 title: SZ Super Unity
+slug: sz-super-unity
 description: Meu primeiro jogo feito fora do Scratch.
 warning: Jogo cancelado, tem pouco conteúdo.
 posted: 1530414000000

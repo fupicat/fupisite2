@@ -1,5 +1,6 @@
 ---
 title: Super Worm World
+slug: super-worm-world
 description: Jogo da cobrinha diferenciado.
 posted: 1485828000000
 icon: /img/icons/super-worm-world.png

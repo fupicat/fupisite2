@@ -1,5 +1,6 @@
 ---
 title: SUPRA MAYRO BORSS
+slug: supra-mayro-borss
 description: supa mario tooooo yahoo
 posted: 1467687600000
 icon: /img/icons/mayro.png

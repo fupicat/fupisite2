@@ -1,5 +1,6 @@
 ---
 title: Sempre em Frente
+slug: sempre-em-frente
 description: Pule até o final usando apenas um botão!
 posted: 1564887600000
 icon: /img/icons/sempre-em-frente.png

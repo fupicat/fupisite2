@@ -1,5 +1,6 @@
 ---
 title: Urinight
+slug: urinight
 description: Simulador de fazer xixi no meio da noite.
 warning: Jogo apenas em inglês.
 posted: 1594522800000

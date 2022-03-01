@@ -1,5 +1,6 @@
 ---
 title: SZ Super
+slug: sz-super
 description: Um pequeno mundo virtual espacial.
 posted: 1506826800000
 icon: /img/icons/sz-super.png

@@ -1,5 +1,6 @@
 ---
 title: Ensinei meu amigo a fazer um jogo em 1 dia
+slug: ensinei-amigo-fazer-jogo-um-dia
 description: Fizemos Yakuza 2D de tiro, eu acho.
 posted: 1619060400000
 icon: /img/icons/ensinando-charis.png

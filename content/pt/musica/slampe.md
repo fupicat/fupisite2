@@ -1,5 +1,6 @@
 ---
 title: Slampe
+slug: slampe
 description: Synthwave house
 posted: 1616900400000
 icon: /img/icons/slampe.png

@@ -1,5 +1,6 @@
 ---
 title: Treino do Nick
+slug: treino-do-nick
 description: Quebre alvos.
 posted: 1507086000000
 icon: /img/icons/treino-do-nick.png

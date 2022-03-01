@@ -9,10 +9,11 @@ collections:
     label: "Blog (PT)" # Used in the UI
     folder: "content/pt/blog" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template
+    slug: "{{fields.slug}}" # Filename template
     sortable_fields: ["title", "posted"]
     fields: # The fields for each document, usually in front matter
       - { label: "Título", name: "title", widget: "string" }
+      - { label: "Slug", name: "slug", widget: "string" }
       - { label: "Descrição", name: "description", widget: "string" }
       - { label: "Postado", name: "posted", widget: "datetime", format: "x" }
       - { label: "Ícone", name: "icon", widget: "image", choose_url: true }
@@ -23,10 +24,11 @@ collections:
     label: "Blog (EN)" # Used in the UI
     folder: "content/en/blog" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template
+    slug: "{{fields.slug}}" # Filename template
     sortable_fields: ["title", "posted"]
     fields: # The fields for each document, usually in front matter
       - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
+      - { label: "Slug", name: "slug", widget: "string" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Posted", name: "posted", widget: "datetime", format: "x" }
@@ -38,10 +40,11 @@ collections:
     label: "Jogos (PT)" # Used in the UI
     folder: "content/pt/jogos" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template
+    slug: "{{fields.slug}}" # Filename template
     sortable_fields: ["title", "posted"]
     fields: # The fields for each document, usually in front matter
       - { label: "Título", name: "title", widget: "string" }
+      - { label: "Slug", name: "slug", widget: "string" }
       - { label: "Descrição", name: "description", widget: "string" }
       - { label: "Aviso", name: "warning", widget: "string", required: false }
       - { label: "Postado", name: "posted", widget: "datetime", format: "x" }
@@ -66,10 +69,11 @@ collections:
     label: "Jogos (EN)"
     folder: "content/en/jogos"
     create: true
-    slug: "{{slug}}"
+    slug: "{{fields.slug}}"
     sortable_fields: ["title", "posted"]
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Slug", name: "slug", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Warning", name: "warning", widget: "string", required: false }
       - { label: "Posted", name: "posted", widget: "datetime", format: "x" }
@@ -94,10 +98,11 @@ collections:
     label: "Música (PT)"
     folder: "content/pt/musica"
     create: true
-    slug: "{{slug}}"
+    slug: "{{fields.slug}}"
     sortable_fields: ["title", "posted"]
     fields:
       - { label: "Título", name: "title", widget: "string" }
+      - { label: "Slug", name: "slug", widget: "string" }
       - { label: "Descrição", name: "description", widget: "string" }
       - { label: "Aviso", name: "warning", widget: "string", required: false }
       - { label: "Postado", name: "posted", widget: "datetime", format: "x" }
@@ -121,10 +126,11 @@ collections:
     label: "Música (EN)"
     folder: "content/en/musica"
     create: true
-    slug: "{{slug}}"
+    slug: "{{fields.slug}}"
     sortable_fields: ["title", "posted"]
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Slug", name: "slug", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Warning", name: "warning", widget: "string", required: false }
       - { label: "Posted", name: "posted", widget: "datetime", format: "x" }
@@ -148,10 +154,11 @@ collections:
     label: "Vídeos (PT)"
     folder: "content/pt/videos"
     create: true
-    slug: "{{slug}}"
+    slug: "{{fields.slug}}"
     sortable_fields: ["title", "posted"]
     fields:
       - { label: "Título", name: "title", widget: "string" }
+      - { label: "Slug", name: "slug", widget: "string" }
       - { label: "Descrição", name: "description", widget: "string" }
       - { label: "Aviso", name: "warning", widget: "string", required: false }
       - { label: "Postado", name: "posted", widget: "datetime", format: "x" }
@@ -175,10 +182,11 @@ collections:
     label: "Vídeos (EN)"
     folder: "content/en/videos"
     create: true
-    slug: "{{slug}}"
+    slug: "{{fields.slug}}"
     sortable_fields: ["title", "posted"]
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Slug", name: "slug", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Warning", name: "warning", widget: "string", required: false }
       - { label: "Posted", name: "posted", widget: "datetime", format: "x" }
@@ -202,10 +210,11 @@ collections:
     label: "Ferramentas (PT)"
     folder: "content/pt/ferramentas"
     create: true
-    slug: "{{slug}}"
+    slug: "{{fields.slug}}"
     sortable_fields: ["title", "posted"]
     fields:
       - { label: "Título", name: "title", widget: "string" }
+      - { label: "Slug", name: "slug", widget: "string" }
       - { label: "Descrição", name: "description", widget: "string" }
       - { label: "Aviso", name: "warning", widget: "string", required: false }
       - { label: "Postado", name: "posted", widget: "datetime", format: "x" }
@@ -230,10 +239,11 @@ collections:
     label: "Ferramentas (EN)"
     folder: "content/en/ferramentas"
     create: true
-    slug: "{{slug}}"
+    slug: "{{fields.slug}}"
     sortable_fields: ["title", "posted"]
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Slug", name: "slug", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Warning", name: "warning", widget: "string", required: false }
       - { label: "Posted", name: "posted", widget: "datetime", format: "x" }
@@ -258,10 +268,11 @@ collections:
     label: "Etc (PT)"
     folder: "content/pt/etc"
     create: true
-    slug: "{{slug}}"
+    slug: "{{fields.slug}}"
     sortable_fields: ["title", "posted"]
     fields:
       - { label: "Título", name: "title", widget: "string" }
+      - { label: "Slug", name: "slug", widget: "string" }
       - { label: "Descrição", name: "description", widget: "string" }
       - { label: "Aviso", name: "warning", widget: "string", required: false }
       - { label: "Postado", name: "posted", widget: "datetime", format: "x" }
@@ -286,10 +297,11 @@ collections:
     label: "Etc (EN)"
     folder: "content/en/etc"
     create: true
-    slug: "{{slug}}"
+    slug: "{{fields.slug}}"
     sortable_fields: ["title", "posted"]
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Slug", name: "slug", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Warning", name: "warning", widget: "string", required: false }
       - { label: "Posted", name: "posted", widget: "datetime", format: "x" }

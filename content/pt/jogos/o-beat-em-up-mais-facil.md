@@ -1,5 +1,6 @@
 ---
 title: O Beat 'em Up mais fácil da história
+slug: o-beat-em-up-mais-facil
 description: Bata em carinhas até ganhar, porque não tem outra opção.
 posted: 1573959600000
 icon: /img/icons/beat-em-up-facil.png

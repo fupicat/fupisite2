@@ -1,5 +1,6 @@
 ---
 title: Turn on the TV
+slug: turn-on-the-tv
 description: Ligue a TV e veja o que acontece!
 warning: Jogo em inglês e sem versão para navegador.
 posted: 1558494000000

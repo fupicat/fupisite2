@@ -1,5 +1,6 @@
 ---
 title: Um Dia Normal na Praia
+slug: um-dia-normal-na-praia
 description: Vá até o mar sem se queimar!
 posted: 1467687600000
 icon: /img/icons/um-dia-normal-na-praia.png

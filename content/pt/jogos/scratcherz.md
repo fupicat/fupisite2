@@ -1,5 +1,6 @@
 ---
 title: ScratcherZ
+slug: scratcherz
 description: Um pequeníssimo mundo virtual.
 posted: 1467687600000
 icon: /img/icons/scratcherz.png

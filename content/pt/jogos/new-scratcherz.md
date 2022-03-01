@@ -1,5 +1,6 @@
 ---
 title: New ScratcherZ
+slug: new-scratcherz
 description: Um pequeno mundo virtual.
 posted: 1486864800000
 icon: /img/icons/new-scratcherz.png

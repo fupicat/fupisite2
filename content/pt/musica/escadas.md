@@ -1,5 +1,6 @@
 ---
 title: Escadas
+slug: escadas
 description: Jazzy chill
 posted: 1591412400000
 icon: /img/icons/escadas.png

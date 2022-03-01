@@ -1,5 +1,6 @@
 ---
 title: Scratch Quest
+slug: scratchquest
 description: Jogue como Scratch e derrote todas as Game Engines!
 posted: 1593572400000
 icon: /img/icons/scratchquest.png
