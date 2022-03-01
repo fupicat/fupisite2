@@ -17,6 +17,13 @@ collections:
       - { label: "Descrição", name: "description", widget: "string" }
       - { label: "Postado", name: "posted", widget: "datetime", format: "x" }
       - { label: "Ícone", name: "icon", widget: "image", choose_url: true }
+      - {
+          label: "Cover",
+          name: "cover",
+          widget: "image",
+          choose_url: true,
+          required: false,
+        }
       - { label: "Tags", name: "tags", widget: "string" }
       - { label: "NFE", name: "nfe", widget: "boolean", required: false }
       - { label: "Conteúdo", name: "body", widget: "markdown" }
@@ -33,6 +40,13 @@ collections:
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Posted", name: "posted", widget: "datetime", format: "x" }
       - { label: "Icon", name: "icon", widget: "image", choose_url: true }
+      - {
+          label: "Cover",
+          name: "cover",
+          widget: "image",
+          choose_url: true,
+          required: false,
+        }
       - { label: "Tags", name: "tags", widget: "string" }
       - { label: "NFE", name: "nfe", widget: "boolean", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
@@ -49,6 +63,13 @@ collections:
       - { label: "Aviso", name: "warning", widget: "string", required: false }
       - { label: "Postado", name: "posted", widget: "datetime", format: "x" }
       - { label: "Ícone", name: "icon", widget: "image", choose_url: true }
+      - {
+          label: "Cover",
+          name: "cover",
+          widget: "image",
+          choose_url: true,
+          required: false,
+        }
       - { label: "Tags", name: "tags", widget: "string" }
       - { label: "NFE", name: "nfe", widget: "boolean", required: false }
       - { label: "Instruções", name: "instructions", widget: "markdown" }
@@ -78,6 +99,13 @@ collections:
       - { label: "Warning", name: "warning", widget: "string", required: false }
       - { label: "Posted", name: "posted", widget: "datetime", format: "x" }
       - { label: "Icon", name: "icon", widget: "image", choose_url: true }
+      - {
+          label: "Cover",
+          name: "cover",
+          widget: "image",
+          choose_url: true,
+          required: false,
+        }
       - { label: "Tags", name: "tags", widget: "string" }
       - { label: "NFE", name: "nfe", widget: "boolean", required: false }
       - { label: "Instructions", name: "instructions", widget: "markdown" }
@@ -107,6 +135,13 @@ collections:
       - { label: "Aviso", name: "warning", widget: "string", required: false }
       - { label: "Postado", name: "posted", widget: "datetime", format: "x" }
       - { label: "Ícone", name: "icon", widget: "image", choose_url: true }
+      - {
+          label: "Cover",
+          name: "cover",
+          widget: "image",
+          choose_url: true,
+          required: false,
+        }
       - { label: "Tags", name: "tags", widget: "string" }
       - { label: "NFE", name: "nfe", widget: "boolean", required: false }
       - { label: "Sobre", name: "about", widget: "markdown" }
@@ -135,6 +170,13 @@ collections:
       - { label: "Warning", name: "warning", widget: "string", required: false }
       - { label: "Posted", name: "posted", widget: "datetime", format: "x" }
       - { label: "Icon", name: "icon", widget: "image", choose_url: true }
+      - {
+          label: "Cover",
+          name: "cover",
+          widget: "image",
+          choose_url: true,
+          required: false,
+        }
       - { label: "Tags", name: "tags", widget: "string" }
       - { label: "NFE", name: "nfe", widget: "boolean", required: false }
       - { label: "About", name: "about", widget: "markdown" }
@@ -163,6 +205,13 @@ collections:
       - { label: "Aviso", name: "warning", widget: "string", required: false }
       - { label: "Postado", name: "posted", widget: "datetime", format: "x" }
       - { label: "Ícone", name: "icon", widget: "image", choose_url: true }
+      - {
+          label: "Cover",
+          name: "cover",
+          widget: "image",
+          choose_url: true,
+          required: false,
+        }
       - { label: "Tags", name: "tags", widget: "string" }
       - { label: "NFE", name: "nfe", widget: "boolean", required: false }
       - { label: "Sobre", name: "about", widget: "markdown" }
@@ -191,6 +240,13 @@ collections:
       - { label: "Warning", name: "warning", widget: "string", required: false }
       - { label: "Posted", name: "posted", widget: "datetime", format: "x" }
       - { label: "Icon", name: "icon", widget: "image", choose_url: true }
+      - {
+          label: "Cover",
+          name: "cover",
+          widget: "image",
+          choose_url: true,
+          required: false,
+        }
       - { label: "Tags", name: "tags", widget: "string" }
       - { label: "NFE", name: "nfe", widget: "boolean", required: false }
       - { label: "About", name: "about", widget: "markdown" }
@@ -219,6 +275,13 @@ collections:
       - { label: "Aviso", name: "warning", widget: "string", required: false }
       - { label: "Postado", name: "posted", widget: "datetime", format: "x" }
       - { label: "Ícone", name: "icon", widget: "image", choose_url: true }
+      - {
+          label: "Cover",
+          name: "cover",
+          widget: "image",
+          choose_url: true,
+          required: false,
+        }
       - { label: "Tags", name: "tags", widget: "string" }
       - { label: "NFE", name: "nfe", widget: "boolean", required: false }
       - { label: "Instruções", name: "instructions", widget: "markdown" }
@@ -248,6 +311,13 @@ collections:
       - { label: "Warning", name: "warning", widget: "string", required: false }
       - { label: "Posted", name: "posted", widget: "datetime", format: "x" }
       - { label: "Icon", name: "icon", widget: "image", choose_url: true }
+      - {
+          label: "Cover",
+          name: "cover",
+          widget: "image",
+          choose_url: true,
+          required: false,
+        }
       - { label: "Tags", name: "tags", widget: "string" }
       - { label: "NFE", name: "nfe", widget: "boolean", required: false }
       - { label: "Instructions", name: "instructions", widget: "markdown" }
@@ -277,6 +347,13 @@ collections:
       - { label: "Aviso", name: "warning", widget: "string", required: false }
       - { label: "Postado", name: "posted", widget: "datetime", format: "x" }
       - { label: "Ícone", name: "icon", widget: "image", choose_url: true }
+      - {
+          label: "Cover",
+          name: "cover",
+          widget: "image",
+          choose_url: true,
+          required: false,
+        }
       - { label: "Tags", name: "tags", widget: "string" }
       - { label: "NFE", name: "nfe", widget: "boolean", required: false }
       - { label: "Instruções", name: "instructions", widget: "markdown" }
@@ -306,6 +383,13 @@ collections:
       - { label: "Warning", name: "warning", widget: "string", required: false }
       - { label: "Posted", name: "posted", widget: "datetime", format: "x" }
       - { label: "Icon", name: "icon", widget: "image", choose_url: true }
+      - {
+          label: "Cover",
+          name: "cover",
+          widget: "image",
+          choose_url: true,
+          required: false,
+        }
       - { label: "Tags", name: "tags", widget: "string" }
       - { label: "NFE", name: "nfe", widget: "boolean", required: false }
       - { label: "Instructions", name: "instructions", widget: "markdown" }
