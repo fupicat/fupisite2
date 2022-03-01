@@ -2,7 +2,7 @@
 title: Loop City
 description: Cheerful song!
 posted: 1601694000000
-icon: /img/icons/loop-city.png
+icon: /img/icons/loopcity.png
 cover: /img/covers/loop-city-song.png
 tags: "#fun"
 about:

@@ -56,6 +56,7 @@ export default {
         { name: "Itch.io", url: "https://fupi.itch.io/" },
         { name: "OpenGameArt", url: "https://opengameart.org/users/fupi" },
         { name: "Freesound", url: "https://freesound.org/people/Fupicat/" },
+        { name: "Bandcamp", url: "https://fupicat.bandcamp.com/" },
       ],
       dark: false,
       nfeShow: false,
