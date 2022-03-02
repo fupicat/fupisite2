@@ -1,13 +1,15 @@
 ---
-slug: loop-city
 title: Loop City
+slug: loop-city
 description: Cheerful song!
 posted: 1601694000000
 icon: /img/icons/loopcity.png
 cover: /img/covers/loop-city-song.png
 tags: "#fun"
-about: |
+about: |-
   Cheerful song made for my game Loop City!
+
+  First time I made an original song for a game.
 links:
   - text: Bandcamp
     link: https://fupicat.bandcamp.com/track/loop-city
