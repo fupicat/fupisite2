@@ -2,19 +2,27 @@
   <div>
     <div class="thing-header">
       <div class="main">
-        <img :src="icon ? icon : '/img/icons/Jigsaw.png'" alt="ícone da postagem" class="reduced-motion">
+        <img
+          :src="icon ? icon : '/img/icons/Jigsaw.png'"
+          alt="ícone da postagem"
+          class="reduced-motion"
+        />
         <div>
           <p class="title">{{ title }}</p>
           <p class="description">{{ description }}</p>
         </div>
       </div>
       <div v-if="posted || edited" class="date">
-        <p>{{ $t("posted") }}<br>{{ formatDate(posted) }}</p>
-        <p v-if="edited && (posted != edited)">{{ $t("edited") }}<br>{{ formatDate(edited) }}</p>
+        <p>{{ $t("posted") }}<br />{{ formatDate(posted) }}</p>
       </div>
     </div>
     <div v-if="tags" class="tags">
-      <tag-link :url="url" v-for="tag in tags.split(' ')" :key="tag" :tag="tag" />
+      <tag-link
+        :url="url"
+        v-for="tag in tags.split(' ')"
+        :key="tag"
+        :tag="tag"
+      />
     </div>
   </div>
 </template>
@@ -26,14 +34,17 @@ export default {
   components: {
     TagLink,
   },
-  props: ['url', 'icon', 'title', 'description', 'posted', 'edited', 'tags'],
+  props: ["url", "icon", "title", "description", "posted", "edited", "tags"],
   methods: {
     formatDate(date) {
-      const options = { year: 'numeric', month: 'long', day: 'numeric' }
-      return new Date(date).toLocaleDateString(this.$i18n.locale, options)
-    }
-  }
-}
+      const options = { year: "numeric", month: "long", day: "numeric" };
+      return new Date(Number(date)).toLocaleDateString(
+        this.$i18n.locale,
+        options
+      );
+    },
+  },
+};
 </script>
 
 <style scoped>

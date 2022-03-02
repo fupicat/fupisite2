@@ -1,7 +1,10 @@
 <template>
   <NuxtLink :to="localePath(`/${path}/${slug}`)" class="thing fupi-btn">
     <div class="main">
-      <img :src="icon ? icon : '/img/icons/Jigsaw.png'" alt="ícone da postagem">
+      <img
+        :src="icon ? icon : '/img/icons/Jigsaw.png'"
+        alt="ícone da postagem"
+      />
       <div>
         <p class="title">{{ title }}</p>
         <p class="description">{{ description }}</p>
@@ -28,11 +31,14 @@ export default {
   },
   methods: {
     formatDate(date) {
-      const options = { year: 'numeric', month: 'long', day: 'numeric' }
-      return new Date(date).toLocaleDateString(this.$i18n.locale, options)
-    }
-  }
-}
+      const options = { year: "numeric", month: "long", day: "numeric" };
+      return new Date(Number(date)).toLocaleDateString(
+        this.$i18n.locale,
+        options
+      );
+    },
+  },
+};
 </script>
 
 <style scoped>

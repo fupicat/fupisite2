@@ -1,4 +1,5 @@
 ---
+slug: loop-city
 title: Loop City
 description: Cheerful song!
 posted: 1601694000000
