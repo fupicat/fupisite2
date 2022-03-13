@@ -2,6 +2,8 @@
 title: Elevar
 slug: elevar
 description: Elevador doidao
+warning: Esse vídeo contém luzes piscantes que podem causar sintomas em pessoas
+  com epilepsia fotossensível.
 posted: "1582125013583"
 icon: /img/uploads/elevar.png
 tags: "#música #desenho #animação #3d"
