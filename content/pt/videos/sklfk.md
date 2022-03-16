@@ -5,6 +5,7 @@ description: Simulação de sklfk
 posted: "1585840072033"
 icon: /img/icons/sklfk.png
 tags: "#música #desenho"
+nfe: true
 about: 🔈🔉🔊👂🔇
 links:
   - text: YouTube
