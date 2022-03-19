@@ -1,13 +1,21 @@
 ---
 title: Scratch Cat 3D
+slug: scratch-cat-3d
 description: 3D model of Scratch's mascot.
 posted: 1630947216650
 icon: /img/icons/scratchcat3d.png
+cover: /img/uploads/scratch-cat-3d-cover.png
 tags: "#3d #scratch #blender"
-about: |
-  This model was very popular in Scratch, it stayed in the "What the community is loving" tab for a whole week I think, pretty crazy.
+instructions: |-
+  - Left click to rotate the model.
+  - Right click to move the camera.
+about: >
+  This model was very popular in Scratch, it stayed in the "What the community
+  is loving" tab for a whole week I think, pretty crazy.
+
 
   One guy even asked for the file in an email and 3D printed it!
+
 
   Famously scary when looked from... any direction.
 links:
