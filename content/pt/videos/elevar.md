@@ -6,6 +6,7 @@ warning: Esse vídeo contém luzes piscantes que podem causar sintomas em pessoa
   com epilepsia fotossensível.
 posted: "1582125013583"
 icon: /img/uploads/elevar.png
+cover: /img/uploads/elevar-cover.png
 tags: "#música #desenho #animação #3d"
 about: >-
   Meu primeiro vídeo musical! Também a minha primeira animação 3D usando
