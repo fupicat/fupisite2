@@ -4,10 +4,11 @@ slug: slampe
 description: Synthwave house
 posted: 1616900400000
 icon: /img/icons/slampe.png
-cover: /img/covers/slampe.png
+cover: /img/uploads/slampe-cover.png
 tags: "#house #divertida #sampling"
-about: |
-  Uma música feita de samples de outras músicas minhas! Ficou como se fosse uma fusão entre música synthwave e house.
+about: >
+  Uma música feita de samples de outras músicas minhas! Ficou como se fosse uma
+  fusão entre música synthwave e house.
 links:
   - text: YouTube
     link: https://www.youtube.com/watch?v=n4boqTH9PRA
