@@ -204,6 +204,10 @@ links:
 #MDPgrid a {
   text-decoration: none;
 }
+#MDPgrid h1 {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
 #MDPgrid.series-grid {
   grid-template-columns: auto auto;
 }
@@ -213,6 +217,9 @@ links:
   grid-column-gap: 10px;
   grid-row-gap: 10px;
   padding-bottom: 10px;
+}
+#MDPgrid.grid (max-width: 768px) {
+  grid-template-columns: auto;
 }
 #MDPgrid .grid-item {
   display: flex;
@@ -241,6 +248,7 @@ links:
 }
 #MDPgrid.series-grid .grid-item .info {
   margin: auto;
+  padding: 1rem;
 }
 #MDPgrid .grid-item .info {
   margin: 10px 10px 0px 10px;
