@@ -5,6 +5,7 @@ description: Wacky elevator
 warning: This video contains flashing lights. Viewer discretion is advised.
 posted: "1582125000000"
 icon: /img/uploads/elevar.png
+cover: /img/uploads/elevar-cover.png
 tags: "#music #art #animation #3d"
 about: >-
   My first music video! Also my first 3D animation using Blender. Thanks to the
