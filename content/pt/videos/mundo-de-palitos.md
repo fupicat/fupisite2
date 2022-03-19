@@ -218,8 +218,10 @@ links:
   grid-row-gap: 10px;
   padding-bottom: 10px;
 }
-#MDPgrid.grid (max-width: 768px) {
-  grid-template-columns: auto;
+@media (max-width: 768px) {
+  #MDPgrid.grid {
+    grid-template-columns: auto;
+  }
 }
 #MDPgrid .grid-item {
   display: flex;
