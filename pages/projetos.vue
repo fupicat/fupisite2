@@ -41,12 +41,12 @@
 </template>
 
 <script>
-import Container from '~/components/Container.vue'
-import CategoryCompact from '~/components/list/CategoryCompact.vue';
-import PageHeader from '~/components/PageHeader.vue'
+import Container from "~/components/Container.vue";
+import CategoryCompact from "~/components/list/CategoryCompact.vue";
+import PageHeader from "~/components/PageHeader.vue";
 
 export default {
-  components: { Container, PageHeader, CategoryCompact, },
+  components: { Container, PageHeader, CategoryCompact },
   async asyncData({ $content, app }) {
     let posts = {
       jogos: [],
@@ -59,10 +59,18 @@ export default {
     try {
       for (let cat in posts) {
         posts[cat] = await $content(`${app.i18n.locale}/${cat}`)
-          .only(['title', 'description', 'slug', 'icon', 'tags', 'posted', 'nfe'])
-          .sortBy('posted', 'desc')
+          .only([
+            "title",
+            "description",
+            "slug",
+            "icon",
+            "tags",
+            "posted",
+            "nfe",
+          ])
+          .sortBy("posted", "desc")
           .fetch();
-        postsSafe[cat] = posts[cat].filter(x => !x.nfe);
+        postsSafe[cat] = posts[cat].filter((x) => !x.nfe);
         posts[cat] = posts[cat].slice(0, 6);
         postsSafe[cat] = postsSafe[cat].slice(0, 6);
       }
@@ -70,25 +78,60 @@ export default {
       return {
         posts,
         postsSafe,
-      }
+      };
     }
   },
   head() {
     return {
       title: this.$t("projetos") + " · Fupi",
       meta: [
-        { hid: 'description', name: 'description', content: this.$t("projetosDesc"), },
-        { hid: 'keywords', name: 'keywords', content: this.$t("fupiTags")},
+        {
+          hid: "description",
+          name: "description",
+          content: this.$t("projetosDesc"),
+        },
+        { hid: "keywords", name: "keywords", content: this.$t("fupiTags") },
+        {
+          hid: "og:image",
+          property: "og:image",
+          content: "/img/covers/Generica.png",
+        },
         // Open Graph
-        { hid: 'og:title', property: 'og:title', content: this.$t("projetos") + " · Fupi" },
-        { hid: 'og:description', property: 'og:description', content: this.$t("projetosDesc") },
+        {
+          hid: "og:title",
+          property: "og:title",
+          content: this.$t("projetos") + " · Fupi",
+        },
+        {
+          hid: "og:description",
+          property: "og:description",
+          content: this.$t("projetosDesc"),
+        },
+        {
+          hid: "og:image",
+          property: "og:image",
+          content: "/img/covers/Generica.png",
+        },
         // Twitter
-        { hid: 'twitter:title', name: 'twitter:title', content: this.$t("projetos") + " · Fupi" },
-        { hid: 'twitter:description', name: 'twitter:description', content: this.$t("projetosDesc") }
-      ]
-    }
-  }
-}
+        {
+          hid: "twitter:title",
+          name: "twitter:title",
+          content: this.$t("projetos") + " · Fupi",
+        },
+        {
+          hid: "twitter:description",
+          name: "twitter:description",
+          content: this.$t("projetosDesc"),
+        },
+        {
+          hid: "twitter:image",
+          name: "twitter:image",
+          content: "/img/covers/Generica.png",
+        },
+      ],
+    };
+  },
+};
 </script>
 
 <style scoped lang="scss">

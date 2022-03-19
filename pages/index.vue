@@ -10,7 +10,7 @@
             :key="proj.post.title"
           >
             <div
-              :style="`background-image: url('/img/covers/${proj.cover}')`"
+              :style="`background-image: url('${proj.post.cover}')`"
               class="cover"
             ></div>
             <div class="btn">
@@ -135,6 +135,15 @@
         :postsSafe="randomSafe.videos"
       />
     </div>
+    <div class="fanarts" v-if="$i18n.locale == 'pt'">
+      <h1>Fan-arts!</h1>
+      <p>
+        Quero incluir uma seção de fan-arts aqui! Se você já fez, ou quer fazer
+        uma fan-art para mim,
+        <NuxtLink to="/sobre#contato">entre em contato</NuxtLink> e eu colocarei
+        aqui no site no futuro!
+      </p>
+    </div>
   </container>
 </template>
 
@@ -143,8 +152,11 @@ import Container from "~/components/Container.vue";
 import CategoryCompact from "~/components/list/CategoryCompact.vue";
 
 const featuredList = [
-  { category: "jogos", slug: "wrap", cover: "wrap.png" },
-  { category: "musica", slug: "slampe", cover: "slampe.png" },
+  { category: "jogos", slug: "wrap" },
+  { category: "musica", slug: "slampe" },
+  { category: "videos", slug: "elevar" },
+  { category: "ferramentas", slug: "replacer" },
+  { category: "etc", slug: "scratch-cat-3d" },
 ];
 
 const allQuotes = {
@@ -298,9 +310,8 @@ export default {
       for (const i of featuredList) {
         featured.push({
           post: await $content(`${app.i18n.locale}/${i.category}`, i.slug)
-            .only(["title", "description", "icon"])
+            .only(["title", "description", "icon", "cover"])
             .fetch(),
-          cover: i.cover,
           category: i.category,
           slug: i.slug,
         });
@@ -395,12 +406,27 @@ export default {
           property: "og:description",
           content: this.$t("fupiDesc"),
         },
+        {
+          hid: "og:description",
+          property: "og:description",
+          content: this.$t("projetosDesc"),
+        },
+        {
+          hid: "og:image",
+          property: "og:image",
+          content: "/img/covers/Generica.png",
+        },
         // Twitter
         { hid: "twitter:title", name: "twitter:title", content: "Fupi" },
         {
           hid: "twitter:description",
           name: "twitter:description",
           content: this.$t("fupiDesc"),
+        },
+        {
+          hid: "twitter:image",
+          name: "twitter:image",
+          content: "/img/covers/Generica.png",
         },
       ],
     };
@@ -736,5 +762,18 @@ export default {
   display: flex;
   flex-direction: column;
   gap: 0.625rem;
+}
+
+.fanarts {
+  margin-bottom: 2rem;
+  padding: 1rem 2rem;
+  background-color: var(--theme-panel);
+  text-align: center;
+  border-radius: 0.625rem;
+  box-shadow: inset 0em 0.4em rgba(0, 0, 0, 0.15);
+  h1 {
+    font-size: 1.625rem;
+    font-weight: bold;
+  }
 }
 </style>

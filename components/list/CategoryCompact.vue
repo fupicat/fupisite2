@@ -1,11 +1,18 @@
 <template>
   <div :class="'category-compact ' + cat">
     <div class="header">
-      <div class="title"><img :src="`/img/${cat}.png`" :alt="cat" /><h1>{{ title }}</h1></div>
-      <nuxt-link class="fupi-btn" :to="localePath('/' + cat)">{{ $t("mais") }}</nuxt-link>
+      <div class="title">
+        <img :src="`/img/${cat}.png`" :alt="cat" />
+        <h1>{{ title }}</h1>
+      </div>
+      <nuxt-link class="fupi-btn" :to="localePath('/' + cat)">{{
+        $t("mais")
+      }}</nuxt-link>
     </div>
     <thing-list>
-      <thing-item v-for="post of filteredPosts" :key="post.slug"
+      <thing-item
+        v-for="post of filteredPosts"
+        :key="post.slug"
         :path="cat"
         :slug="post.slug"
         :title="post.title"
@@ -19,11 +26,11 @@
 </template>
 
 <script>
-import ThingList from '~/components/list/ThingList.vue'
-import ThingItem from '~/components/list/ThingItem.vue'
+import ThingList from "~/components/list/ThingList.vue";
+import ThingItem from "~/components/list/ThingItem.vue";
 
 export default {
-  components: { ThingList, ThingItem, },
+  components: { ThingList, ThingItem },
   props: {
     cat: String,
     title: String,
@@ -37,9 +44,9 @@ export default {
       } else {
         return this.posts;
       }
-    }
+    },
   },
-}
+};
 </script>
 
 <style>
@@ -62,6 +69,12 @@ export default {
   color: var(--theme-title);
 }
 
+@media (max-width: 768px) {
+  .category-compact .header .title h1 {
+    font-size: 1.3rem;
+  }
+}
+
 .category-compact .header .title img {
   height: 2rem;
 }
@@ -72,6 +85,13 @@ export default {
   line-height: 100%;
   display: flex;
   align-items: center;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .category-compact .header a {
+    font-size: 0.8rem;
+  }
 }
 
 .category-compact {

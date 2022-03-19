@@ -18,17 +18,17 @@
 
 <script>
 export default {
-  props: {
-    path: String,
-    slug: String,
-    title: String,
-    description: String,
-    icon: String,
-    posted: Number,
-    showdate: Boolean,
-    color: String,
-    colorhov: String,
-  },
+  props: [
+    "path",
+    "slug",
+    "title",
+    "description",
+    "icon",
+    "posted",
+    "showdate",
+    "color",
+    "colorhov",
+  ],
   methods: {
     formatDate(date) {
       const options = { year: "numeric", month: "long", day: "numeric" };

@@ -1,7 +1,18 @@
 /* Content */
 
+.blog .nuxt-content {
+  padding: 0 13%;
+  color: #2f2f2f;
+}
+
 .dark .blog .nuxt-content {
   color: var(--purple-textdark);
+}
+
+@media (max-width: 768px) {
+  .blog .nuxt-content {
+    padding: 0;
+  }
 }
 
 .blog .nuxt-content img {
@@ -75,8 +86,10 @@
   margin-top: 0rem;
 }
 
-.blog .nuxt-content .nuxt-content-highlight pre code, .blog .nuxt-content .nuxt-content-highlight pre code * {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+.blog .nuxt-content .nuxt-content-highlight pre code,
+.blog .nuxt-content .nuxt-content-highlight pre code * {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
   font-size: 1rem;
 }
 

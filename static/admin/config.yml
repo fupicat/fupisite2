@@ -72,8 +72,13 @@ collections:
         }
       - { label: "Tags", name: "tags", widget: "string", required: false }
       - { label: "NFE", name: "nfe", widget: "boolean", required: false }
-      - { label: "Instruções", name: "instructions", widget: "markdown" }
-      - { label: "Sobre", name: "about", widget: "markdown" }
+      - {
+          label: "Instruções",
+          name: "instructions",
+          widget: "markdown",
+          required: false,
+        }
+      - { label: "Sobre", name: "about", widget: "markdown", required: false }
       - {
           label: "Links",
           name: "links",
@@ -108,8 +113,13 @@ collections:
         }
       - { label: "Tags", name: "tags", widget: "string", required: false }
       - { label: "NFE", name: "nfe", widget: "boolean", required: false }
-      - { label: "Instructions", name: "instructions", widget: "markdown" }
-      - { label: "About", name: "about", widget: "markdown" }
+      - {
+          label: "Instructions",
+          name: "instructions",
+          widget: "markdown",
+          required: false,
+        }
+      - { label: "About", name: "about", widget: "markdown", required: false }
       - {
           label: "Links",
           name: "links",
@@ -144,7 +154,7 @@ collections:
         }
       - { label: "Tags", name: "tags", widget: "string", required: false }
       - { label: "NFE", name: "nfe", widget: "boolean", required: false }
-      - { label: "Sobre", name: "about", widget: "markdown" }
+      - { label: "Sobre", name: "about", widget: "markdown", required: false }
       - {
           label: "Links",
           name: "links",
@@ -179,7 +189,7 @@ collections:
         }
       - { label: "Tags", name: "tags", widget: "string", required: false }
       - { label: "NFE", name: "nfe", widget: "boolean", required: false }
-      - { label: "About", name: "about", widget: "markdown" }
+      - { label: "About", name: "about", widget: "markdown", required: false }
       - {
           label: "Links",
           name: "links",
@@ -214,7 +224,7 @@ collections:
         }
       - { label: "Tags", name: "tags", widget: "string", required: false }
       - { label: "NFE", name: "nfe", widget: "boolean", required: false }
-      - { label: "Sobre", name: "about", widget: "markdown" }
+      - { label: "Sobre", name: "about", widget: "markdown", required: false }
       - {
           label: "Links",
           name: "links",
@@ -249,7 +259,7 @@ collections:
         }
       - { label: "Tags", name: "tags", widget: "string", required: false }
       - { label: "NFE", name: "nfe", widget: "boolean", required: false }
-      - { label: "About", name: "about", widget: "markdown" }
+      - { label: "About", name: "about", widget: "markdown", required: false }
       - {
           label: "Links",
           name: "links",
@@ -284,8 +294,13 @@ collections:
         }
       - { label: "Tags", name: "tags", widget: "string", required: false }
       - { label: "NFE", name: "nfe", widget: "boolean", required: false }
-      - { label: "Instruções", name: "instructions", widget: "markdown" }
-      - { label: "Sobre", name: "about", widget: "markdown" }
+      - {
+          label: "Instruções",
+          name: "instructions",
+          widget: "markdown",
+          required: false,
+        }
+      - { label: "Sobre", name: "about", widget: "markdown", required: false }
       - {
           label: "Links",
           name: "links",
@@ -320,8 +335,13 @@ collections:
         }
       - { label: "Tags", name: "tags", widget: "string", required: false }
       - { label: "NFE", name: "nfe", widget: "boolean", required: false }
-      - { label: "Instructions", name: "instructions", widget: "markdown" }
-      - { label: "About", name: "about", widget: "markdown" }
+      - {
+          label: "Instructions",
+          name: "instructions",
+          widget: "markdown",
+          required: false,
+        }
+      - { label: "About", name: "about", widget: "markdown", required: false }
       - {
           label: "Links",
           name: "links",
@@ -356,8 +376,13 @@ collections:
         }
       - { label: "Tags", name: "tags", widget: "string", required: false }
       - { label: "NFE", name: "nfe", widget: "boolean", required: false }
-      - { label: "Instruções", name: "instructions", widget: "markdown" }
-      - { label: "Sobre", name: "about", widget: "markdown" }
+      - {
+          label: "Instruções",
+          name: "instructions",
+          widget: "markdown",
+          required: false,
+        }
+      - { label: "Sobre", name: "about", widget: "markdown", required: false }
       - {
           label: "Links",
           name: "links",
@@ -392,8 +417,13 @@ collections:
         }
       - { label: "Tags", name: "tags", widget: "string", required: false }
       - { label: "NFE", name: "nfe", widget: "boolean", required: false }
-      - { label: "Instructions", name: "instructions", widget: "markdown" }
-      - { label: "About", name: "about", widget: "markdown" }
+      - {
+          label: "Instructions",
+          name: "instructions",
+          widget: "markdown",
+          required: false,
+        }
+      - { label: "About", name: "about", widget: "markdown", required: false }
       - {
           label: "Links",
           name: "links",
