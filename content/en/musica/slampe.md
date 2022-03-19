@@ -1,12 +1,14 @@
 ---
 title: Slampe
+slug: slampe
 description: Synthwave house
 posted: 1616900400000
 icon: /img/icons/slampe.png
-cover: /img/covers/slampe.png
+cover: /img/uploads/slampe-cover.png
 tags: "#house #fun #sampling"
-about: |
-  A song made from samples of other songs of mine! It's like a fusion of synthwave and house music.
+about: >
+  A song made from samples of other songs of mine! It's like a fusion of
+  synthwave and house music.
 links:
   - text: YouTube
     link: https://www.youtube.com/watch?v=n4boqTH9PRA
