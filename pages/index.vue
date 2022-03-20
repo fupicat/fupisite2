@@ -1,26 +1,30 @@
 <template>
   <container>
     <div class="main">
-      <div class="featured" v-swiper="swiperOptions">
+      <div class="swiper featured">
         <div class="swiper-wrapper">
-          <NuxtLink
-            :to="localePath(`/${proj.category}/${proj.slug}`)"
-            :class="`project swiper-slide ${proj.category}`"
+          <div
+            class="swiper-slide"
             v-for="proj in featured"
             :key="proj.post.title"
           >
-            <div
-              :style="`background-image: url('${proj.post.cover}')`"
-              class="cover"
-            ></div>
-            <div class="btn">
-              <img :src="proj.post.icon" :alt="$t('postIcon')" />
-              <div class="info">
-                <p class="title">{{ proj.post.title }}</p>
-                <p class="description">{{ proj.post.description }}</p>
+            <NuxtLink
+              :to="localePath(`/${proj.category}/${proj.slug}`)"
+              :class="`project swiper-slide ${proj.category}`"
+            >
+              <div
+                :style="`background-image: url('${proj.post.cover}')`"
+                class="cover"
+              ></div>
+              <div class="btn">
+                <img :src="proj.post.icon" :alt="$t('postIcon')" />
+                <div class="info">
+                  <p class="title">{{ proj.post.title }}</p>
+                  <p class="description">{{ proj.post.description }}</p>
+                </div>
               </div>
-            </div>
-          </NuxtLink>
+            </NuxtLink>
+          </div>
         </div>
         <img
           src="/img/Left.png"
@@ -137,12 +141,28 @@
     </div>
     <div class="fanarts" v-if="$i18n.locale == 'pt'">
       <h1>Fan-arts!</h1>
-      <p>
-        Quero incluir uma seção de fan-arts aqui! Se você já fez, ou quer fazer
-        uma fan-art para mim,
-        <NuxtLink to="/sobre#contato">entre em contato</NuxtLink> e eu colocarei
-        aqui no site no futuro!
-      </p>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="/img/fanart/Charalian.png" alt="Fanart de Charalian" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/img/fanart/Johnmaker.png" alt="Fanart de Johnmaker" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/img/fanart/Lureis.png" alt="Fanart de Lureis" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/img/fanart/Charalian.png" alt="Fanart de Charalian" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/img/fanart/Johnmaker.png" alt="Fanart de Johnmaker" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/img/fanart/Lureis.png" alt="Fanart de Lureis" />
+          </div>
+        </div>
+      </div>
     </div>
   </container>
 </template>
@@ -262,32 +282,11 @@ const filteredQuotes = {
 export default {
   components: { Container, CategoryCompact },
   data() {
-    const vue = this;
     return {
       currQ: 0,
       nextQ: 1,
       animating: false,
       swiperBottom: 0,
-      swiperOptions: {
-        slidesPerView: "auto",
-        centeredSlides: true,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        on: {
-          init() {
-            vue.swiperBottom =
-              this.slides[this.activeIndex].querySelector(".btn").clientHeight /
-              2;
-          },
-          slideChangeTransitionStart() {
-            vue.swiperBottom =
-              this.slides[this.activeIndex].querySelector(".btn").clientHeight /
-              2;
-          },
-        },
-      },
     };
   },
   async asyncData({ $content, store, app }) {
@@ -391,6 +390,15 @@ export default {
           src: "/js/identity.js",
           body: true,
         },
+        {
+          src: "https://unpkg.com/swiper@8/swiper-bundle.min.js",
+        },
+      ],
+      link: [
+        {
+          rel: "stylesheet",
+          href: "https://unpkg.com/swiper@8/swiper-bundle.min.css",
+        },
       ],
       meta: [
         {
@@ -430,6 +438,41 @@ export default {
         },
       ],
     };
+  },
+  mounted() {
+    const vue = this;
+    const featuredSwiper = new Swiper(".featured", {
+      slidesPerView: "auto",
+      centeredSlides: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      on: {
+        init: function () {
+          vue.swiperBottom =
+            this.slides[this.activeIndex].querySelector(".btn").clientHeight /
+            2;
+        },
+        slideChangeTransitionStart: function () {
+          vue.swiperBottom =
+            this.slides[this.activeIndex].querySelector(".btn").clientHeight /
+            2;
+        },
+      },
+    });
+    const fanartSwiper = new Swiper(".fanarts .swiper", {
+      slidesPerView: "auto",
+      centeredSlides: true,
+      loop: true,
+      spaceBetween: 10,
+      speed: 700,
+      autoplay: {
+        delay: 5000,
+        pauseOnMouseEnter: true,
+        disableOnInteraction: false,
+      },
+    });
   },
   methods: {
     nextQuote() {
@@ -766,7 +809,7 @@ export default {
 
 .fanarts {
   margin-bottom: 2rem;
-  padding: 1rem 2rem;
+  padding: 1rem;
   background-color: var(--theme-panel);
   text-align: center;
   border-radius: 0.625rem;
@@ -774,6 +817,17 @@ export default {
   h1 {
     font-size: 1.625rem;
     font-weight: bold;
+  }
+
+  .swiper {
+    .swiper-wrapper {
+      .swiper-slide {
+        max-width: fit-content;
+        img {
+          height: 14rem;
+        }
+      }
+    }
   }
 }
 </style>
