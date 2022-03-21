@@ -139,27 +139,45 @@
         :postsSafe="randomSafe.videos"
       />
     </div>
-    <div class="fanarts" v-if="$i18n.locale == 'pt'">
-      <h1>Fan-arts!</h1>
+    <div class="fanarts">
+      <h1>Fanart!</h1>
+      <p class="desc" v-html="$t('fanartThanks')"></p>
       <div class="swiper">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="/img/fanart/Charalian.png" alt="Fanart de Charalian" />
-          </div>
-          <div class="swiper-slide">
-            <img src="/img/fanart/Johnmaker.png" alt="Fanart de Johnmaker" />
-          </div>
-          <div class="swiper-slide">
-            <img src="/img/fanart/Lureis.png" alt="Fanart de Lureis" />
-          </div>
-          <div class="swiper-slide">
-            <img src="/img/fanart/Charalian.png" alt="Fanart de Charalian" />
-          </div>
-          <div class="swiper-slide">
-            <img src="/img/fanart/Johnmaker.png" alt="Fanart de Johnmaker" />
-          </div>
-          <div class="swiper-slide">
-            <img src="/img/fanart/Lureis.png" alt="Fanart de Lureis" />
+          <div
+            class="swiper-slide"
+            v-for="fanart in [
+              {
+                name: 'Charalian',
+                image: 'Charalian.png',
+                link: 'https://charalian.xyz/',
+              },
+              {
+                name: 'JohnmakerX',
+                image: 'Johnmaker.png',
+                link: 'https://scratch.mit.edu/users/johnmakerX/',
+              },
+              {
+                name: 'Lureis2812',
+                image: 'Lureis.png',
+                link: 'https://scratch.mit.edu/users/lureis2812/',
+              },
+              {
+                name: 'Sonnic1998',
+                image: 'Sonnic.png',
+                link: 'https://scratch.mit.edu/users/sonnic1998/',
+              },
+            ]"
+            :key="fanart.name"
+          >
+            <img
+              :src="`/img/fanart/${fanart.image}`"
+              :alt="`Fanart de ${fanart.name}`"
+            />
+            <p>
+              de
+              <a :href="fanart.link" target="_blank">{{ fanart.name }}</a> ❤️
+            </p>
           </div>
         </div>
       </div>
@@ -814,17 +832,32 @@ export default {
   text-align: center;
   border-radius: 0.625rem;
   box-shadow: inset 0em 0.4em rgba(0, 0, 0, 0.15);
+
   h1 {
     font-size: 1.625rem;
     font-weight: bold;
+    color: var(--theme-title);
+  }
+
+  .desc {
+    padding-bottom: 1rem;
   }
 
   .swiper {
     .swiper-wrapper {
       .swiper-slide {
         max-width: fit-content;
+        background: white;
+        border-radius: 0.5rem;
+        overflow: hidden;
+
         img {
           height: 14rem;
+        }
+
+        p {
+          color: rgb(36, 36, 36);
+          padding: 0.3rem 0;
         }
       }
     }

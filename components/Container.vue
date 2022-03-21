@@ -1,5 +1,5 @@
 <template>
-  <div :class="{ 'mobile': !pconly, 'container': true, 'pad': pad }">
+  <div :class="{ mobile: !pconly, container: true, pad: pad }">
     <slot />
   </div>
 </template>
@@ -9,8 +9,8 @@ export default {
   props: {
     pad: Boolean,
     pconly: Boolean,
-  }
-}
+  },
+};
 </script>
 
 <style scoped>
@@ -29,9 +29,12 @@ export default {
 }
 
 @media (min-width: 768px) {
-  .container, .container.mobile {
-    padding-left: 10%;
-    padding-right: 10%;
+  .container,
+  .container.mobile {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    max-width: 1280px;
+    margin: auto;
   }
 }
 </style>

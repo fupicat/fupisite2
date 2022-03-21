@@ -1,10 +1,10 @@
 export default {
-
   // Index
 
   index: "Home",
   fupiDesc: "A place for all my stuff! Games, music, tech demos and more!",
-  fupiTags: "fupi, fupicat, fupi437, scratch, godot, engine, html5, online, games, sz, scratcherz, music, royalty-free, public domain, videos",
+  fupiTags:
+    "fupi, fupicat, fupi437, scratch, godot, engine, html5, online, games, sz, scratcherz, music, royalty-free, public domain, videos",
   postIcon: "Project icon",
   fupiHead: "Fupi's head",
   hi: "hi",
@@ -12,16 +12,19 @@ export default {
   intro1: "Hi! I'm Fupi!",
   intro2: "On this website you'll find all the stuff I make!",
   intro3: "For instance:",
+  fanartThanks:
+    "Many thanks to all wonderful people who have sent me fanart!! If you made some of your own and want me to include it here, <a href='/en/sobre#contato'>contact me</a>!",
 
   // Projects
 
-  fullXp: 'This page only displays projects in English. To get the Complete Fupi Experience™ change the website language and,, idk learn Portuguese???',
+  fullXp:
+    "This page only displays projects in English. To get the Complete Fupi Experience™ change the website language and,, idk learn Portuguese???",
 
-  projetos: 'Projects',
-  projetosDesc: 'All the stuff I made',
+  projetos: "Projects",
+  projetosDesc: "All the stuff I made",
   mais: "See more +",
 
-  jogos: 'Games',
+  jogos: "Games",
   jogosRandom: "Random games",
   jogosDesc: "Stuff you can play",
 
@@ -62,7 +65,8 @@ export default {
 
   theme: "Theme",
   nfe: "Content filter",
-  nfeDesc: "Some of the content on this site contains depictions of cartoon violence and profanity. It's nothing too extreme, no adult content, but still it's hidden by default. Deactivate the filter below if you are willing to see content that might not be apropriate for everyone.",
+  nfeDesc:
+    "Some of the content on this site contains depictions of cartoon violence and profanity. It's nothing too extreme, no adult content, but still it's hidden by default. Deactivate the filter below if you are willing to see content that might not be apropriate for everyone.",
   nfeOn: "Filter on",
   nfeOff: "Filter off",
 
@@ -71,6 +75,7 @@ export default {
   error: "Error!",
   404: "This page doesn't exist!",
   500: "Something went wrong!",
-  errorDesc: "Either you mistyped the address, this page doesn't have an English translation, or my code is acting up. If you think this is a mistake, ",
+  errorDesc:
+    "Either you mistyped the address, this page doesn't have an English translation, or my code is acting up. If you think this is a mistake, ",
   errorContact: "contact me.",
-}
+};

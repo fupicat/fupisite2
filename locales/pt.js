@@ -1,10 +1,11 @@
 export default {
-
   // Índice
 
   index: "Início",
-  fupiDesc: "Um lugar para todas as minhas coisas! Jogos, música, tech demos e mais!",
-  fupiTags: "fupi, fupicat, fupi437, scratch, godot, engine, html5, online, jogos, games, sz, scratcherz, música, royalty-free, domínio público, vídeos",
+  fupiDesc:
+    "Um lugar para todas as minhas coisas! Jogos, música, tech demos e mais!",
+  fupiTags:
+    "fupi, fupicat, fupi437, scratch, godot, engine, html5, online, jogos, games, sz, scratcherz, música, royalty-free, domínio público, vídeos",
   postIcon: "Ícone do projeto",
   fupiHead: "Cabeça do Fupi",
   hi: "oi",
@@ -12,14 +13,16 @@ export default {
   intro1: "Olá! Eu sou o Fupi!",
   intro2: "Neste site você verá as coisas que eu faço!",
   intro3: "Entre elas:",
+  fanartThanks:
+    "Muito obrigado a todas essas pessoas lindas que me mandaram fanart!! Se você fez sua própria fanart e quer que eu inclua aqui, <a href='/sobre#contato'>fale comigo</a>!",
 
   // Projetos
 
-  projetos: 'Projetos',
-  projetosDesc: 'Todas as coisas que eu fiz',
+  projetos: "Projetos",
+  projetosDesc: "Todas as coisas que eu fiz",
   mais: "Ver mais +",
 
-  jogos: 'Jogos',
+  jogos: "Jogos",
   jogosRandom: "Jogos aleatórios",
   jogosDesc: "Coisas para jogar",
 
@@ -40,7 +43,7 @@ export default {
 
   etc: "Etc.",
   etcDesc: "Coisas que eu não consegui encaixar nas outras categorias",
-  
+
   sobre: "Sobre",
   sobreDesc: "Coisas sobre coisas",
 
@@ -60,7 +63,8 @@ export default {
 
   theme: "Tema",
   nfe: "Filtro de conteúdo",
-  nfeDesc: "Alguns dos conteúdos nesse site contêm violência fantasiosa e palavrões. Nada extremo demais, nenhum conteúdo para adultos, mas ainda assim não aparecem por padrão. Desative o filtro abaixo se você está ciente e deseja ver conteúdo que pode não ser apropriado para todos.",
+  nfeDesc:
+    "Alguns dos conteúdos nesse site contêm violência fantasiosa e palavrões. Nada extremo demais, nenhum conteúdo para adultos, mas ainda assim não aparecem por padrão. Desative o filtro abaixo se você está ciente e deseja ver conteúdo que pode não ser apropriado para todos.",
   nfeOn: "Filtro ativado",
   nfeOff: "Filtro desativado",
 
@@ -69,6 +73,7 @@ export default {
   error: "Erro!",
   404: "Essa página não existe!",
   500: "Algo deu errado!",
-  errorDesc: "Ou você digitou o endereço errado, ou o meu código desistiu de funcionar. Se você suspeita que isso é um erro, ",
+  errorDesc:
+    "Ou você digitou o endereço errado, ou o meu código desistiu de funcionar. Se você suspeita que isso é um erro, ",
   errorContact: "me avise.",
-}
+};

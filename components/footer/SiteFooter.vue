@@ -3,43 +3,72 @@
     <container>
       <div class="socials">
         <a v-for="icon in social" :key="icon.name" :href="icon.url">
-          <img class="social-icon reduced-motion" width="20px" height="20px" :src="`/social/${icon.name}.svg`" :alt="icon.name">
+          <img
+            class="social-icon reduced-motion"
+            width="20px"
+            height="20px"
+            :src="`/social/${icon.name}.svg`"
+            :alt="icon.name"
+          />
         </a>
       </div>
       <div class="toolbar">
         <div class="theme-switch tool" @click="darkMode()">
           <!-- Mostra o ícone certo para o tema -->
-          <i :class="{ 'fas fa-lg' : true, 'fa-sun': !$store.state.dark.dark, 'fa-moon': $store.state.dark.dark }"></i>
+          <i
+            :class="{
+              'fas fa-lg': true,
+              'fa-sun': !$store.state.dark.dark,
+              'fa-moon': $store.state.dark.dark,
+            }"
+          ></i>
           <p>{{ $t("theme") }}</p>
         </div>
 
         <div class="nfe tool" @click="nfeShow = true">
           <i class="fas fa-lg fa-child"></i>
-          <p>{{ $t('nfe') }}</p>
+          <p>{{ $t("nfe") }}</p>
         </div>
-        
+
         <div class="lang-switch tool">
           <i class="fas fa-globe" @click="openLang()"></i>
           <select name="Idioma" @change="langChanged">
-            <option v-for="locale in availableLocales" :key="locale.code" :value="locale.code" :selected="locale.code == $i18n.locale ? true : null">{{ locale.name }}</option>
+            <option
+              v-for="locale in availableLocales"
+              :key="locale.code"
+              :value="locale.code"
+              :selected="locale.code == $i18n.locale ? true : null"
+            >
+              {{ locale.name }}
+            </option>
           </select>
         </div>
       </div>
     </container>
 
-    <modal :show="nfeShow" @close="nfeShow = false" :title="$t('nfe')" :description="$t('nfeDesc')">
+    <modal
+      :show="nfeShow"
+      @close="nfeShow = false"
+      :title="$t('nfe')"
+      :description="$t('nfeDesc')"
+    >
       <div class="nfe-switch" @click="nfe()">
-        <i :class="{ 'fas fa-lg' : true, 'fa-toggle-on': !$store.state.nfe.nfe, 'fa-toggle-off': $store.state.nfe.nfe }"></i>
+        <i
+          :class="{
+            'fas fa-lg': true,
+            'fa-toggle-on': !$store.state.nfe.nfe,
+            'fa-toggle-off': $store.state.nfe.nfe,
+          }"
+        ></i>
         <p>{{ $t($store.state.nfe.nfe ? "nfeOff" : "nfeOn") }}</p>
       </div>
     </modal>
-
   </footer>
 </template>
 
 <script>
-import Container from '../Container.vue';
-import Modal from '../Modal.vue';
+import Container from "../Container.vue";
+import Modal from "../Modal.vue";
 
 export default {
   components: { Container, Modal },
@@ -60,12 +89,12 @@ export default {
       ],
       dark: false,
       nfeShow: false,
-    }
+    };
   },
   computed: {
-    availableLocales () {
+    availableLocales() {
       return this.$i18n.locales;
-    }
+    },
   },
   methods: {
     openLang() {
@@ -75,17 +104,16 @@ export default {
       this.$i18n.setLocale(event.target.value);
     },
     darkMode() {
-      this.$store.commit('dark/change', !this.$store.state.dark.dark);
+      this.$store.commit("dark/change", !this.$store.state.dark.dark);
     },
     nfe() {
-      this.$store.commit('nfe/change', !this.$store.state.nfe.nfe);
+      this.$store.commit("nfe/change", !this.$store.state.nfe.nfe);
     },
   },
-}
+};
 </script>
 
 <style scoped>
-
 /* Footer */
 
 footer {
@@ -129,6 +157,7 @@ footer {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  padding-top: 1rem;
   width: 100%;
   gap: 0.5rem;
 }
@@ -180,5 +209,4 @@ footer {
   cursor: pointer;
   padding-bottom: 1rem;
 }
-
 </style>
