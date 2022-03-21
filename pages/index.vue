@@ -398,7 +398,7 @@ export default {
       "fupgato",
     ];
     let title = "Fupi";
-    if (Math.random() > 0.8) {
+    if (Math.random() > 0.98) {
       title = titles[Math.floor(Math.random() * titles.length)];
     }
     return {
