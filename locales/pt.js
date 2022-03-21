@@ -14,7 +14,7 @@ export default {
   intro2: "Neste site você verá as coisas que eu faço!",
   intro3: "Entre elas:",
   fanartThanks:
-    "Muito obrigado a todas essas pessoas lindas que me mandaram fanart!! Se você fez sua própria fanart e quer que eu inclua aqui, <a href='/sobre#contato'>fale comigo</a>!",
+    "Muito obrigado a todas essas pessoas maravilhosas que me mandaram fanart!! Se você fez sua própria fanart e quer que eu inclua aqui, <a href='/sobre#contato'>fale comigo</a>!",
 
   // Projetos
 

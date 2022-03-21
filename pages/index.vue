@@ -393,6 +393,9 @@ export default {
       "Fupi ._.",
       "xX-_fUpI_-Xx",
       "fupi",
+      "Fupizera",
+      "Full picante",
+      "fupgato",
     ];
     let title = "Fupi";
     if (Math.random() > 0.8) {
