@@ -528,6 +528,11 @@ export default {
     border-radius: 10px;
     overflow: hidden;
     width: 100%;
+    height: 20rem;
+
+    @media (max-width: 1024px) {
+      height: 60vw;
+    }
 
     .swiper-button-prev,
     .swiper-button-next {
@@ -555,14 +560,9 @@ export default {
       display: flex;
       flex-direction: column;
       height: 100%;
-      max-height: 20rem;
       text-decoration: none;
       color: white;
       background: var(--theme-btn);
-
-      @media (max-width: 1024px) {
-        height: 60vw;
-      }
 
       &:hover {
         .cover {
