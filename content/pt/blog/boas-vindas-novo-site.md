@@ -2,7 +2,7 @@
 title: Boas-vindas ao meu novo site!!
 slug: boas-vindas-novo-site
 description: Por quê mais um site?
-posted: "1647878451276"
+posted: "1648071360000"
 icon: /img/uploads/novo-site.png
 cover: /img/uploads/uhu.png
 tags: "#web #anuncio #dev #html #css #js"
