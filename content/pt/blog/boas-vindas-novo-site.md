@@ -60,7 +60,7 @@ Ao que eu descobri, esse é de longe o problema mais comum de ter um site! Deixa
 
 Eu considerei e até tentei fazer todos esses métodos. Mas o que eu usei para esse site foi uma framework, até porque existem muitos serviços que podem hospedar projetos feitos com frameworks de graça! Existem várias frameworks diferentes, cada uma com seu próprio jeito de escrever e lidar com componentes. Eu usei [Vue](https://vuejs.org/) para esse site, mas qualquer uma que você escolher vai ter conceitos bem parecidos.
 
-Como eu estou usando uma framework, isso significa que eu posso dividir os meus componentes do site mais repetitivos, como os botões, as páginas de projeto e as categorias, cada um em seu próprio arquivo. Então, se eu quiser mudar o design do botão, é só eu alterar aquele um arquivo, e todos os botões serão alterados ao mesmo tempo!
+Como eu estou usando uma framework, eu posso dividir os meus componentes do site mais repetitivos, como os botões, as páginas de projeto e as categorias, cada um em seu próprio arquivo. Então, se eu quiser mudar o design do botão, é só eu alterar aquele um arquivo, e todos os botões serão alterados ao mesmo tempo!
 
 A outra parte da solução é separar o conteúdo do layout da página. Ao invés de escrever as instruções, curiosidades, e colocar o jogo tudo direto em um arquivo HTML, eu separei-os em arquivos de texto comuns, bem mais legíveis. No momento que o usuário acessa uma página de projeto, ou de blog, o site só acessa aquele arquivo, pega o conteúdo que ele precisa e o adiciona à página!
 
