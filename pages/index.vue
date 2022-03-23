@@ -190,6 +190,7 @@ import Container from "~/components/Container.vue";
 import CategoryCompact from "~/components/list/CategoryCompact.vue";
 
 const featuredList = [
+  { category: "blog", slug: "boas-vindas-novo-site" },
   { category: "jogos", slug: "wrap" },
   { category: "musica", slug: "slampe" },
   { category: "videos", slug: "elevar" },
