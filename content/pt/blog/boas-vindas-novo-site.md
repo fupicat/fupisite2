@@ -54,4 +54,46 @@ Por conta disso, o meu site continuou parecendo de tutorial. Eu até fiz umas au
 
 Ao que eu descobri, esse é de longe o problema mais comum de ter um site! Deixar a adição de conteúdo a uma página e mudanças de design mais fácil. Assim, existem várias soluções para isso:
 
-* Servidor: O método mais comum na internet antiga, deixar um computador (ou mais) ligado 24 horas por dia, recebendo os usuários que entram no seu site, pegando o conteúdo do site de arquivos no PC, criando o arquivo HTML na hora, e mostrando pro usuário. Esse método é bom pra sites com conteúdo em uma base de dados que muda muito rápido, como o YouTube, que recebe vários vídeos novos por segundo, e o site precisa estar sempre atualizado.
+* Servidor: O método mais comum na internet antiga. Guardar o conteúdo do site em um banco de dados e deixar um computador (ou mais) ligado 24 horas por dia para receber os usuários que entram no seu site, pegando o conteúdo do banco de dados, criando o arquivo HTML na hora, e mostrando pro usuário. Esse método é bom pra sites com conteúdo em uma base de dados que muda muito rápido, como o YouTube, que recebe vários vídeos novos por segundo, e o site precisa estar sempre atualizado.
+* Javascript puro: Guardar o conteúdo do site em arquivos no PC, criar um site com páginas e design prontas, mas sem conteúdo, e então usar Javascript para criar os elementos necessários um por um e adicionar o conteúdo dos arquivos a eles automaticamente. O problema com esse método é que criar elementos HTML usando Javascript é extremamente tedioso e resulta em código longo e, muitas vezes, ininteligível.
+* Framework: Usar uma extensão para o Javascript chamada "framework" para criar o layout do site de uma forma baseada em componentes, os quais podem ser reutilizados e personalizados com o conteúdo que você quiser.
+
+Eu considerei e até tentei fazer todos esses métodos. Mas o que eu usei para esse site foi uma framework, até porque existem muitos serviços que podem hospedar projetos feitos com frameworks de graça! Existem várias frameworks diferentes, cada uma com seu próprio jeito de escrever e lidar com componentes. Eu usei [Vue](https://vuejs.org/) para esse site, mas qualquer uma que você escolher vai ter conceitos bem parecidos.
+
+Como eu estou usando uma framework, isso significa que eu posso dividir os meus componentes do site mais repetitivos, como os botões, as páginas de projeto e as categorias, cada um em seu próprio arquivo. Então, se eu quiser mudar o design do botão, é só eu alterar aquele um arquivo, e todos os botões serão alterados ao mesmo tempo!
+
+A outra parte da solução é separar o conteúdo do layout da página. Ao invés de escrever as instruções, curiosidades, e colocar o jogo tudo direto em um arquivo HTML, eu separei-os em arquivos de texto comuns, bem mais legíveis. No momento que o usuário acessa uma página de projeto, ou de blog, o site só acessa aquele arquivo, pega o conteúdo que ele precisa e o adiciona à página!
+
+## Resumindo...
+
+Enfim, se você não entendeu nada ou não tá nem aí, só saiba que agora é muito mais fácil de editar o site e adicionar projetos.
+
+Ok vamos ver o que tem de novo no site.
+
+## Novidades
+
+**Novos projetos!** Projetos novos e antigos, que não estavam no site anterior.
+
+![Jogos](/img/uploads/jogos.png)
+
+**Citações!** Falas doidas aleatórias na página inicial. [Envie a sua!](/sobre#contato)
+
+![Quantidade é melhor que qualidade, para quem está entediado o suficiente.](/img/uploads/quote.png)
+
+**Fanarts!** Uma faixa na página inicial para as minhas fanarts favoritas. Se você fez alguma, [envie a sua!](/sobre#contato)
+
+![Faixa de fanarts.](/img/uploads/fanarts.png)
+
+**Blog!** Meu blog está de volta, com alguns tutoriais. Quero fazer mais tutoriais e postagens no futuro!
+
+![Blog](/img/uploads/blog.png)
+
+**Músicas!** Finalmente, todas as minhas músicas apresentáveis em um só lugar.
+
+![Músicas](/img/uploads/musicas.png)
+
+Filtro de conteúdo: Algumas coisas nesse site podem não ser apropriadas para todas as idades, incluindo violência fantasiosa e palavrões. Todo o conteúdo desse tipo não aparece por padrão. Se estiver ciente e quiser ver projetos potencialmente inapropriados, desative o "Filtro de conteúdo" clicando no botão do meio do rodapé do site. Desativar o filtro de conteúdo também lhe dá acesso às seções de comentário dos projetos, mas tenha em mente que a moderação vai ser bem liberal.
+
+## Concluindo
+
+Muito obrigado por ler essa postagem, e aparecer no lançamento do meu novo site! Nem acredito que ele finalmente está pronto. Enfim, espero que gostem! Até a próxima!
