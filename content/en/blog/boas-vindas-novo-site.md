@@ -12,19 +12,19 @@ Welcome to my new site! WOOOOOOO
 
 ![Fupi and Fupicat celebrating](/img/uploads/uhu.png)
 
-This site is a project I've been working on since June 2021; I hope you like it!
+This website is a project I've been working on since June 2021; I hope you like it!
 
-In case you don't know me, and fell into this site by typing random things on Google, I'm Fupi, creator of *things* on the internet. I make games, music, videos, tools, art, and even websites. This is already my fifth personal website.
+In case you don't know me, and fell into this site by typing random things into Google, I'm Fupi, internet *thing* maker. I make games, music, videos, tools, art, and even websites. In fact, this is already my fifth personal website.
 
-*For the love of God, fifth site?!?!?!?!"* - Yes! But... with good reason.
+*For the love of God, **fifth**?!?!?!?!"* - Yes! But... with good reason.
 
 ## Why have I had so many sites?
 
-Since I was a child, I wanted to have a site, just to have. I like to have things. I had already created several random blogs, but nothing great.
+Since I was a child, I wanted to have a website, just because. I like to have things. I had already created several random blogs, but nothing worthwhile.
 
-Then one day I was poking around and discovered Wix, a site that let you create sites visually by dragging elements around. I created 3 sites on it in separate times, each time trying to improve...
+Then one day I was digging around and discovered Wix, a platform that lets you create sites visually by dragging elements around. I created 3 websites on it in the course of a few years, trying to become better and better...
 
-But I always knew that real sites are not made this way (no offense Wix). So, I wanted to dig deeper and make a "real" site, actually programming it.
+But I always knew that real websites were not made like this (no offense to Wix). So, I wanted to dig deeper and make a "real" site, actually coding it.
 
 ## How does a site work?
 
