@@ -25,7 +25,7 @@ export default {
 
 .container.pad {
   padding-top: 0.5rem;
-  padding-bottom: 1.5rem;
+  padding-bottom: 1rem;
 }
 
 @media (min-width: 768px) {
