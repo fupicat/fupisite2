@@ -26,15 +26,15 @@ Then one day I was digging around and discovered Wix, a platform that lets you c
 
 But I always knew that real websites were not made like this (no offense to Wix). So, I wanted to dig deeper and make a "real" site, actually coding it.
 
-## How does a site work?
+## How does a website work?
 
 If you don't know, websites are basically made with 3 technologies:
 
-**[HTML](https://en.wikipedia.org/wiki/HTML):** Code to put elements on your site. *E.g. text, titles, images, buttons.
+**[HTML](https://en.wikipedia.org/wiki/HTML):** Code to put elements on your site. *E.g. text, titles, images, buttons.*
 
-**CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets):** Code for changing colors, shapes and styles of elements. *E.g. site colors, size of images, fonts, animations when mouseover
+**[CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets):** Code for changing colors, shapes and styles of elements. *E.g. site colors, size of images, fonts, animations on mouse hover*
 
-**JS](https://en.wikipedia.org/wiki/JavaScript):** Code to create extra interactivity on your site. *Ex: Make a button to switch the site to dark mode, create a language selector to change the content, create a comment box that sends the comment to a database.*
+**[JS](https://en.wikipedia.org/wiki/JavaScript):** Code to create extra interactivity on your site. *Ex: Make a button to switch the site to dark mode, create a language selector for content, create a comment box that sends the comment to a database.*
 
 Underneath the scenes, all web sites run under these 3 technologies. Put them together, you have enough flexibility to do whatever you want, and you have a lot of typing to do as well.
 
