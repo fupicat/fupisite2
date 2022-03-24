@@ -21,11 +21,11 @@ export default {
 .container.mobile {
   padding-left: 1rem;
   padding-right: 1rem;
-  padding-bottom: 1.5rem;
 }
 
 .container.pad {
   padding-top: 0.5rem;
+  padding-bottom: 1.5rem;
 }
 
 @media (min-width: 768px) {
