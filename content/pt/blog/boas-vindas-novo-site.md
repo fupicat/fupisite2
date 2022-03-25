@@ -35,7 +35,7 @@ Se você não sabe, sites na internet são basicamente feitos com 3 tecnologias:
 
 **[JS](https://pt.wikipedia.org/wiki/JavaScript):** Código para criar interatividade extra no seu site. *Ex: Fazer um botão mudar o site para o modo escuro, criar um seletor de idioma para mudar o conteúdo, criar uma caixa de comentário que envie o comentário para uma base de dados.*
 
-![Comparação ilustrativa entre um site com HTML, CSS e JS.](/img/uploads/htmlcssjs.png)
+![Ilustração do processo de adicionar HTML, CSS e JS a um site.](/img/uploads/htmlcssjs.png)
 
 Por baixo dos panos, todos os sites da internet rodam sob essas 3 tecnologias. Juntando-as, você tem flexibilidade o bastante pra você fazer o que quiser, além de ter muita coisa pra digitar também.
 
