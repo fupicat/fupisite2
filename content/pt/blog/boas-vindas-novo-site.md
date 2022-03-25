@@ -1,7 +1,7 @@
 ---
 title: Boas-vindas ao meu novo site!!
 slug: boas-vindas-novo-site
-description: Por quê mais um site?
+description: Por que mais um site?
 posted: "1648071360000"
 icon: /img/uploads/novo-site.png
 cover: /img/uploads/uhu.png
@@ -34,6 +34,8 @@ Se você não sabe, sites na internet são basicamente feitos com 3 tecnologias:
 **[CSS](https://pt.wikipedia.org/wiki/Cascading_Style_Sheets):** Código para mudar as cores, formas e estilos dos elementos. *Ex: Cores do site, tamanho das imagens, fontes, animações quando o mouse passa por cima.*
 
 **[JS](https://pt.wikipedia.org/wiki/JavaScript):** Código para criar interatividade extra no seu site. *Ex: Fazer um botão mudar o site para o modo escuro, criar um seletor de idioma para mudar o conteúdo, criar uma caixa de comentário que envie o comentário para uma base de dados.*
+
+![Comparação ilustrativa entre um site com HTML, CSS e JS.](/img/uploads/htmlcssjs.png)
 
 Por baixo dos panos, todos os sites da internet rodam sob essas 3 tecnologias. Juntando-as, você tem flexibilidade o bastante pra você fazer o que quiser, além de ter muita coisa pra digitar também.
 
