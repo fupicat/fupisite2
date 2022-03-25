@@ -36,6 +36,8 @@ If you don't know, websites are basically made with 3 technologies:
 
 **[JS](https://en.wikipedia.org/wiki/JavaScript):** Code to create extra interactivity on your site. *Ex: Make a button to switch the site to dark mode, create a language selector for content, create a comment box that sends the comment to a database.*
 
+![Illustration of the process of adding HTML, CSS and JS to a website.](/img/uploads/htmlcssjs.png)
+
 Underneath the scenes, all web sites run under these 3 technologies. Put them together, you have enough flexibility to do whatever you want, and you have a lot of typing to do as well.
 
 I started learning this stuff by watching a very dated tutorial on how to make a simple website with these code languages. The product of this tutorial... was my previous website.
