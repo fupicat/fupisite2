@@ -51,11 +51,17 @@ export default {
   color: var(--theme-title);
 }
 
+.main {
+  align-items: center;
+  justify-content: center;
+}
+
 .instructions,
 .about {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  max-width: 37.6875rem;
 }
 
 .instructions {
@@ -139,6 +145,7 @@ export default {
 @media (min-width: 768px) {
   .project-info .main {
     flex-direction: row;
+    align-items: unset;
   }
 }
 
