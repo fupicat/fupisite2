@@ -59,16 +59,26 @@ export default {
 }
 
 .instructions {
-  ul {
-    height: 100%;
+  .nuxt-content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
 
-    li {
-      margin-bottom: 1rem;
-      text-align: justify;
-      list-style: inside disc;
+    h3 {
+      font-weight: bold;
+      font-size: 1.3rem;
+    }
+
+    ul {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      li {
+        margin-bottom: 1rem;
+        text-align: justify;
+        list-style: inside disc;
+      }
     }
   }
 }
