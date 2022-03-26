@@ -79,9 +79,7 @@ Ok let's see what's new on the site.
 
 ![Games](/img/uploads/jogos.png)
 
-**Quotations!** Random crazy lines on the home page. [Send yours!](/about#contact)
-
-Quantity is better than quality, for those who are bored enough.](/img/uploads/quote.png)
+**Quotes!** Random crazy lines on the home page. [Send yours!](/about#contact)
 
 **Fanarts!** A section on the homepage for my favorite fanarts. If you've made some, [submit yours!](/about#contact)
 
@@ -95,7 +93,7 @@ Quantity is better than quality, for those who are bored enough.](/img/uploads/q
 
 ![Songs](/img/uploads/musicas.png)
 
-Content Filter: Some things on this site may not be appropriate for all ages, including fantasy violence and swearing. All such content does not appear by default. If you are aware and want to see potentially inappropriate projects, turn off the "Content Filter" by clicking the button in the middle of the site footer. Disabling the content filter also gives you access to the comment sections of the projects, but keep in mind that moderation will be quite liberal.
+Content Filter: Some things on this site may not be appropriate for all ages, including fantasy violence and swearing. All such content does not appear by default. If you are aware and want to see potentially inappropriate projects, turn off the "Content Filter" by clicking the button in the middle of the site footer. Disabling the content filter also gives you access to the comment sections of the projects, and if you have a Github account you can leave a comment, but keep in mind that moderation will be quite liberal.
 
 ## In Conclusion
 
