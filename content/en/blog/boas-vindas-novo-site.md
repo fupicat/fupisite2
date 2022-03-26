@@ -40,7 +40,7 @@ If you don't know, websites are basically made with 3 technologies:
 
 Underneath the scenes, all web sites run under these 3 technologies. Put them together, you have enough flexibility to do whatever you want, and you have a lot of typing to do as well.
 
-I started learning this stuff by watching a very dated tutorial on how to make a simple website with these code languages. The product of this tutorial... was my previous website.
+I started learning this stuff by watching a very dated tutorial on how to make a simple website with these code languages. The product of this tutorial... [was my previous website](https://fupicat.github.io/old/).
 
 Yep, straight out of a tutorial.
 
