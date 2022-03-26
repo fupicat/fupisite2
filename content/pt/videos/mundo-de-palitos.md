@@ -26,6 +26,7 @@ links:
   - text: Primeira temporada (alguns episódios foram perdidos)
     link: https://scratch.mit.edu/studios/25835179/
 ---
+
 <div class="grid series-grid" id="MDPgrid">
   <a href="https://scratch.mit.edu/projects/353414298/embed">
     <div class="grid-item">
@@ -195,6 +196,15 @@ links:
       <div class="info">
         <h1>Ep 19 - Energia</h1>
         <p>Tudo parece ir de acordo com o plano.</p>
+      </div>
+    </div>
+  </a>
+  <a href="https://scratch.mit.edu/projects/488551345/embed">
+    <div class="grid-item">
+      <img src="https://cdn2.scratch.mit.edu/get_image/project/488551345_1440x1080.png">
+      <div class="info">
+        <h1>Ep 20 - Subsolo</h1>
+        <p>Segredos sombrios.</p>
       </div>
     </div>
   </a>
