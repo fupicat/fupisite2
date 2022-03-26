@@ -34,7 +34,7 @@ If you don't know, websites are basically made with 3 technologies:
 
 **[CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets):** Code for changing colors, shapes and styles of elements. *E.g. site colors, size of images, fonts, animations on mouse hover*
 
-**[JS](https://en.wikipedia.org/wiki/JavaScript):** Code to create extra interactivity on your site. *Ex: Make a button to switch the site to dark mode, create a language selector for content, create a comment box that sends the comment to a database.*
+**[JS](https://en.wikipedia.org/wiki/JavaScript):** Code to create extra interactivity on your site. *Ex: Make a button to switch the site to dark mode, create a language selector for content, create a comment box that sends the comment to a database, anything!*
 
 ![Illustration of the process of adding HTML, CSS and JS to a website.](/img/uploads/htmlcssjs.png)
 
