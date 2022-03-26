@@ -81,7 +81,7 @@ export default {
   ],
 
   i18n: {
-    baseUrl: "https://fupi.netlify.app/",
+    baseUrl: "https://fupicat.com.br/",
     locales: [
       {
         code: "en",

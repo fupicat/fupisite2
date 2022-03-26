@@ -15,7 +15,7 @@
       <client-only>
         <vssue
           v-if="$store.state.nfe.nfe && !document.nocomment"
-          :title="document.title"
+          :title="this.$i18n.locale + ' / ' + category + ' / ' + document.title"
         />
       </client-only>
     </container>
