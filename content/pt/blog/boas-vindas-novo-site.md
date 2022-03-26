@@ -39,7 +39,7 @@ Se você não sabe, sites na internet são basicamente feitos com 3 tecnologias:
 
 Por baixo dos panos, todos os sites da internet rodam sob essas 3 tecnologias. Juntando-as, você tem flexibilidade o bastante pra você fazer o que quiser, além de ter muita coisa pra digitar também.
 
-Eu comecei a aprender essas coisas vendo um tutorial bem datado sobre como fazer um site simples com essas linguagens de código. O produto desse tutorial... era o meu site anterior.
+Eu comecei a aprender essas coisas vendo um tutorial bem datado sobre como fazer um site simples com essas linguagens de código. O produto desse tutorial... [era o meu site anterior](https://fupicat.github.io/old/).
 
 Éh, direto de um tutorial.
 
