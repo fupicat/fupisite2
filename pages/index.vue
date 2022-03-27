@@ -167,6 +167,10 @@
                 image: 'Sonnic.png',
                 link: 'https://scratch.mit.edu/users/sonnic1998/',
               },
+              {
+                name: 'Lilo5000',
+                image: 'Screenshot_20220327-195732_Firefox.jpg',
+                link: 'https://scratch.mit.edu/users/lilo5000/',
             ]"
             :key="fanart.name"
           >
