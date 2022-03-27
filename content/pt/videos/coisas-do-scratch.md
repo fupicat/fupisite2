@@ -2,7 +2,7 @@
 title: Coisas do Scratch
 slug: coisas-do-scratch
 description: O show só para Scratchers.
-posted: "1647446263907"
+posted: "1491580663907"
 icon: /img/uploads/coisas-do-scratch.png
 tags: ""
 about: Uma animação simplista falando sobre como é a vida de um Scratcher.
