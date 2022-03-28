@@ -172,6 +172,11 @@
                 image: 'Screenshot_20220327-195732_Firefox.jpg',
                 link: 'https://scratch.mit.edu/users/lilo5000/',
               },
+              {
+                name: 'Neon',
+                image: 'Neon.png',
+                link: 'https://twitter.com/Tf12Neon',
+              },
             ]"
             :key="fanart.name"
           >
