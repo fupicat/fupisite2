@@ -869,14 +869,17 @@ export default {
         background: white;
         border-radius: 0.5rem;
         overflow: hidden;
+        display: flex;
+        flex-direction: column;
 
         img {
           height: 14rem;
+          object-fit: contain;
         }
 
         p {
           color: rgb(36, 36, 36);
-          padding: 0.3rem 0;
+          padding: 0.3rem 0.5rem;
         }
       }
     }
