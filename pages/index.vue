@@ -154,7 +154,7 @@
               },
               {
                 name: 'JohnmakerX',
-                image: 'Johnmaker.png',
+                image: 'Johnmaker2.png',
                 link: 'https://scratch.mit.edu/users/johnmakerX/',
               },
               {
@@ -176,6 +176,11 @@
                 name: 'Neon',
                 image: 'Neon.png',
                 link: 'https://twitter.com/Tf12Neon',
+              },
+              {
+                name: 'Fabriciogamer123neo',
+                image: 'fabriciogamer.png',
+                link: 'https://scratch.mit.edu/users/fabriciogamer123neo/',
               },
             ]"
             :key="fanart.name"
