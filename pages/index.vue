@@ -182,6 +182,11 @@
                 image: 'fabriciogamer.png',
                 link: 'https://scratch.mit.edu/users/fabriciogamer123neo/',
               },
+              {
+                name: 'PN_Scratching',
+                image: 'PNScratching.jpg',
+                link: 'https://scratch.mit.edu/users/PN_Scratching',
+              },
             ]"
             :key="fanart.name"
           >
