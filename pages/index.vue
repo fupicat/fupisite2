@@ -187,6 +187,16 @@
                 image: 'PNScratching.jpg',
                 link: 'https://scratch.mit.edu/users/PN_Scratching',
               },
+              {
+                name: 'GameEngineer',
+                image: 'GameEngineer.png',
+                link: 'https://scratch.mit.edu/users/GameEnginner/',
+              },
+              {
+                name: 'anon',
+                image: 'anon.png',
+                link: '',
+              },
             ]"
             :key="fanart.name"
           >
