@@ -14,6 +14,9 @@ about: >-
 
 
   eu pedi pros meus amigos no vídeo se tava ok de publicar no youtube e eles disseram q sim! então aqui está
+
+
+  (eu não sou o principal btw, eu sou o feto q aparece em 1:07 kjdfakjsdajk)
 links:
   - text: YouTube
     link: https://www.youtube.com/watch?v=zSTPlBaphbY
