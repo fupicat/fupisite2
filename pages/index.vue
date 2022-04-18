@@ -220,10 +220,10 @@ import Container from "~/components/Container.vue";
 import CategoryCompact from "~/components/list/CategoryCompact.vue";
 
 const featuredList = [
+  { category: "videos", slug: "isaac-newton-o-filme" },
+  { category: "jogos", slug: "fire-hazard" },
   { category: "blog", slug: "boas-vindas-novo-site" },
-  { category: "jogos", slug: "wrap" },
   { category: "musica", slug: "slampe" },
-  { category: "videos", slug: "elevar" },
   { category: "ferramentas", slug: "replacer" },
   { category: "etc", slug: "scratch-cat-3d" },
 ];
@@ -496,6 +496,12 @@ export default {
     const featuredSwiper = new Swiper(".featured", {
       slidesPerView: "auto",
       centeredSlides: true,
+      speed: 700,
+      autoplay: {
+        delay: 5000,
+        pauseOnMouseEnter: true,
+        disableOnInteraction: false,
+      },
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
