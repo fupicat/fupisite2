@@ -197,6 +197,11 @@
                 image: 'anon.png',
                 link: '',
               },
+              {
+                name: 'Chara5566',
+                image: 'Chara.png',
+                link: 'https://scratch.mit.edu/users/Chara5566/',
+              },
             ]"
             :key="fanart.name"
           >
@@ -220,7 +225,6 @@ import Container from "~/components/Container.vue";
 import CategoryCompact from "~/components/list/CategoryCompact.vue";
 
 const featuredList = [
-  { category: "videos", slug: "isaac-newton-o-filme" },
   { category: "jogos", slug: "fire-hazard" },
   { category: "blog", slug: "boas-vindas-novo-site" },
   { category: "musica", slug: "slampe" },
