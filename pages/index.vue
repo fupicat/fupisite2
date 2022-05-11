@@ -274,7 +274,10 @@ const allQuotes = {
       author: "PN_Scratching",
       link: "https://scratch.mit.edu/users/PN_Scratching/",
     },
-
+    {
+      text: "eu gosto de carne é bom",
+      author: "passo do at",
+    },
     {
       text: "Sabia que você pode enviar suas próprias frases para aparecer aqui? :O",
       author: "Contate-me!",
