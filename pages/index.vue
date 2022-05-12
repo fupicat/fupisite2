@@ -202,6 +202,11 @@
                 image: 'Chara.png',
                 link: 'https://scratch.mit.edu/users/Chara5566/',
               },
+              {
+                name: 'Passo',
+                image: 'passo.png',
+                link: 'https://scratch.mit.edu/users/passooficial/',
+              },
             ]"
             :key="fanart.name"
           >
