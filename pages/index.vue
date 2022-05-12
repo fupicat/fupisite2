@@ -214,10 +214,11 @@
               :src="`/img/fanart/${fanart.image}`"
               :alt="`Fanart de ${fanart.name}`"
             />
-            <p>
+            <p v-if="fanart.link">
               de
               <a :href="fanart.link" target="_blank">{{ fanart.name }}</a> ❤️
             </p>
+            <p v-else>de {{ fanart.name }} ❤️</p>
           </div>
         </div>
       </div>
