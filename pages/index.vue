@@ -207,6 +207,11 @@
                 image: 'passo.png',
                 link: 'https://scratch.mit.edu/users/passooficial/',
               },
+              {
+                name: 'bruno290811',
+                image: 'bruno290811.png',
+                link: 'https://scratch.mit.edu/users/bruno4273298562947/',
+              },
             ]"
             :key="fanart.name"
           >
