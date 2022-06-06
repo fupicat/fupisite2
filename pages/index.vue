@@ -217,6 +217,11 @@
                 image: 'jackson959.png',
                 link: 'https://scratch.mit.edu/users/jackson959/',
               },
+              {
+                name: 'Wangaloide',
+                image: 'wangaloide.png',
+                link: 'https://twitter.com/Wangaloide',
+              },
             ]"
             :key="fanart.name"
           >
