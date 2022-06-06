@@ -212,6 +212,11 @@
                 image: 'bruno290811.png',
                 link: 'https://scratch.mit.edu/users/bruno4273298562947/',
               },
+              {
+                name: 'jackson959',
+                image: 'jackson959.png',
+                link: 'https://scratch.mit.edu/users/jackson959/',
+              },
             ]"
             :key="fanart.name"
           >
