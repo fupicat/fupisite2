@@ -222,6 +222,11 @@
                 image: 'wangaloide.png',
                 link: 'https://twitter.com/Wangaloide',
               },
+              {
+                name: 'criadorfenix',
+                image: 'criadorfenix.png',
+                link: 'https://scratch.mit.edu/users/criadorfenix/',
+              },
             ]"
             :key="fanart.name"
           >
