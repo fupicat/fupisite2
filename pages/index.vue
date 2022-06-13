@@ -263,7 +263,6 @@ const allQuotes = {
     {
       text: "É gostosinho",
       author: "Charis",
-      link: "https://twitter.com/char_alian/",
       nfe: true,
     },
     { text: ":d", author: "Fupi" },
@@ -280,14 +279,12 @@ const allQuotes = {
     {
       text: "eu odeio prolapso anal",
       author: "Charis",
-      link: "https://twitter.com/char_alian/",
       nfe: true,
     },
     { text: "nao!!! nao pissa em mim!!", author: "Neon" },
     {
       text: "aueguh :V",
       author: "Charis pós-bufa",
-      link: "https://twitter.com/char_alian/",
       nfe: true,
     },
     {
@@ -298,11 +295,14 @@ const allQuotes = {
     {
       text: "Por gentileza, dirija-se as fezes.",
       author: "PN_Scratching",
-      link: "https://scratch.mit.edu/users/PN_Scratching/",
     },
     {
       text: "eu gosto de carne é bom",
       author: "passo do at",
+    },
+    {
+      text: "Vou tentar não ficar quieto.",
+      author: "Maujoa",
     },
     {
       text: "Sabia que você pode enviar suas próprias frases para aparecer aqui? :O",
