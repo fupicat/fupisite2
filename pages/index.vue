@@ -290,7 +290,6 @@ const allQuotes = {
     {
       text: "Toda a vida nesse planeta morreu...",
       author: "God Complex",
-      link: "/jogos/god-complex",
     },
     {
       text: "Por gentileza, dirija-se as fezes.",
@@ -321,19 +320,16 @@ const allQuotes = {
     {
       text: "i hate anal prolapse",
       author: "Charis",
-      link: "https://twitter.com/char_alian/",
       nfe: true,
     },
     {
       text: "aueguh :V",
       author: "Charis",
-      link: "https://twitter.com/char_alian/",
       nfe: true,
     },
     {
       text: "All life has died in this planet...",
       author: "God Complex",
-      link: "/en/jogos/god-complex",
     },
 
     {
