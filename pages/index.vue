@@ -305,6 +305,10 @@ const allQuotes = {
       author: "Maujoa",
     },
     {
+      text: "lembrar pra n esquecer.txt",
+      author: "Maujoa",
+    },
+    {
       text: "Sabia que você pode enviar suas próprias frases para aparecer aqui? :O",
       author: "Contate-me!",
       link: "/sobre#contato",
