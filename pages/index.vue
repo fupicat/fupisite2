@@ -227,6 +227,11 @@
                 image: 'criadorfenix.png',
                 link: 'https://scratch.mit.edu/users/criadorfenix/',
               },
+              {
+                name: 'Lalá D.A.',
+                image: 'LalaDA.png',
+                link: 'https://scratch.mit.edu/users/Lala-Olivio/',
+              },
             ]"
             :key="fanart.name"
           >
