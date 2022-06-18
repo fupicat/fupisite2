@@ -225,7 +225,7 @@
               {
                 name: 'criadorfenix',
                 image: 'criadorfenix.png',
-                link: 'https://scratch.mit.edu/users/criadorfenix/',
+                link: 'https://www.youtube.com/channel/UCKMUhovNNf8DawEx7raL-PQ',
               },
               {
                 name: 'Lalá D.A.',
