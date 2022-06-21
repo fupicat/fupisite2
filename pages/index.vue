@@ -232,6 +232,11 @@
                 image: 'LalaDA.png',
                 link: 'https://scratch.mit.edu/users/Lala-Olivio/',
               },
+              {
+                name: 'pixytixy',
+                image: 'pixytixy.png',
+                link: 'https://scratch.mit.edu/users/pixytixy/',
+              },
             ]"
             :key="fanart.name"
           >
