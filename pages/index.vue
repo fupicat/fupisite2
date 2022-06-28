@@ -318,6 +318,23 @@ const allQuotes = {
       author: "Maujoa",
     },
     {
+      text: "- cabeça de cuia",
+      author: "Lalá D.A.",
+    },
+    {
+      text: "- do caralho",
+      author: "Lalá D.A.",
+      nfe: true,
+    },
+    {
+      text: "FUPEQUETE???!!?!?",
+      author: "smixqse",
+    },
+    {
+      text: "uwu",
+      author: "Wangaloide o tempo todo (sério ela não para smh)",
+    },
+    {
       text: "Sabia que você pode enviar suas próprias frases para aparecer aqui? :O",
       author: "Contate-me!",
       link: "/sobre#contato",
@@ -341,7 +358,6 @@ const allQuotes = {
       text: "All life has died in this planet...",
       author: "God Complex",
     },
-
     {
       text: "Did you know you can submit your own quotes for this page? :O",
       author: "Contact me!",
