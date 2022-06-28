@@ -335,6 +335,10 @@ const allQuotes = {
       author: "Wangaloide o tempo todo (sério ela não para smh)",
     },
     {
+      text: "AHAAAAAAAAAAAAAAAAAAAA",
+      author: "Wangaloide",
+    },
+    {
       text: "Sabia que você pode enviar suas próprias frases para aparecer aqui? :O",
       author: "Contate-me!",
       link: "/sobre#contato",
