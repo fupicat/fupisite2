@@ -237,6 +237,11 @@
                 image: 'pixytixy.png',
                 link: 'https://scratch.mit.edu/users/pixytixy/',
               },
+              {
+                name: '-Laura-ap_Scratch-',
+                image: '-Laura-ap_Scratch-.png',
+                link: 'https://scratch.mit.edu/users/-Laura-ap_Scratch-',
+              },
             ]"
             :key="fanart.name"
           >
