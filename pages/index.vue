@@ -242,6 +242,11 @@
                 image: '-Laura-ap_Scratch-.png',
                 link: 'https://scratch.mit.edu/users/-Laura-ap_Scratch-',
               },
+              {
+                name: 'Pandi',
+                image: 'Pandi.png',
+                link: 'https://scratch.mit.edu/users/Pandi-YT/',
+              }
             ]"
             :key="fanart.name"
           >
