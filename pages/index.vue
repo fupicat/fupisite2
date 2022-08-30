@@ -148,94 +148,14 @@
             class="swiper-slide"
             v-for="fanart in [
               {
-                name: 'Charalian',
-                image: 'Charalian.png',
-                link: 'https://charalian.xyz/',
+                name: 'Faiku',
+                image: 'faiku.png',
+                link: 'https://twitter.com/faikuuuu',
               },
               {
-                name: 'JohnmakerX',
-                image: 'Johnmaker2.png',
-                link: 'https://scratch.mit.edu/users/johnmakerX/',
-              },
-              {
-                name: 'Lureis2812',
-                image: 'Lureis.png',
-                link: 'https://scratch.mit.edu/users/lureis2812/',
-              },
-              {
-                name: 'Sonnic1998',
-                image: 'Sonnic.png',
-                link: 'https://scratch.mit.edu/users/sonnic1998/',
-              },
-              {
-                name: 'Lilo5000',
-                image: 'Screenshot_20220327-195732_Firefox.jpg',
-                link: 'https://scratch.mit.edu/users/lilo5000/',
-              },
-              {
-                name: 'Neon',
-                image: 'Neon.png',
-                link: 'https://twitter.com/Tf12Neon',
-              },
-              {
-                name: 'Fabriciogamer123neo',
-                image: 'fabriciogamer.png',
-                link: 'https://scratch.mit.edu/users/fabriciogamer123neo/',
-              },
-              {
-                name: 'PN_Scratching',
-                image: 'PNScratching.jpg',
-                link: 'https://scratch.mit.edu/users/PN_Scratching',
-              },
-              {
-                name: 'GameEngineer',
-                image: 'GameEngineer.png',
-                link: 'https://scratch.mit.edu/users/GameEnginner/',
-              },
-              {
-                name: 'anon',
-                image: 'anon.png',
-                link: '',
-              },
-              {
-                name: 'Chara5566',
-                image: 'Chara.png',
-                link: 'https://scratch.mit.edu/users/Chara5566/',
-              },
-              {
-                name: 'Passo',
-                image: 'passo.png',
-                link: 'https://scratch.mit.edu/users/passooficial/',
-              },
-              {
-                name: 'bruno290811',
-                image: 'bruno290811.png',
-                link: 'https://scratch.mit.edu/users/bruno4273298562947/',
-              },
-              {
-                name: 'jackson959',
-                image: 'jackson959.png',
-                link: 'https://scratch.mit.edu/users/jackson959/',
-              },
-              {
-                name: 'Wangaloide',
-                image: 'wangaloide.png',
-                link: 'https://twitter.com/Wangaloide',
-              },
-              {
-                name: 'criadorfenix',
-                image: 'criadorfenix.png',
-                link: 'https://www.youtube.com/channel/UCKMUhovNNf8DawEx7raL-PQ',
-              },
-              {
-                name: 'Lalá D.A.',
-                image: 'LalaDA.png',
-                link: 'https://scratch.mit.edu/users/Lala-Olivio/',
-              },
-              {
-                name: 'pixytixy',
-                image: 'pixytixy.png',
-                link: 'https://scratch.mit.edu/users/pixytixy/',
+                name: 'Pandi',
+                image: 'Pandi.png',
+                link: 'https://scratch.mit.edu/users/Pandi-YT/',
               },
               {
                 name: '-Laura-ap_Scratch-',
@@ -243,9 +163,94 @@
                 link: 'https://scratch.mit.edu/users/-Laura-ap_Scratch-',
               },
               {
-                name: 'Pandi',
-                image: 'Pandi.png',
-                link: 'https://scratch.mit.edu/users/Pandi-YT/',
+                name: 'pixytixy',
+                image: 'pixytixy.png',
+                link: 'https://scratch.mit.edu/users/pixytixy/',
+              },
+              {
+                name: 'Lalá D.A.',
+                image: 'LalaDA.png',
+                link: 'https://scratch.mit.edu/users/Lala-Olivio/',
+              },
+              {
+                name: 'criadorfenix',
+                image: 'criadorfenix.png',
+                link: 'https://www.youtube.com/channel/UCKMUhovNNf8DawEx7raL-PQ',
+              },
+              {
+                name: 'Wangaloide',
+                image: 'wangaloide.png',
+                link: 'https://twitter.com/Wangaloide',
+              },
+              {
+                name: 'jackson959',
+                image: 'jackson959.png',
+                link: 'https://scratch.mit.edu/users/jackson959/',
+              },
+              {
+                name: 'bruno290811',
+                image: 'bruno290811.png',
+                link: 'https://scratch.mit.edu/users/bruno4273298562947/',
+              },
+              {
+                name: 'Passo',
+                image: 'passo.png',
+                link: 'https://scratch.mit.edu/users/passooficial/',
+              },
+              {
+                name: 'Chara5566',
+                image: 'Chara.png',
+                link: 'https://scratch.mit.edu/users/Chara5566/',
+              },
+              {
+                name: 'anon',
+                image: 'anon.png',
+                link: '',
+              },
+              {
+                name: 'GameEngineer',
+                image: 'GameEngineer.png',
+                link: 'https://scratch.mit.edu/users/GameEnginner/',
+              },
+              {
+                name: 'PN_Scratching',
+                image: 'PNScratching.jpg',
+                link: 'https://scratch.mit.edu/users/PN_Scratching',
+              },
+              {
+                name: 'Fabriciogamer123neo',
+                image: 'fabriciogamer.png',
+                link: 'https://scratch.mit.edu/users/fabriciogamer123neo/',
+              },
+              {
+                name: 'Neon',
+                image: 'Neon.png',
+                link: 'https://twitter.com/Tf12Neon',
+              },
+              {
+                name: 'Lilo5000',
+                image: 'Screenshot_20220327-195732_Firefox.jpg',
+                link: 'https://scratch.mit.edu/users/lilo5000/',
+              },
+              {
+                name: 'Sonnic1998',
+                image: 'Sonnic.png',
+                link: 'https://scratch.mit.edu/users/sonnic1998/',
+              },
+              {
+                name: 'Lureis2812',
+                image: 'Lureis.png',
+                link: 'https://scratch.mit.edu/users/lureis2812/',
+              },
+              {
+                name: 'JohnmakerX',
+                image: 'Johnmaker2.png',
+                link: 'https://scratch.mit.edu/users/johnmakerX/',
+              },
+              {
+                name: 'Charalian',
+                image: 'Charalian.png',
+                link: 'https://charalian.xyz/',
               }
             ]"
             :key="fanart.name"
