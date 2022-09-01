@@ -148,6 +148,11 @@
             class="swiper-slide"
             v-for="fanart in [
               {
+                name: 'Luam',
+                image: 'Luam.png',
+                link: 'https://twitter.com/Luam53193638',
+              },
+              {
                 name: 'Faiku',
                 image: 'faiku.png',
                 link: 'https://twitter.com/faikuuuu',
