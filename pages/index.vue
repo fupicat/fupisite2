@@ -150,7 +150,7 @@
               {
                 name: 'Luam',
                 image: 'Luam.png',
-                link: 'https://twitter.com/Luam53193638',
+                link: 'https://twitter.com/Luam_16',
               },
               {
                 name: 'Faiku',
