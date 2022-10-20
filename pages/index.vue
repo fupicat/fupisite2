@@ -148,6 +148,11 @@
             class="swiper-slide"
             v-for="fanart in [
               {
+                name: 'Helivy',
+                image: 'Helivy.png',
+                link: 'https://www.instagram.com/helivystar/',
+              },
+              {
                 name: 'Luam',
                 image: 'Luam.png',
                 link: 'https://twitter.com/Luam_16',
