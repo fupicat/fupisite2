@@ -148,6 +148,11 @@
             class="swiper-slide"
             v-for="fanart in [
               {
+                name: 'LuanKCT',
+                image: 'LuanKCT.png',
+                link: 'https://twitter.com/luankct/',
+              },
+              {
                 name: 'Helivy',
                 image: 'Helivy.png',
                 link: 'https://www.instagram.com/helivystar/',
