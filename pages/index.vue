@@ -148,6 +148,11 @@
             class="swiper-slide"
             v-for="fanart in [
               {
+                name: 'Rainzi',
+                image: 'rainzi.jpg',
+                link: 'https://twitter.com/byrainzilol',
+              },
+              {
                 name: 'LuanKCT',
                 image: 'LuanKCT.png',
                 link: 'https://twitter.com/luankct/',
