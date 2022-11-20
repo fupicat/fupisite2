@@ -148,6 +148,11 @@
             class="swiper-slide"
             v-for="fanart in [
               {
+                name: 'Henrick',
+                image: 'henrick.png',
+                link: 'https://scratch.mit.edu/users/henrick9/',
+              },
+              {
                 name: 'Rainzi',
                 image: 'rainzi.jpg',
                 link: 'https://twitter.com/byrainzilol',
