@@ -148,6 +148,16 @@
             class="swiper-slide"
             v-for="fanart in [
               {
+                name: 'Gordalho',
+                image: 'Gordalho.png',
+                link: 'https://twitter.com/Gordogrind/',
+              },
+              {
+                name: 'Randomm',
+                image: 'Randomm.png',
+                link: 'https://twitter.com/randomm607/',
+              },
+              {
                 name: 'Henrick',
                 image: 'henrick.png',
                 link: 'https://scratch.mit.edu/users/henrick9/',
