@@ -283,9 +283,8 @@
                 link: 'https://scratch.mit.edu/users/johnmakerX/',
               },
               {
-                name: 'Charalian',
+                name: 'LeoLegal',
                 image: 'Charalian.png',
-                link: 'https://charalian.xyz/',
               }
             ]"
             :key="fanart.name"
