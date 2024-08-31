@@ -77,7 +77,7 @@ export default {
       social: [
         { name: "Scratch", url: "https://scratch.mit.edu/users/Fupicat" },
         { name: "YouTube", url: "https://youtube.com/c/fupii" },
-        { name: "Twitter", url: "https://twitter.com/fupibr" },
+        { name: "Bluesky", url: "https://bsky.app/profile/fupi.cat" },
         { name: "Reddit", url: "https://www.reddit.com/user/fup437" },
         { name: "GitHub", url: "https://github.com/Fupicat" },
         { name: "Newgrounds", url: "https://fupicat.newgrounds.com/" },
